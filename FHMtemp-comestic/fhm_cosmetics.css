@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100&display=swap");
+
+@font-face {
+  font-family: TuesdayNight;
+  src: url("./fonts/TuesdayNight-Regular/TuesdayNight-Regular.otf");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+.input-group-text,
+.sub-menu-container .menu-link div,
+#logo a,
+.top-search-form input,
+.entry-link,
+.entry.entry-date-section span,
+.button.button-desc,
+.fbox-content h3,
+.tab-nav-lg li a,
+.counter,
+label,
+.widget-filter-links li a,
+.nav-tree li a,
+.wedding-head,
+.font-primary,
+.font-secondary,
+.button,
+.menu-link,
+.product-title h3 a,
+.single-product .product-title h2 a,
+.quantity .plus,
+.quantity .minus,
+.quantity .qty,
+.tab-content,
+.tab-nav li.ui-tabs-active a,
+.tab-nav li.ui-tabs-active span,
+.comment-content .comment-author {
+  font-family: "Lato", sans-serif !important;
+}
+
+p,
+li,
+.tab-nav li.ui-tabs-active span,
+.tab-nav li a,
+.tab-content {
+  font-weight: 300;
+}
+
+.comment-content .comment-author {
+  font-weight: 400;
+}
+
+.form-control,
+.input-group-text,
+.btn,
+.badge {
+  border-radius: 0px;
+}
+
+.badge {
+  font-weight: 300 !important;
+}
+
+/* START MENU */
+.top-cart-number::before {
+  background-color: #e7a89c;
+}
+
+svg {
+  fill: #e7a89c;
+}
+/* END MENU */
+
+/* START SUB TITLE */
+
+.titular-sub-title {
+  font-family: TuesdayNight !important;
+  text-transform: unset;
+  color: #e5e5e5 !important;
+  font-size: 42px;
+  line-height: 27px !important;
+}
+
+/* END SUBTITLE */
+
+/* START CATEGORY */
+.category-link {
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-desc {
+  width: 94%;
+  height: 0%;
+  background-color: #fff;
+  transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.65s;
+  transform-origin: bottom;
+  opacity: 0;
+}
+
+.category-link:hover .category-desc {
+  height: 94%;
+  opacity: 1;
+}
+/* END CATEGORY */
+
+/* START TESTIMONIALS */
+#testimonials {
+  background-image: url("https://biagiotti.qodeinteractive.com/wp-content/uploads/2019/09/m-h-background-2-2.jpg?id=3004");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 167px !important;
+  padding-bottom: 188px !important;
+}
+
+.testimonial {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+/* END TESTIMONIALS */
+
+/* START ADVANCETAGES */
+
+.fbox-icon i,
+.fbox-icon img {
+  background-color: transparent;
+  border-radius: 0px;
+}
+/* END ADVANCETAGES */
+
+/* START FINDOUT */
+
+.findout-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#findout .button:hover {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+/* END FINDOUT */
+
+/* START PRODUCTS */
+#product {
+  background-image: url("https://biagiotti.qodeinteractive.com/wp-content/uploads/2019/09/m-h-background-3.jpg?id=2652");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* END PRODUCTS */
+
+/* START FORM */
+
+#form .row {
+  height: 300px;
+  background-color: #feebe7;
+}
+
+#form p {
+  font-family: TuesdayNight !important;
+  text-transform: unset;
+  color: #fff;
+  font-size: 218px;
+  line-height: 27px;
+  padding: 0 60px;
+  display: inline-block;
+}
+/* END FORM */
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px) {
+  .category-link {
+    height: 300px;
+  }
+
+  #findout .heading-block h1 {
+    font-size: 27px;
+  }
+}
