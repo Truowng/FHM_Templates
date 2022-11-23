@@ -3,16 +3,12 @@
 }
 
 #page-title {
-  background-image: url("https://lacomete.qodeinteractive.com/wp-content/uploads/2019/04/title-area-background-img.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 5rem 0;
+  padding: 10rem 0;
 }
 
 #page-title h1 {
-  font-family: "Lato", sans-serif !important;
   font-weight: 400;
+  font-size: 4rem;
 }
 
 .product-title h3 {
@@ -48,4 +44,64 @@
 
 .widget-filter-links li.active-filter span {
   background-color: rgb(158, 132, 83) !important;
+}
+
+/* FILTER */
+
+.irs-line,
+.irs--flat .irs-bar {
+  height: 7px !important;
+}
+
+.irs--flat .irs-bar {
+  background-color: #000 !important;
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to {
+  border-radius: 0px !important;
+  background-color: #000 !important;
+}
+
+.irs--flat .irs-handle > i:first-child,
+.irs--flat .irs-handle > i:last-child {
+  height: 75% !important;
+  background-color: #000 !important;
+}
+
+.irs--flat .irs-line,
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+  border-radius: 0px !important;
+}
+
+/* PAGINATION */
+
+.pagination .page-item .page-link,
+.pagination-lg .page-item:last-child .page-link,
+.pagination-lg .page-item:first-child .page-link {
+  border-radius: 0px;
+  margin-left: 8px;
+}
+
+.page-item.active .page-link,
+.page-link:focus,
+.page-link:hover {
+  background-color: #000 !important;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  #page-title {
+    padding: 5rem 0;
+  }
+
+  #page-title h1 {
+    font-size: 2rem;
+  }
+
+  .pagination {
+    justify-content: center;
+  }
 }
