@@ -1,0 +1,10 @@
+/* START HEADER */
+.header-size-md #header-wrap #logo img {
+  height: 50px;
+}
+
+.sticky-header-shrink #header-wrap #logo img {
+  height: 35px;
+}
+
+/* END HEADER */

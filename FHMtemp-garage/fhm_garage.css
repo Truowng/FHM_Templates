@@ -18,10 +18,17 @@
 
 /* START SERVICE */
 #garage-service {
-  background-image: url("https://zcube.in/autozox/img/bg/approch-bg.png");
-  background-position: top;
-  background-size: contain;
-  background-repeat: no-repeat;
+  position: relative;
+}
+
+#garage-service::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 60%;
+  background-color: #c91b1f;
+  top: 0;
+  left: 0;
 }
 
 .portfolio-desc h3 a:hover {
