@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.top-cart-number::before {
+  background-color: #cd2c24 !important ;
+}
+
+/* START CATEGORY */
+.dark .portfolio-desc h3 a:hover {
+  color: #fff !important;
+}
+/* END CATEGORY */
+
+/* START SERVICE */
+#service .button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: all ease 0.2s;
+}
+
+#service .button:hover {
+  color: #cd2c24;
+  background-color: #fff;
+}
+
+/* END SERVICE */
+
+/* START PRODUCT */
+#product .button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: all ease 0.2s;
+}
+
+#product .button:hover {
+  color: #cd2c24;
+  background-color: #fff;
+}
+/* END PRODUCT */
