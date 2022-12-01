@@ -6,6 +6,14 @@
 .top-cart-number::before {
   background-color: #c91b1f;
 }
+
+#logo img {
+  height: 60px !important;
+}
+
+.sticky-header-shrink #header-wrap #logo img {
+  height: 35px !important;
+}
 /* END HEADER */
 
 #garage-slider {
@@ -54,13 +62,13 @@
 /* END CONTACT */
 
 /* START TESTIMONIALS */
-#garage-testimonial {
+/* #garage-testimonial {
   background-image: url(https://html.tonatheme.com/2022/gearup/assets/images/background/bg-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding: 8rem 0;
-}
+} */
 /* END TESTIMONIALS */
 
 /* START BLOGS */
@@ -70,18 +78,28 @@
 /* END BLOGS */
 
 /* START FOOTER */
-#footer {
-  background-image: url("https://zcube.in/autozox/img/bg/footer-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 #footer .button {
   background-color: #c91b1f;
+}
+
+.footer-logo img {
+  width: 70%;
 }
 
 #copyrights {
   background-color: #c91b1f !important;
 }
 /* END FOOTER */
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  #garage-service::before {
+    height: 100%;
+  }
+
+  #garage-service .portfolio-desc span,
+  #garage-service .portfolio-desc h3 a {
+    color: #fff;
+  }
+}
