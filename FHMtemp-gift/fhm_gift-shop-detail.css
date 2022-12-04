@@ -1,0 +1,15 @@
+.single-product .button {
+  background-color: #fff;
+  color: #cd2c24;
+  border: 1px solid #cd2c24;
+}
+
+.single-product .button:hover {
+  background-color: #cd2c24;
+  color: #fff;
+  border: 1px solid #cd2c24;
+}
+
+.single-product i {
+  color: #cd2c24;
+}

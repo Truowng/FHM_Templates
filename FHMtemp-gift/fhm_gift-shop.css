@@ -4,6 +4,15 @@
   background-color: #cd2c24 !important ;
 }
 
+.dark .top-cart-content {
+  background-color: #fff;
+}
+
+.dark .top-cart-item-desc a,
+.dark .top-cart-title h4 {
+  color: #000;
+}
+
 /* START CATEGORY */
 .dark .portfolio-desc h3 a:hover {
   color: #fff !important;
@@ -38,3 +47,49 @@
   background-color: #fff;
 }
 /* END PRODUCT */
+
+/* START TESITMONIALS */
+#testimonials {
+  background-image: url("https://images.unsplash.com/photo-1581680062469-1c8b88f4bb3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#testimonials .testimonial {
+  backdrop-filter: blur(10px);
+  border-color: transparent;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.testimonial .flex-control-nav li a {
+  background-color: #fff !important;
+}
+/* END TESITMONIALS */
+
+/* START CONTACT */
+#contact {
+  background-image: url("https://images.unsplash.com/photo-1550015296-7fd664acc768?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#contact .btn {
+  border: 1px solid #fff;
+  color: #fff;
+  transition: all ease 0.2s;
+}
+
+#contact .btn:hover {
+  background-color: #cd2c24;
+  border-color: #cd2c24;
+}
+/* END CONTACT */
+
+/* START FOOTER */
+
+.footer-logo {
+  width: 80%;
+}
+/* END FOOTER */

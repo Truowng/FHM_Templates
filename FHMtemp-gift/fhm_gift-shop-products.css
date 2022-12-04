@@ -1,0 +1,9 @@
+.irs-bar,
+.irs-from,
+.irs-to,
+.irs-single,
+.irs-handle > i:first-child,
+.irs-handle.state_hover > i:first-child,
+.irs-handle:hover > i:first-child {
+  background-color: #cd2c24 !important;
+}

@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+  <!-- Mirrored from themes.semicolonweb.com/html/canvas/demo-store-products.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Aug 2021 15:12:58 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+
+    <!-- Stylesheets
+	============================================= -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla:400,700&amp;display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="style_fhm_gift-shop.css" type="text/css" />
+    <link rel="stylesheet" href="css/swiper.css" type="text/css" />
+    <link rel="stylesheet" href="css/dark.css" type="text/css" />
+
+    <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Range Slider CSS -->
+    <link
+      rel="stylesheet"
+      href="css/components/ion.rangeslider.css"
+      type="text/css"
+    />
+
+    <!-- Store Demo Specific Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="css/colors2135.css?color=222222"
+      type="text/css"
+    />
+    <!-- Store Theme Color -->
+    <link rel="stylesheet" href="demos/store/store.css" type="text/css" />
+    <!-- Store Theme Custom CSS -->
+    <!-- / -->
+
+    <link rel="stylesheet" href="fhm_gift-shop-detail.css" />
+    <link rel="stylesheet" href="fhm_gift-shop-products.css" />
+    <link rel="stylesheet" href="fhm_gift-shop.css" />
+
+    <!-- Document Title
+	============================================= -->
+    <title>FHM - Gift Shop Products</title>
+  </head>
+
+  <body class="stretched modal-subscribe-bottom">
+    <!-- Document Wrapper
+	============================================= -->
+    <div id="wrapper" class="clearfix">
+      <!-- Header
+		============================================= -->
+      <header
+        id="header"
+        class="dark transparent-header floating-header header-size-custom"
+        data-sticky-shrink="false"
+        data-sticky-class="not-dark"
+      >
+        <div id="header-wrap">
+          <div class="container-fluid">
+            <div class="header-row justify-content-lg-between">
+              <!-- Logo
+						============================================= -->
+              <div id="logo" class="me-lg-0">
+                <a
+                  href="index-2.html"
+                  class="standard-logo"
+                  data-dark-logo="https://fhmvietnam.com/data/cms-image/logo/logo_new_light.png"
+                  ><img
+                    src="https://fhmvietnam.com/data/cms-image/logo/logo_new_dark.png"
+                    alt="Canvas Logo"
+                /></a>
+                <a
+                  href="index-2.html"
+                  class="retina-logo"
+                  data-dark-logo="https://fhmvietnam.com/data/cms-image/logo/logo_new_light.png"
+                  ><img
+                    src="https://fhmvietnam.com/data/cms-image/logo/logo_new_dark.png"
+                    alt="Canvas Logo"
+                /></a>
+              </div>
+              <!-- #logo end -->
+
+              <div class="header-misc">
+                <!-- Top Search
+                ============================================= -->
+                <div id="top-search" class="header-misc-icon">
+                  <a href="#" id="top-search-trigger"
+                    ><i class="icon-line-search"></i
+                    ><i class="icon-line-cross"></i
+                  ></a>
+                </div>
+                <!-- #top-search end -->
+
+                <!-- Top Cart
+                ============================================= -->
+                <div id="top-cart" class="header-misc-icon d-none d-sm-block">
+                  <a href="#" id="top-cart-trigger"
+                    ><i class="icon-line-bag"></i
+                    ><span class="top-cart-number">2</span></a
+                  >
+                  <div class="top-cart-content">
+                    <div class="top-cart-title">
+                      <h4>Giỏ hàng</h4>
+                    </div>
+                    <div class="top-cart-items">
+                      <div class="top-cart-item">
+                        <div class="top-cart-item-image">
+                          <a href="#"
+                            ><img
+                              src="https://images.unsplash.com/photo-1656821991452-648b8312a30b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                              alt="Blue Round-Neck Tshirt"
+                          /></a>
+                        </div>
+                        <div class="top-cart-item-desc">
+                          <div class="top-cart-item-desc-title">
+                            <a href="#">Hộp quà Valentine</a>
+                            <span class="top-cart-item-price d-block"
+                              >450.000đ</span
+                            >
+                          </div>
+                          <div class="top-cart-item-quantity">x 2</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="top-cart-action">
+                      <span class="top-checkout-price">900.000đ</span>
+                      <a href="#" class="button button-3d button-small m-0"
+                        >Xem giỏ hàng</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- #top-cart end -->
+              </div>
+
+              <div id="primary-menu-trigger">
+                <svg class="svg-trigger" viewBox="0 0 100 100">
+                  <path
+                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
+                  ></path>
+                  <path d="m 30,50 h 40"></path>
+                  <path
+                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Primary Navigation
+						============================================= -->
+              <nav class="primary-menu with-arrows">
+                <!-- Menu Left -->
+                <ul class="not-dark menu-container">
+                  <li class="menu-item current">
+                    <a class="menu-link" href="#"><div>TRANG CHỦ</div></a>
+                  </li>
+                  <li class="menu-item mega-menu">
+                    <a class="menu-link" href="demo-store-products.html"
+                      ><div>SẢN PHẨM</div></a
+                    >
+                  </li>
+                  <!-- .mega-menu end -->
+                  <li class="menu-item">
+                    <a class="menu-link" href="demo-store-products.html"
+                      ><div>DỊCH VỤ</div></a
+                    >
+                  </li>
+
+                  <!-- .mega-menu end -->
+                  <li class="menu-item">
+                    <a class="menu-link" href="demo-store-contact.html"
+                      ><div>LIÊN HỆ</div></a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <!-- #primary-menu end -->
+            </div>
+          </div>
+        </div>
+        <div class="header-wrap-clone"></div>
+      </header>
+      <!-- #header end -->
+
+      <!-- Page Title
+		============================================= -->
+      <section
+        id="page-title"
+        class="page-title-parallax page-title-dark page-title-center"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1612201606640-2b989fbb93c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80');
+          background-size: cover;
+          padding: 170px 0 100px;
+        "
+        data-bottom-top="background-position: 50% 200px;"
+        data-top-bottom="background-position: 50% -200px;"
+      >
+        <div class="container clearfix">
+          <h1 class="font-secondary text-uppercase">Tất cả sản phẩm</h1>
+          <!-- <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Men</li>
+          </ol> -->
+        </div>
+      </section>
+      <!-- #page-title end -->
+
+      <!-- Content
+		============================================= -->
+      <section id="content">
+        <div class="content-wrap pb-0">
+          <div class="container-fluid topmargin">
+            <div class="row">
+              <div class="col-md-10">
+                <div
+                  id="product"
+                  class="row shop grid-container"
+                  data-layout="fitRows"
+                >
+                  <!-- Shop Item -->
+                  <div
+                    class="col-lg-4 col-md-6 mb-4 sf-shoes sf-sportswear sf-new"
+                  >
+                    <div class="product">
+                      <div class="product-image position-relative">
+                        <div
+                          class="fslider"
+                          data-pagi="false"
+                          data-speed="400"
+                          data-pause="200000"
+                        >
+                          <div class="flexslider">
+                            <div class="slider-wrap">
+                              <div class="slide">
+                                <a href="demo-store-product-single.html"
+                                  ><img
+                                    src="https://images.unsplash.com/photo-1578073273382-f847b29d2192?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=384&q=80"
+                                    alt="Lì xì Tết Quý Mão"
+                                /></a>
+                              </div>
+                              <div class="slide">
+                                <a href="demo-store-product-single.html"
+                                  ><img
+                                    src="https://images.unsplash.com/photo-1578073273382-f847b29d2192?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=384&q=80"
+                                    alt="Lì xì Tết Quý Mão"
+                                /></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="cart-btn button"
+                          ><i class="icon-line-plus"></i>Thêm vào giỏ</a
+                        >
+                      </div>
+                      <div class="product-desc">
+                        <div class="product-title">
+                          <h3>
+                            <a href="demo-store-product-single.html"
+                              >Lì xì Tết Quý Mão</a
+                            >
+                          </h3>
+                          <span><a href="#">Lì xì</a></span>
+                        </div>
+                        <div class="product-price"><ins>25.000đ</ins></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Shop Item -->
+                  <div
+                    class="col-lg-4 col-md-6 mb-4 sf-shoes sf-sportswear sf-new"
+                  >
+                    <div class="product">
+                      <div class="product-image position-relative">
+                        <div
+                          class="fslider"
+                          data-pagi="false"
+                          data-speed="400"
+                          data-pause="200000"
+                        >
+                          <div class="flexslider">
+                            <div class="slider-wrap">
+                              <div class="slide">
+                                <a href="demo-store-product-single.html"
+                                  ><img
+                                    src="https://images.unsplash.com/photo-1578073273382-f847b29d2192?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=384&q=80"
+                                    alt="Lì xì Tết Quý Mão"
+                                /></a>
+                              </div>
+                              <div class="slide">
+                                <a href="demo-store-product-single.html"
+                                  ><img
+                                    src="https://images.unsplash.com/photo-1578073273382-f847b29d2192?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=384&q=80"
+                                    alt="Lì xì Tết Quý Mão"
+                                /></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="cart-btn button"
+                          ><i class="icon-line-plus"></i>Thêm vào giỏ</a
+                        >
+                      </div>
+                      <div class="product-desc">
+                        <div class="product-title">
+                          <h3>
+                            <a href="demo-store-product-single.html"
+                              >Lì xì Tết Quý Mão</a
+                            >
+                          </h3>
+                          <span><a href="#">Lì xì</a></span>
+                        </div>
+                        <div class="product-price"><ins>25.000đ</ins></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Shop Item -->
+                  <div
+                    class="col-lg-4 col-md-6 mb-4 sf-shoes sf-sportswear sf-new"
+                  >
+                    <div class="product">
+                      <div class="product-image position-relative">
+                        <div
+                          class="fslider"
+                          data-pagi="false"
+                          data-speed="400"
+                          data-pause="200000"
+                        >
+                          <div class="flexslider">
+                            <div class="slider-wrap">
+                              <div class="slide">
+                                <a href="demo-store-product-single.html"
+                                  ><img
+                                    src="https://images.unsplash.com/photo-1578073273382-f847b29d2192?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=384&q=80"
+                                    alt="Lì xì Tết Quý Mão"
+                                /></a>
+                              </div>
+                              <div class="slide">
+                                <a href="demo-store-product-single.html"
+                                  ><img
+                                    src="https://images.unsplash.com/photo-1578073273382-f847b29d2192?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=384&q=80"
+                                    alt="Lì xì Tết Quý Mão"
+                                /></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="cart-btn button"
+                          ><i class="icon-line-plus"></i>Thêm vào giỏ</a
+                        >
+                      </div>
+                      <div class="product-desc">
+                        <div class="product-title">
+                          <h3>
+                            <a href="demo-store-product-single.html"
+                              >Lì xì Tết Quý Mão</a
+                            >
+                          </h3>
+                          <span><a href="#">Lì xì</a></span>
+                        </div>
+                        <div class="product-price"><ins>25.000đ</ins></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Shop Item -->
+                  <div
+                    class="col-lg-4 col-md-6 mb-4 sf-shoes sf-sportswear sf-new"
+                  >
+                    <div class="product">
+                      <div class="product-image position-relative">
+                        <div
+                          class="fslider"
+                          data-pagi="false"
+                          data-speed="400"
+                          data-pause="200000"
+                        >
+                          <div class="flexslider">
+                            <div class="slider-wrap">
+                              <div class="slide">
+                                <a href="demo-store-product-single.html"
+                                  ><img
+                                    src="https://images.unsplash.com/photo-1578073273382-f847b29d2192?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=384&q=80"
+                                    alt="Lì xì Tết Quý Mão"
+                                /></a>
+                              </div>
+                              <div class="slide">
+                                <a href="demo-store-product-single.html"
+                                  ><img
+                                    src="https://images.unsplash.com/photo-1578073273382-f847b29d2192?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=384&q=80"
+                                    alt="Lì xì Tết Quý Mão"
+                                /></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="cart-btn button"
+                          ><i class="icon-line-plus"></i>Thêm vào giỏ</a
+                        >
+                      </div>
+                      <div class="product-desc">
+                        <div class="product-title">
+                          <h3>
+                            <a href="demo-store-product-single.html"
+                              >Lì xì Tết Quý Mão</a
+                            >
+                          </h3>
+                          <span><a href="#">Lì xì</a></span>
+                        </div>
+                        <div class="product-price"><ins>25.000đ</ins></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Shop Item -->
+                  <div
+                    class="col-lg-4 col-md-6 mb-4 sf-shoes sf-sportswear sf-new"
+                  >
+                    <div class="product">
+                      <div class="product-image position-relative">
+                        <div
+                          class="fslider"
+                          data-pagi="false"
+                          data-speed="400"
+                          data-pause="200000"
+                        >
+                          <div class="flexslider">
+                            <div class="slider-wrap">
+                              <div class="slide">
+                                <a href="demo-store-product-single.html"
+                                  ><img
+                                    src="https://images.unsplash.com/photo-1578073273382-f847b29d2192?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=384&q=80"
+                                    alt="Lì xì Tết Quý Mão"
+                                /></a>
+                              </div>
+                              <div class="slide">
+                                <a href="demo-store-product-single.html"
+                                  ><img
+                                    src="https://images.unsplash.com/photo-1578073273382-f847b29d2192?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=384&q=80"
+                                    alt="Lì xì Tết Quý Mão"
+                                /></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="cart-btn button"
+                          ><i class="icon-line-plus"></i>Thêm vào giỏ</a
+                        >
+                      </div>
+                      <div class="product-desc">
+                        <div class="product-title">
+                          <h3>
+                            <a href="demo-store-product-single.html"
+                              >Lì xì Tết Quý Mão</a
+                            >
+                          </h3>
+                          <span><a href="#">Lì xì</a></span>
+                        </div>
+                        <div class="product-price"><ins>25.000đ</ins></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Shop Item -->
+                  <div
+                    class="col-lg-4 col-md-6 mb-4 sf-shoes sf-sportswear sf-new"
+                  >
+                    <div class="product">
+                      <div class="product-image position-relative">
+                        <div
+                          class="fslider"
+                          data-pagi="false"
+                          data-speed="400"
+                          data-pause="200000"
+                        >
+                          <div class="flexslider">
+                            <div class="slider-wrap">
+                              <div class="slide">
+                                <a href="demo-store-product-single.html"
+                                  ><img
+                                    src="https://images.unsplash.com/photo-1578073273382-f847b29d2192?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=384&q=80"
+                                    alt="Lì xì Tết Quý Mão"
+                                /></a>
+                              </div>
+                              <div class="slide">
+                                <a href="demo-store-product-single.html"
+                                  ><img
+                                    src="https://images.unsplash.com/photo-1578073273382-f847b29d2192?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=384&q=80"
+                                    alt="Lì xì Tết Quý Mão"
+                                /></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="cart-btn button"
+                          ><i class="icon-line-plus"></i>Thêm vào giỏ</a
+                        >
+                      </div>
+                      <div class="product-desc">
+                        <div class="product-title">
+                          <h3>
+                            <a href="demo-store-product-single.html"
+                              >Lì xì Tết Quý Mão</a
+                            >
+                          </h3>
+                          <span><a href="#">Lì xì</a></span>
+                        </div>
+                        <div class="product-price"><ins>25.000đ</ins></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Shop Item -->
+                  <div
+                    class="col-lg-4 col-md-6 mb-4 sf-shoes sf-sportswear sf-new"
+                  >
+                    <div class="product">
+                      <div class="product-image position-relative">
+                        <div
+                          class="fslider"
+                          data-pagi="false"
+                          data-speed="400"
+                          data-pause="200000"
+                        >
+                          <div class="flexslider">
+                            <div class="slider-wrap">
+                              <div class="slide">
+                                <a href="demo-store-product-single.html"
+                                  ><img
+                                    src="https://images.unsplash.com/photo-1578073273382-f847b29d2192?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=384&q=80"
+                                    alt="Lì xì Tết Quý Mão"
+                                /></a>
+                              </div>
+                              <div class="slide">
+                                <a href="demo-store-product-single.html"
+                                  ><img
+                                    src="https://images.unsplash.com/photo-1578073273382-f847b29d2192?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=384&q=80"
+                                    alt="Lì xì Tết Quý Mão"
+                                /></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="cart-btn button"
+                          ><i class="icon-line-plus"></i>Thêm vào giỏ</a
+                        >
+                      </div>
+                      <div class="product-desc">
+                        <div class="product-title">
+                          <h3>
+                            <a href="demo-store-product-single.html"
+                              >Lì xì Tết Quý Mão</a
+                            >
+                          </h3>
+                          <span><a href="#">Lì xì</a></span>
+                        </div>
+                        <div class="product-price"><ins>25.000đ</ins></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 sticky-sidebar-wrap">
+                <ul
+                  class="list-unstyled items-nav sticky-sidebar shop-filter"
+                  data-container="#shop"
+                >
+                  <li>
+                    <a href="#" class="text-dark fw-semibold" data-filter="*"
+                      >Tất cả sản phẩm</a
+                    >
+                  </li>
+                  <li class="no-divider">
+                    <a
+                      href="#"
+                      class="text-dark fw-semibold"
+                      data-filter=".sf-new"
+                      >Sản phẩm mới</a
+                    >
+                  </li>
+                  <li><hr /></li>
+                  <li><a href="#" data-filter=".sf-jeans">Tết Quý Mão</a></li>
+                  <li><a href="#" data-filter=".sf-t-shirts">Valentine</a></li>
+                  <li><a href="#" data-filter=".sf-watches">Giáng Sinh</a></li>
+                  <li><a href="#" data-filter=".sf-shoes">Trung Thu</a></li>
+                </ul>
+
+                <hr />
+
+                <div>
+                  <h5 class="ls0 text-muted">Giá:</h5>
+                  <input class="range_23" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #content end -->
+
+      <!-- Footer
+		============================================= -->
+      <footer id="footer" class="">
+        <div class="container">
+          <!-- Footer Widgets
+					============================================= -->
+          <div class="footer-widgets-wrap">
+            <div class="row col-mb-50">
+              <div class="col-lg-8">
+                <div class="row col-mb-50">
+                  <div class="col-md-4">
+                    <div class="widget clearfix">
+                      <img
+                        src="https://fhmvietnam.com/data/cms-image/logo/logo_new_dark.png"
+                        alt="Image"
+                        class="footer-logo"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="widget widget_links clearfix">
+                      <h4>Chính sách</h4>
+
+                      <ul>
+                        <li>
+                          <a href="https://codex.wordpress.org/"
+                            >Chính sách bảo hành</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://wordpress.org/support/forum/requests-and-feedback"
+                            >Điều khoản dịch vụ</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://wordpress.org/extend/plugins/"
+                            >Chính sách hỗ trợ</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="widget widget_links clearfix">
+                      <h4>Liên kết nhanh</h4>
+
+                      <ul>
+                        <li>
+                          <a href="https://codex.wordpress.org/">Sản phẩm</a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://wordpress.org/support/forum/requests-and-feedback"
+                            >Dịch vụ</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://wordpress.org/extend/plugins/"
+                            >Liên hệ</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="widget clearfix">
+                  <div
+                    style="
+                      background: url('images/world-map.png') no-repeat center
+                        center;
+                      background-size: 100%;
+                    "
+                  >
+                    <address>
+                      <strong>Địa chỉ:</strong><br />
+                      2/25 Thọ Tháp, Dịch Vọng, Cầu Giấy, Hà Nội<br />
+                    </address>
+                    <abbr title="Phone Number"><strong>Hotline:</strong></abbr>
+                    0393004567<br />
+
+                    <abbr title="Email Address"><strong>Email:</strong></abbr>
+                    fhmvietnam@gmail.com
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- .footer-widgets-wrap end -->
+        </div>
+      </footer>
+      <!-- #footer end -->
+    </div>
+    <!-- #wrapper end -->
+
+    <!-- Go To Top
+	============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- JavaScripts
+	============================================= -->
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.min.js"></script>
+
+    <!-- Range Slider Plugin -->
+    <script src="js/components/rangeslider.min.js"></script>
+
+    <!-- Footer Scripts
+	============================================= -->
+    <script src="js/functions.js"></script>
+
+    <script>
+      $(document).ready(changeHeaderColor);
+      $(window).on("resize", changeHeaderColor);
+
+      function changeHeaderColor() {
+        if (jQuery(window).width() > 991.98) {
+          jQuery("#header").hover(
+            function () {
+              if (!$(this).hasClass("sticky-header")) {
+                $(this).addClass("hover-light").removeClass("dark");
+                SEMICOLON.header.logo();
+              }
+              $("#wrapper").addClass("header-overlay");
+            },
+            function () {
+              if (!$(this).hasClass("sticky-header")) {
+                $(this).removeClass("hover-light").addClass("dark");
+                SEMICOLON.header.logo();
+              }
+              $("#wrapper").removeClass("header-overlay");
+            }
+          );
+        }
+      }
+
+      $(window).scroll(function () {
+        if (
+          $(document).scrollTop() > 2000 &&
+          $("#modal-subscribe").attr("displayed") === "false"
+        ) {
+          $("#modal-subscribe").modal("show");
+          $("#modal-subscribe").attr("displayed", "true");
+        }
+      });
+
+      jQuery("#modal-subscribe-form").on("formSubmitSuccess", function () {
+        $("#modal-subscribe").addClass("fadeOutDown");
+        setTimeout(function () {
+          $("#modal-subscribe").modal("hide");
+        }, 400);
+        $("#modal-subscribe").attr("displayed", "false");
+      });
+
+      var priceRangefrom = 0,
+        priceRangeto = 0,
+        $container = null;
+
+      jQuery(window).on("load", function () {
+        $container = $("#shop");
+
+        $container.isotope({ transitionDuration: "0.65s" });
+
+        $(".shop-filter a").click(function () {
+          $(".shop-filter li").removeClass("activeFilter");
+          $(this).parent("li").addClass("activeFilter");
+          var selector = $(this).attr("data-filter");
+          $container.isotope({ filter: selector });
+          return false;
+        });
+
+        $(window).resize(function () {
+          $container.isotope("layout");
+        });
+      });
+
+      jQuery(document).ready(function ($) {
+        $(".range_23").ionRangeSlider({
+          type: "double",
+          min: 9.99,
+          max: 99.99,
+          from: 9.99,
+          to: 99.99,
+          prefix: "$",
+          hide_min_max: true,
+          hide_from_to: false,
+          grid: false,
+          onStart: function (data) {
+            priceRangefrom = data.from;
+            priceRangeto = data.to;
+          },
+          onFinish: function (data) {
+            priceRangefrom = data.from;
+            priceRangeto = data.to;
+
+            $container.isotope({
+              filter: function () {
+                if ($(this).find(".product-price").find("ins").length > 0) {
+                  var price = $(this).find(".product-price ins").text();
+                } else {
+                  var price = $(this).find(".product-price").text();
+                }
+
+                priceNum = price.split("$");
+
+                return (
+                  priceRangefrom <= priceNum[1] && priceRangeto >= priceNum[1]
+                );
+              },
+            });
+          },
+        });
+      });
+    </script>
+  </body>
+
+  <!-- Mirrored from themes.semicolonweb.com/html/canvas/demo-store-products.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Aug 2021 15:13:41 GMT -->
+</html>

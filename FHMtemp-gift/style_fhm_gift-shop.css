@@ -4034,7 +4034,9 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
   .full-header .top-search-form input {
     padding-left: 30px;
   }
-  .transparent-header:not(.sticky-header):not(.full-header):not(.floating-header)
+  .transparent-header:not(.sticky-header):not(.full-header):not(
+      .floating-header
+    )
     .top-search-form
     input {
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
@@ -10157,7 +10159,6 @@ body:not(.device-touch) .clients-grid .grid-item a {
 }
 .testi-content p {
   margin-bottom: 0;
-  font-family: "PT Serif", serif;
   font-style: italic;
 }
 .testi-content p::after,
@@ -12256,8 +12257,7 @@ body:not(.device-touch) #gotoTop {
 }
 #footer {
   position: relative;
-  background-color: #eee;
-  border-top: 5px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 992px) {
   .sticky-footer #content,
@@ -12282,7 +12282,7 @@ body:not(.device-touch) #gotoTop {
 }
 #copyrights {
   padding: 40px 0;
-  background-color: #ddd;
+  background-color: #cd2c24;
   font-size: 0.875rem;
   line-height: 1.8;
 }
