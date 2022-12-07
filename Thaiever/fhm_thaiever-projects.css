@@ -1,0 +1,14 @@
+#projects .button {
+  height: auto;
+}
+
+.fbox-icon i,
+.fbox-icon img {
+  background-color: var(--pri-color);
+}
+
+.fbox-effect .fbox-icon i:hover,
+.fbox-effect:hover .fbox-icon i {
+  background-color: #fff;
+  color: var(--pri-color);
+}
