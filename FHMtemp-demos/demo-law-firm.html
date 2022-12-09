@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+  <!-- Mirrored from themes.semicolonweb.com/html/canvas/demo-law-firm.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Aug 2021 12:26:22 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+
+    <!-- Stylesheets
+	============================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;family=Merriweather:wght@400;700&amp;family=Material+Icons+Outlined&amp;family=Material+Icons+Two+Tone&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <link rel="stylesheet" href="css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+    <!-- law-firm Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="demos/law-firm/law-firm.css" type="text/css" />
+    <!-- law-firm Custom Css -->
+    <link
+      rel="stylesheet"
+      href="demos/law-firm/css/fonts.css"
+      type="text/css"
+    />
+    <!-- law-firm Custom Fonts -->
+    <!-- / -->
+
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="css/colorsf7fa.css?color=0F317E"
+      type="text/css"
+    />
+
+    <style>
+      #logo a img {
+        height: 50px !important;
+      }
+    </style>
+
+    <!-- Document Title
+	============================================= -->
+    <title>Law Firm | FHM</title>
+  </head>
+
+  <body class="stretched">
+    <!-- Document Wrapper
+	============================================= -->
+    <div id="wrapper" class="clearfix">
+      <!-- Header
+		============================================= -->
+      <header id="header" class="transparent-header dark">
+        <div id="header-wrap">
+          <div class="container">
+            <div
+              class="header-row align-items-lg-start justify-content-between py-lg-4"
+            >
+              <!-- Logo
+						============================================= -->
+              <div
+                id="logo"
+                class="col-xl-2 col-md-3 col-6 align-items-lg-start py-4"
+              >
+                <a href="index-2.html" class="standard-logo"
+                  ><img
+                    src="https://fhmvietnam.vn/data/cms-image/logo/logo_new_light.png"
+                    alt="Canvas Logo"
+                /></a>
+                <a href="index-2.html" class="retina-logo"
+                  ><img
+                    src="https://fhmvietnam.vn/data/cms-image/logo/logo_new_light.png"
+                    alt="Canvas Logo"
+                /></a>
+              </div>
+              <!-- #logo end -->
+
+              <!-- Primary Menu In Large Screen
+						============================================= -->
+              <div class="col-auto d-none d-lg-flex py-2">
+                <div class="row gx-5 large-device-menu-wrap">
+                  <div class="col-auto large-device-menu">
+                    <a class="text-white op-09 h-op-1" href="#"
+                      ><div>Về chúng tôi</div></a
+                    >
+                    <a class="text-white op-09 h-op-1" href="#"
+                      ><div>Lịch sử án</div></a
+                    >
+                    <a class="text-white op-09 h-op-1" href="#"
+                      ><div>Luật sư</div></a
+                    >
+                  </div>
+                  <div class="col-auto large-device-menu">
+                    <a class="text-white op-09 h-op-1" href="#"
+                      ><div>Tin tức</div></a
+                    >
+                    <a class="text-white op-09 h-op-1" href="#"
+                      ><div>Liên hệ</div></a
+                    >
+                  </div>
+                  <div class="col-auto">
+                    <a
+                      href="#"
+                      data-scrollto="#section-contact"
+                      data-easing="easeInOutExpo"
+                      data-speed="1250"
+                      data-offset="88"
+                      class="btn px-3 py-2 btn-dark h-bg-light h-text-dark d-inline-block op-09 h-op-1"
+                      style="background-color: rgba(255, 255, 255, 0.2)"
+                      >Tư vấn miễn phí</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Primary Menu Trigger for Devices
+						============================================= -->
+              <div id="primary-menu-trigger">
+                <svg class="svg-trigger" viewBox="0 0 100 100">
+                  <path
+                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
+                  ></path>
+                  <path d="m 30,50 h 40"></path>
+                  <path
+                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Primary Menu In Mobile
+						============================================= -->
+              <nav class="primary-menu d-block d-lg-none">
+                <ul class="menu-container">
+                  <li class="menu-item">
+                    <a class="menu-link h-text-warning" href="#"
+                      ><div>Về chúng tôi</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link h-text-warning" href="#"
+                      ><div>Lịch sử án</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link h-text-warning" href="#"
+                      ><div>Luật sư</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link h-text-warning" href="#"
+                      ><div>Tin tức</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link h-text-warning" href="#"
+                      ><div>Liên hệ</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link text-warning" href="#"
+                      ><div>Tư vấn miễn phí</div></a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <!-- #primary-menu end -->
+            </div>
+          </div>
+        </div>
+        <div class="header-wrap-clone"></div>
+      </header>
+      <!-- #header end -->
+
+      <!-- Hero
+		============================================= -->
+      <section
+        id="slider"
+        class="slider-element dark min-vh-md-100 min-vh-75 include-header"
+      >
+        <div
+          class="slider-inner"
+          style="
+            background-image: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.3)
+              ),
+              url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+            background-position: 50% 0;
+          "
+        >
+          <div class="container">
+            <div class="vertical-middle">
+              <div class="row mt-6">
+                <div class="col-md-6">
+                  <div
+                    class="before-title text-border-right position-relative text-uppercase ls3 text-smaller overflow-hidden mb-4 op-04 b-w-50"
+                  >
+                    Đội ngũ cơ quan pháp luật
+                  </div>
+                  <h2 class="display-4 fw-bold">
+                    Trung tâm tư vấn luật pháp tốt nhất!
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content
+		============================================= -->
+      <section id="content">
+        <div class="content-wrap overflow-visible py-0">
+          <div class="container">
+            <div class="service-feature w-100 mb-4 mt-5 mt-lg-0">
+              <div class="row justify-content-center gx-3">
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                  <div
+                    class="grid-inner shadow-sm h-shadow bg-white p-5 overflow-hidden rounded-5 text-center shadow-ts"
+                  >
+                    <div class="f-b-desc">
+                      <i class="material-icons-outlined display-5 color mb-3"
+                        >gavel</i
+                      >
+                      <h3 class="h5 mb-0 fw-bold">Điểm mạnh</h3>
+                    </div>
+                    <a href="#" class="more-link fst-normal color">Chi tiết</a>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                  <div
+                    class="grid-inner shadow-sm h-shadow bg-white p-5 overflow-hidden rounded-5 text-center shadow-ts"
+                  >
+                    <div class="f-b-desc">
+                      <i class="material-icons-outlined display-5 color mb-3"
+                        >outlined_flag</i
+                      >
+                      <h3 class="h5 mb-0 fw-bold">Sứ mệnh</h3>
+                    </div>
+                    <a href="#" class="more-link fst-normal color">Chi tiết</a>
+                  </div>
+                </div>
+
+                <div class="col-lg-3">
+                  <div
+                    class="grid-inner shadow-sm h-shadow bg-white p-5 overflow-hidden rounded-5 text-center shadow-ts"
+                  >
+                    <div class="f-b-desc">
+                      <i class="material-icons-outlined display-5 color mb-3"
+                        >date_range</i
+                      >
+                      <h3 class="h5 mb-0 fw-bold">Liên hệ</h3>
+                    </div>
+                    <a href="#" class="more-link fst-normal color">Liên hệ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="clear"></div>
+
+            <div
+              class="row align-items-center justify-content-center mt-6 mt-lg-0 bottommargin-sm"
+            >
+              <div class="col-lg-5 col-10 px-5">
+                <div class="lady-justice-img position-relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1589578527966-fdac0f44566c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                    alt="Image"
+                    class="rounded"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-5 p-5">
+                <i class="material-icons-outlined display-4 color mb-3"
+                  >verified</i
+                >
+                <h2 class="h1 fw-bold lh-sm">
+                  Công bằng của cộng đồng là sứ mệnh của chúng tôi
+                </h2>
+                <h4
+                  class="mt-4 fw-normal lh-base"
+                  style="line-height: 1.75 !important"
+                >
+                  Rapidiously conceptualize inexpensive value through
+                  functionalized markets. Enthusiastically integrate distinctive
+                  web services vis-a-vis end-to-end ROI. Assertively fashion
+                  best-of-breed products for installed base alignments.
+                  Enthusiastically.
+                </h4>
+
+                <h4
+                  class="mt-4 fw-normal lh-base"
+                  style="line-height: 1.75 !important"
+                >
+                  Rapidiously conceptualize inexpensive value through
+                  functionalized markets.
+                </h4>
+                <a
+                  href="#"
+                  class="btn py-3 px-4 mt-2 rounded-1 btn-dark bg-color h-op-09"
+                  >Tìm hiểu thêm
+                  <i class="material-icons-outlined align-middle mb-0 ms-1"
+                    >arrow_right_alt</i
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="clear"></div>
+
+          <div class="section bg-transparent py-4">
+            <div class="container">
+              <div
+                class="row align-items-center justify-content-center gutter-50"
+              >
+                <div class="col-lg-5 px-5">
+                  <i class="material-icons-outlined display-4 color mb-3"
+                    >help_outline</i
+                  >
+                  <h2 class="h1 fw-bold mb-4">Giải đáp thắc mắc</h2>
+
+                  <p class="lead">
+                    Nam aut labore voluptas explicabo, assumenda
+                  </p>
+
+                  <div class="toggle" data-state="open">
+                    <div class="toggle-header justify-content-between">
+                      <div class="toggle-icon">
+                        <i class="toggle-closed icon-caret-down color"></i>
+                        <i class="toggle-open icon-caret-up text-warning"></i>
+                      </div>
+                      <div class="toggle-title fw-bold">
+                        Làm thế nào để tôi có thể trở thành tác giả
+                      </div>
+                    </div>
+                    <div class="toggle-content ps-4">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Assumenda, dolorum, vero ipsum molestiae minima odio quo
+                      voluptate illum excepturi quam cum voluptates doloribus
+                      quae nisi tempore necessitatibus dolores.
+                    </div>
+                  </div>
+
+                  <div class="toggle">
+                    <div class="toggle-header justify-content-between">
+                      <div class="toggle-icon">
+                        <i class="toggle-closed icon-caret-down color"></i>
+                        <i class="toggle-open icon-caret-up text-warning"></i>
+                      </div>
+                      <div class="toggle-title fw-bold">
+                        Tài nguyên hữu ích cho tác giả
+                      </div>
+                    </div>
+                    <div class="toggle-content ps-4">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Assumenda, dolorum, vero ipsum molestiae minima odio quo
+                      voluptate illum excepturi quam cum voluptates doloribus
+                      quae nisi tempore necessitatibus dolores ducimus enim
+                      libero eaque explicabo suscipit animi at quaerat aliquid
+                      ex expedita perspiciatis? Saepe, aperiam, nam unde quas
+                      beatae vero vitae nulla.
+                    </div>
+                  </div>
+
+                  <div class="toggle">
+                    <div class="toggle-header justify-content-between">
+                      <div class="toggle-icon">
+                        <i class="toggle-closed icon-caret-down color"></i>
+                        <i class="toggle-open icon-caret-up text-warning"></i>
+                      </div>
+                      <div class="toggle-title fw-bold">
+                        Tôi có thể làm được bao nhiêu tiền
+                      </div>
+                    </div>
+                    <div class="toggle-content ps-4">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Assumenda, dolorum, vero ipsum molestiae minima odio quo
+                      voluptate illum excepturi quam cum voluptates doloribus
+                      quae nisi tempore necessitatibus dolores ducimus enim
+                      libero eaque explicabo suscipit animi at quaerat aliquid
+                      ex expedita perspiciatis? Saepe, aperiam, nam unde quas
+                      beatae vero vitae nulla.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-5 col-10">
+                  <img src="demos/law-firm/images/bg-2.jpg" alt="Image" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section py-6 mb-0" style="background-color: #f1f3f7">
+            <div class="container">
+              <div
+                class="row justify-content-between align-items-center col-mb-30"
+              >
+                <div class="col-lg-4">
+                  <div class="d-flex mb-2">
+                    <i class="icon-star3 h5 me-1 text-warning"></i>
+                    <i class="icon-star3 h5 me-1 text-warning"></i>
+                    <i class="icon-star3 h5 me-1 text-warning"></i>
+                    <i class="icon-star3 h5 me-1 text-warning"></i>
+                    <i class="icon-star3 h5 me-1 text-warning"></i>
+                  </div>
+                  <h3 class="h3 font-secondary fw-bold mb-4">
+                    Phản hồi khách hàng
+                  </h3>
+                  <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perspiciatis quibusdam possimus aut itaque quo ex et
+                    dignissimos fuga animi id.
+                  </p>
+                  <a
+                    href="https://themeforest.net/item/canvas-the-multipurpose-html5-template/reviews/9228123?utf8=%E2%9C%93&amp;reviews_controls%5Bsort%5D=ratings_descending"
+                    class="btn py-3 px-4 mt-3 rounded-1 btn-dark bg-color h-op-09"
+                    >Xem thêm phản hồi</a
+                  >
+                </div>
+
+                <div class="col-lg-7">
+                  <div
+                    class="row row-cols-1 row-cols-md-2 g-4 align-items-center"
+                  >
+                    <div class="col">
+                      <div class="card rounded-6 overflow-hidden mb-4">
+                        <div class="card-body p-4">
+                          <div class="row">
+                            <div class="col-12">
+                              <p class="mb-4 font-secondary">
+                                "Sau khi sử dụng dịch vụ tư vấn pháp luật, tôi
+                                đã hiểu hơn về pháp luật và đưa ra các quyết
+                                định đúng đắn hơn để không vi phạm pháp luật"
+                              </p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <img
+                                class="rounded-circle me-3"
+                                src="demos/articles/images/authors/2.jpg"
+                                width="48"
+                                height="48"
+                                alt="Customer Testimonails"
+                              />
+                              <div>
+                                <h4 class="h6 mb-0 fw-medium">
+                                  <a
+                                    href="https://themeforest.net/ratings/3295792"
+                                    >Chị Thủy</a
+                                  >
+                                </h4>
+                                <small class="text-muted">10 ngày trước</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="bgicon icon-star3 op-02"></div>
+                      </div>
+
+                      <div class="card rounded-6 overflow-hidden">
+                        <div class="card-body p-4">
+                          <div class="row">
+                            <div class="col-12">
+                              <p class="mb-4 font-secondary">
+                                "Sau khi sử dụng dịch vụ tư vấn pháp luật, tôi
+                                đã hiểu hơn về pháp luật và đưa ra các quyết
+                                định đúng đắn hơn để không vi phạm pháp luật"
+                              </p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <img
+                                class="rounded-circle me-3"
+                                src="demos/articles/images/authors/1.jpg"
+                                width="48"
+                                height="48"
+                                alt="Customer Testimonails"
+                              />
+                              <div>
+                                <h4 class="h6 mb-0 fw-medium">
+                                  <a
+                                    href="https://themeforest.net/ratings/3297954"
+                                    >Anh Tuấn</a
+                                  >
+                                </h4>
+                                <small class="text-muted">15 ngày trước</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="bgicon icon-star3 op-02"></div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card rounded-6 overflow-hidden">
+                        <div class="card-body p-4">
+                          <div class="row">
+                            <div class="col-12">
+                              <p class="mb-4 font-secondary">
+                                "Sau khi sử dụng dịch vụ tư vấn pháp luật, tôi
+                                đã hiểu hơn về pháp luật và đưa ra các quyết
+                                định đúng đắn hơn để không vi phạm pháp luật.
+                                Tôi rất tin tưởng dịch vụ của công ty mình. Đội
+                                ngũ luật sư của công ty là những người rất giỏi,
+                                có chuyên môn cao và thực sự hết lòng vì công
+                                việc và khách hàng"
+                              </p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <img
+                                class="rounded-circle me-3"
+                                src="demos/articles/images/authors/3.jpg"
+                                width="48"
+                                height="48"
+                                alt="Customer Testimonails"
+                              />
+                              <div>
+                                <h4 class="h6 mb-0 fw-medium">
+                                  <a
+                                    href="https://themeforest.net/ratings/3304063"
+                                    >Anh Trung</a
+                                  >
+                                </h4>
+                                <small class="text-muted">24 ngày trước</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="bgicon icon-star3 op-02"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section my-0 dark py-6" style="background-color: #000">
+            <div class="container">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6 align-self-center mb-6">
+                  <h3 class="h2 font-secondary fw-bold mb-4 lh-base">
+                    Tại sao bạn nên chọn<br />
+                    FHM Agency?
+                  </h3>
+                  <p class="mb-5">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Saepe unde, atque autem deleniti rem vel fuga, sapiente
+                    nobis omnis veritatis esse vitae soluta vero debitis.
+                  </p>
+                  <div class="row g-4">
+                    <div class="col-sm-6">
+                      <div class="d-flex align-items-center mb-2">
+                        <i class="material-icons-outlined text-warning h2 mb-0"
+                          >admin_panel_settings</i
+                        >
+                        <h3 class="h6 fw-bold ms-2 mb-0">
+                          Đội ngũ chuyên nghiệp
+                        </h3>
+                      </div>
+                      <p class="text-white op-06">
+                        Powerful Layout with Responsive functionality that can
+                        be adapted to any screen size. Resize browser to view.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="d-flex align-items-center mb-2">
+                        <i class="material-icons-outlined text-warning h2 mb-0"
+                          >qr_code_scanner</i
+                        >
+                        <h3 class="h6 fw-bold ms-2 mb-0">Hỗ trợ 24/7</h3>
+                      </div>
+                      <p class="text-white op-06">
+                        Looks beautiful &amp; ultra-sharp on Retina Screen
+                        Displays. Retina Icons, Fonts &amp; all others graphics
+                        are optimized.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="d-flex align-items-center mb-2">
+                        <i class="material-icons-outlined text-warning h2 mb-0"
+                          >female</i
+                        >
+                        <h3 class="h6 fw-bold ms-2 mb-0">Giá cả hợp lí</h3>
+                      </div>
+                      <p class="text-white op-06">
+                        Canvas includes tons of optimized code that are
+                        completely customizable and deliver unmatched fast
+                        performance.
+                      </p>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="d-flex align-items-center mb-2">
+                        <i class="material-icons-outlined text-warning h2 mb-0"
+                          >support</i
+                        >
+                        <h3 class="h6 fw-bold ms-2 mb-0">Chứng chỉ quốc tế</h3>
+                      </div>
+                      <p class="text-white op-06">
+                        Canvas included 20+ custom designed Slider Pages with
+                        Premium Sliders like Layer, Revolution, Swiper &amp;
+                        others.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-7 mx-auto">
+                  <img src="demos/law-firm/images/lawyer.jpg" alt="Image" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container mw-md">
+            <div
+              class="position-relative p-5 mb-4 z-3 rounded shadow bg-white service-feature mt-5 mt-lg-0"
+            >
+              <div
+                class="row align-items-center justify-content-center grid-border"
+              >
+                <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                  <div class="counter color fw-normal mb-2">
+                    <span
+                      class="display-4 fw-bold"
+                      data-from="40"
+                      data-to="213"
+                      data-refresh-interval="100"
+                      data-speed="2000"
+                    ></span>
+                  </div>
+                  <h5 class="mb-0 h6 nott">Dự án thành công</h5>
+                </div>
+
+                <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                  <div class="counter color fw-normal mb-2">
+                    <span
+                      class="display-4 fw-bold"
+                      data-from="0"
+                      data-to="20"
+                      data-refresh-interval="100"
+                      data-speed="2000"
+                    ></span
+                    >+
+                  </div>
+                  <h5 class="mb-0 h6 nott">Năm kinh nghiệm</h5>
+                </div>
+
+                <div class="col-lg-4 text-center">
+                  <div class="counter color fw-normal mb-2">
+                    <span
+                      class="display-4 fw-bold"
+                      data-from="100"
+                      data-to="5000"
+                      data-refresh-interval="100"
+                      data-speed="2000"
+                    ></span
+                    >+
+                  </div>
+                  <h5 class="mb-0 h6 nott">Phản hồi tích cực</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container mw-md mt-5 mt-lg-0">
+            <div class="row g-4 align-items-end blog-cards">
+              <div class="col-md-8">
+                <div class="p-3 pb-4">
+                  <div
+                    class="before-title text-border-right position-relative text-uppercase ls3 text-smaller overflow-hidden mb-4 op-04 b-w-50"
+                  >
+                    Tin tức mới nhất
+                  </div>
+                  <h3 class="h2 font-secondary fw-bold mb-4 lh-base">
+                    Từ cộng đồng Luật sư
+                  </h3>
+                  <p class="mb-5">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Saepe unde, atque autem deleniti rem vel fuga, sapiente
+                    nobis omnis veritatis esse vitae soluta vero debitis.
+                  </p>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="card h-translate-y-sm transform-ts">
+                      <img
+                        src="https://images.unsplash.com/photo-1505664063603-28e48ca204eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body p-4">
+                        <h5 class="mb-3 text-warning">12/06/2020</h5>
+                        <h3 class="h5 lh-base mb-3 color">
+                          <a href="#"
+                            >Cách mà bạn có thể hỗ trợ ai đó hồi phục sau chấn
+                            thương</a
+                          >
+                        </h3>
+                        <p class="mb-4">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Deserunt exercitationem esse eaque velit.
+                        </p>
+                        <a href="#"
+                          >Xem thêm
+                          <span
+                            class="material-icons-outlined align-middle mb-1"
+                            >trending_flat</span
+                          ></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 mt-4 mt-sm-0">
+                    <div class="card h-translate-y-sm transform-ts">
+                      <img
+                        src="https://source.unsplash.com/Oaqk7qqNh_c"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body p-4">
+                        <h5 class="mb-3 text-warning">14/06/2020</h5>
+                        <h3 class="h5 lh-base mb-3 color">
+                          <a href="#"
+                            >Hành khách hàng không ngỗ ngược có thể bị truy tố
+                            không?</a
+                          >
+                        </h3>
+                        <p class="mb-4">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Deserunt exercitationem esse eaque velit.
+                        </p>
+                        <a href="#"
+                          >Xem thêm
+                          <span
+                            class="material-icons-outlined align-middle mb-1"
+                            >trending_flat</span
+                          ></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="row">
+                  <div class="col-md-12 col-sm-6">
+                    <div class="card h-translate-y-sm transform-ts dark mb-4">
+                      <img
+                        src="https://source.unsplash.com/j06gLuKK0GM"
+                        alt=""
+                        class="card-img"
+                      />
+                      <a
+                        href="#"
+                        class="card-img-overlay d-flex flex-column justify-content-end p-4"
+                        style="
+                          background-image: linear-gradient(
+                            to bottom,
+                            rgba(0, 0, 0, 0.1),
+                            rgba(0, 0, 0, 0.3)
+                          );
+                        "
+                      >
+                        <h5 class="mb-3 text-warning">07/08/2020</h5>
+                        <h3 class="h5 lh-base mb-0">
+                          Liệu rượu bia có thể bị cấm?
+                        </h3>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-sm-6">
+                    <div class="card h-translate-y-sm transform-ts">
+                      <div class="card-body p-4">
+                        <h5 class="mb-3 text-warning">30/09/2021</h5>
+                        <h3 class="h5 lh-base mb-3 color">
+                          <a href="#"
+                            >Luật sửa đổi mới giúp người lao động bị sa thải có
+                            thể đòi lại công việc cũ?</a
+                          >
+                        </h3>
+                        <p class="mb-4">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Deserunt exercitationem esse eaque velit.
+                        </p>
+                        <a href="#"
+                          >Xem thêm
+                          <span
+                            class="material-icons-outlined align-middle mb-1"
+                            >trending_flat</span
+                          ></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="section topmargin-lg mb-0"
+            style="background-color: #f1f3f7"
+          >
+            <div class="container">
+              <div
+                class="row align-items-center justify-content-center col-mb-30 mx-md mx-auto"
+              >
+                <div class="col-sm-12 col-md">
+                  <h3 class="h3 font-secondary fw-semibold mb-0">
+                    Đừng ngần ngại liên hệ để được
+                    <span class="border-bottom border-warning border-width-3"
+                      >Tư vấn Miễn phí</span
+                    >!
+                  </h3>
+                </div>
+                <div class="col-sm-12 col-md-auto">
+                  <a
+                    href="#"
+                    data-scrollto="#section-contact"
+                    data-easing="easeInOutExpo"
+                    data-speed="1250"
+                    data-offset="88"
+                    class="btn py-3 px-5 rounded-1 btn-dark bg-color h-op-09 m-0"
+                    >Liên hệ ngay!
+                    <span class="material-icons-outlined align-middle mb-1 ms-1"
+                      >trending_flat</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #content end -->
+
+      <!-- Footer
+		============================================= -->
+      <footer id="footer" class="bg-color dark border-warning">
+        <div class="container">
+          <!-- Footer Widgets
+				============================================= -->
+          <div class="footer-widgets-wrap">
+            <div class="row col-mb-50">
+              <div class="col-lg-5 col-sm-6">
+                <div class="widget clearfix">
+                  <h5 class="mb-2 h6">
+                    <i
+                      class="material-icons-outlined h5 text-warning mb-0 align-middle me-3"
+                      >share_location</i
+                    >Địa chỉ:
+                  </h5>
+                  <address class="ms-4 ps-3 font-secondary text-warning">
+                    2/25 Thọ Tháp, Dịch Vọng, Cầu Giấy, Hà Nội<br />
+                  </address>
+
+                  <h5 class="mb-3 h6">
+                    <i
+                      class="material-icons-outlined h5 text-warning mb-0 align-middle me-3"
+                      >schedule</i
+                    >Thứ 2 - Thứ 6: 8:30 - 18:00
+                  </h5>
+                  <h5 class="mb-3 h6">
+                    <i
+                      class="material-icons-outlined h5 text-warning mb-0 align-middle me-3"
+                      >call</i
+                    >0393004567
+                  </h5>
+                  <h5 class="mb-0 h6">
+                    <i
+                      class="material-icons-outlined h5 text-warning mb-0 align-middle me-3"
+                      >alternate_email</i
+                    >fhmvietnam@gmail.com
+                  </h5>
+                </div>
+              </div>
+              <div class="col-lg-2 col-sm-6">
+                <div class="widget widget_links clearfix">
+                  <h4>Liên kết nhanh</h4>
+
+                  <ul class="">
+                    <li>
+                      <a href="#">Dịch vụ</a>
+                    </li>
+                    <li>
+                      <a href="#">Tư vấn</a>
+                    </li>
+                    <li>
+                      <a href="#">Hỗ trợ</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-2 col-6">
+                <div class="widget widget_links clearfix">
+                  <h4>Điều khoản</h4>
+
+                  <ul>
+                    <li>
+                      <a href="#">Contact Us</a>
+                    </li>
+                    <li><a href="#">Chính sách</a></li>
+                    <li>
+                      <a href="#">Điều khoản dịch vụ</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-2 col-6">
+                <div class="widget widget_links clearfix widget-li-noicon">
+                  <ul>
+                    <li>
+                      <a href="#" class="d-flex align-items-center"
+                        ><i
+                          class="icon-facebook-square h5 text-warning mb-0 me-3"
+                        ></i>
+                        Facebook</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="d-flex align-items-center"
+                        ><i
+                          class="icon-instagram2 h5 text-warning mb-0 me-3"
+                        ></i>
+                        Instagram</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="d-flex align-items-center"
+                        ><i
+                          class="icon-twitter-sign h5 text-warning mb-0 me-3"
+                        ></i>
+                        Twitter</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="d-flex align-items-center"
+                        ><i class="icon-envelope h5 text-warning mb-0 me-3"></i>
+                        Gmail</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- .footer-widgets-wrap end -->
+        </div>
+
+        <!-- Copyrights
+			============================================= -->
+        <div id="copyrights">
+          <div class="container">
+            <div class="row col-mb-30 align-items-center">
+              <div class="col-md-6 text-center text-md-start">
+                Copyrights &copy; 2022 Bản quyền thuộc về FHM Agency<br />
+              </div>
+
+              <div class="col-md-6 text-center text-md-end">
+                <div class="copyright-links">
+                  <a href="#">Điều khoản sử dụng</a> /
+                  <a href="#">Chính sách riêng tư</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- #copyrights end -->
+      </footer>
+      <!-- #footer end -->
+    </div>
+    <!-- #wrapper end -->
+
+    <!-- Go To Top
+	============================================= -->
+    <div id="gotoTop" class="icon-line-chevrons-up rounded-circle"></div>
+
+    <!-- JavaScripts
+	============================================= -->
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.min.js"></script>
+
+    <!-- Footer Scripts
+	============================================= -->
+    <script src="js/functions.js"></script>
+  </body>
+
+  <!-- Mirrored from themes.semicolonweb.com/html/canvas/demo-law-firm.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Aug 2021 12:26:51 GMT -->
+</html>
