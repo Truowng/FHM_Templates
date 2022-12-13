@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+  <!-- Mirrored from themes.semicolonweb.com/html/canvas/demo-medical.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Aug 2021 12:42:08 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+
+    <!-- Stylesheets
+	============================================= -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Montserrat:400,700|Crete+Round:400i&amp;display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="css/swiper.css" type="text/css" />
+
+    <!-- Medical Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="demos/medical/medical.css" type="text/css" />
+    <!-- / -->
+
+    <link rel="stylesheet" href="css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="demos/medical/css/medical-icons.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+    <link rel="stylesheet" href="demos/medical/fonts.css" type="text/css" />
+
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="css/colors0ee8.css?color=DE6262"
+      type="text/css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      body {
+        font-family: "Montserrat", sans-serif !important;
+      }
+    </style>
+
+    <!-- Document Title
+	============================================= -->
+    <title>Medical Demo | FHM</title>
+  </head>
+
+  <body
+    class="stretched side-header side-header-right open-header push-wrapper close-header-on-scroll"
+  >
+    <!-- Document Wrapper
+	============================================= -->
+    <div id="wrapper" class="clearfix">
+      <div id="header-trigger" class="d-none d-lg-block">
+        <i class="icon-line-menu"></i><i class="icon-line-cross"></i>
+      </div>
+
+      <!-- Header
+		============================================= -->
+      <header id="header">
+        <div id="header-wrap">
+          <div class="container">
+            <div class="header-row justify-content-between">
+              <!-- Logo
+						============================================= -->
+              <div id="logo">
+                <a
+                  href="index-2.html"
+                  class="standard-logo"
+                  data-dark-logo="https://fhmvietnam.vn/data/cms-image/logo/logo_new_dark.png"
+                  data-mobile-logo="https://fhmvietnam.vn/data/cms-image/logo/logo_new_dark.png"
+                  ><img
+                    src="https://fhmvietnam.vn/data/cms-image/logo/logo_new_dark.png"
+                    alt="FHM Logo"
+                /></a>
+                <a
+                  href="index-2.html"
+                  class="retina-logo"
+                  data-dark-logo="https://fhmvietnam.vn/data/cms-image/logo/logo_new_dark.png"
+                  data-mobile-logo="https://fhmvietnam.vn/data/cms-image/logo/logo_new_dark.png"
+                  ><img
+                    src="https://fhmvietnam.vn/data/cms-image/logo/logo_new_dark.png"
+                    alt="FHM Logo"
+                /></a>
+              </div>
+              <!-- #logo end -->
+
+              <div id="primary-menu-trigger">
+                <svg class="svg-trigger" viewBox="0 0 100 100">
+                  <path
+                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
+                  ></path>
+                  <path d="m 30,50 h 40"></path>
+                  <path
+                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
+                  ></path>
+                </svg>
+              </div>
+
+              <div class="header-misc d-none d-sm-block">
+                <div class="d-flex my-lg-3">
+                  <a
+                    href="#"
+                    class="social-icon si-small si-borderless si-facebook"
+                  >
+                    <i class="icon-facebook"></i>
+                    <i class="icon-facebook"></i>
+                  </a>
+
+                  <a
+                    href="#"
+                    class="social-icon si-small si-borderless si-twitter"
+                  >
+                    <i class="icon-twitter"></i>
+                    <i class="icon-twitter"></i>
+                  </a>
+
+                  <a
+                    href="#"
+                    class="social-icon si-small si-borderless si-gplus"
+                  >
+                    <i class="icon-gplus"></i>
+                    <i class="icon-gplus"></i>
+                  </a>
+
+                  <a
+                    href="#"
+                    class="social-icon si-small si-borderless si-pinterest"
+                  >
+                    <i class="icon-pinterest"></i>
+                    <i class="icon-pinterest"></i>
+                  </a>
+
+                  <a
+                    href="#"
+                    class="social-icon si-small si-borderless si-github"
+                  >
+                    <i class="icon-github"></i>
+                    <i class="icon-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Primary Navigation
+						============================================= -->
+              <nav class="primary-menu on-click">
+                <ul class="menu-container">
+                  <li class="menu-item">
+                    <a class="menu-link" href="index-2.html"
+                      ><div>Trang chủ</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="#"><div>Dịch vụ</div></a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="#"><div>Tư vấn</div></a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="#"><div>Hỗ trợ</div></a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="#"><div>Tin tức</div></a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="#"><div>Liên hệ</div></a>
+                    <ul class="sub-menu-container">
+                      <li class="menu-item">
+                        <a class="menu-link" href="animations.html"
+                          ><div><i class="icon-magic"></i>Animations</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="buttons.html"
+                          ><div><i class="icon-link"></i>Buttons</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="carousel.html"
+                          ><div><i class="icon-heart3"></i>Carousel</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="charts.html"
+                          ><div><i class="icon-bar-chart"></i>Charts</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="clients.html"
+                          ><div><i class="icon-apple"></i>Clients</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="columns-grids.html"
+                          ><div><i class="icon-th-large"></i>Columns</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="counters.html"
+                          ><div><i class="icon-time"></i>Counters</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="dividers.html"
+                          ><div>
+                            <i class="icon-indent-right"></i>Dividers
+                          </div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="featured-boxes.html"
+                          ><div>
+                            <i class="icon-lightbulb"></i>Icon Boxes
+                          </div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="gallery.html"
+                          ><div><i class="icon-picture"></i>Galleries</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="headings-dropcaps.html"
+                          ><div>
+                            <i class="icon-pencil2"></i>Heading Styles
+                          </div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="icon-lists.html"
+                          ><div><i class="icon-list-alt"></i>Icon Lists</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="gradients.html"
+                          ><div><i class="icon-tint"></i>Gradients</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="lightbox.html"
+                          ><div>
+                            <i class="icon-resize-full"></i>Lightbox
+                          </div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="lists-cards.html"
+                          ><div>
+                            <i class="icon-th-list"></i>Lists &amp; Cards
+                          </div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="maps.html"
+                          ><div><i class="icon-map-marker2"></i>Maps</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="media-embeds.html"
+                          ><div><i class="icon-play"></i>Media Embeds</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="modal-popovers.html"
+                          ><div><i class="icon-move"></i>Modal Boxes</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="navigation.html"
+                          ><div>
+                            <i class="icon-align-justify2"></i>Navigations
+                          </div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="pagination-progress.html"
+                          ><div><i class="icon-cogs"></i>Pagination</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="pie-skills.html"
+                          ><div>
+                            <i class="icon-tasks"></i>Pies &amp; Skills
+                          </div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="pricing.html"
+                          ><div>
+                            <i class="icon-dollar"></i>Pricing Boxes
+                          </div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="process-steps.html"
+                          ><div>
+                            <i class="icon-thumbs-up"></i>Process Steps
+                          </div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="promo-boxes.html"
+                          ><div><i class="icon-rocket"></i>Promo Boxes</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="quotes-blockquotes.html"
+                          ><div>
+                            <i class="icon-quote-left"></i>Blockquotes
+                          </div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="responsive.html"
+                          ><div><i class="icon-laptop2"></i>Responsive</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="sections.html"
+                          ><div>
+                            <i class="icon-folder-open"></i>Sections
+                          </div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="social-icons.html"
+                          ><div>
+                            <i class="icon-facebook2"></i>Social Icons
+                          </div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="style-boxes.html"
+                          ><div>
+                            <i class="icon-exclamation-sign"></i>Alert Boxes
+                          </div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="styled-icons.html"
+                          ><div><i class="icon-flag2"></i>Styled Icons</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="tables.html"
+                          ><div><i class="icon-table"></i>Tables</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="tabs.html"
+                          ><div><i class="icon-star3"></i>Tabs</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="testimonials-twitter.html"
+                          ><div><i class="icon-user4"></i>Testimonials</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="thumbnails-slider.html"
+                          ><div><i class="icon-camera3"></i>Thumbnails</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="toggles-accordions.html"
+                          ><div><i class="icon-ok-circle"></i>Toggles</div></a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+              <!-- #primary-menu end -->
+            </div>
+          </div>
+        </div>
+        <div class="header-wrap-clone"></div>
+      </header>
+      <!-- #header end -->
+
+      <!-- Slider
+		============================================= -->
+      <section
+        id="slider"
+        class="slider-element swiper_wrapper min-vh-50 min-vh-md-100"
+        data-loop="true"
+        data-autoplay="5000"
+      >
+        <div class="slider-inner">
+          <div class="swiper-container swiper-parent">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="container">
+                  <div
+                    class="slider-caption slider-caption-right"
+                    style="max-width: 700px"
+                  >
+                    <div>
+                      <h2 data-animate="flipInX">
+                        Chuyên gia <br />
+                        hàng đầu<span>.</span>
+                      </h2>
+                      <p
+                        class="d-none d-sm-block"
+                        data-animate="flipInX"
+                        data-delay="500"
+                      >
+                        Đội ngũ bác sĩ giỏi dày dặn kinh nghiệm, trải qua hàng
+                        ngàn ca phẫu thuật thành công
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide-bg"
+                  style="
+                    background-image: url('https://images.unsplash.com/photo-1512678080530-7760d81faba6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80');
+                  "
+                ></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container">
+                  <div class="slider-caption">
+                    <div>
+                      <h2 data-animate="zoomIn">
+                        Nhịp đập <br /><span> Trái tim</span>.
+                      </h2>
+                      <p
+                        class="d-none d-sm-block"
+                        data-animate="zoomIn"
+                        data-delay="500"
+                      >
+                        Sức khỏe của bạn là sự hạnh phúc của chúng tôi.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide-bg"
+                  style="
+                    background-image: url('https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80');
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #slider end -->
+
+      <!-- Content
+		============================================= -->
+      <section id="content">
+        <div class="content-wrap">
+          <div class="container clearfix">
+            <div class="row col-mb-50 mb-0">
+              <div class="col-sm-6 col-md-4">
+                <div class="feature-box fbox-plain">
+                  <div class="fbox-icon" data-animate="bounceIn">
+                    <a href="#"><i class="icon-medical-i-cardiology"></i></a>
+                  </div>
+                  <div class="fbox-content">
+                    <h3>Quan tâm sâu sắc</h3>
+                    <p>
+                      Powerful Layout with Responsive functionality that can be
+                      adapted to any screen size. Resize browser to view.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="feature-box fbox-plain">
+                  <div
+                    class="fbox-icon"
+                    data-animate="bounceIn"
+                    data-delay="200"
+                  >
+                    <a href="#"
+                      ><i class="icon-medical-i-social-services"></i
+                    ></a>
+                  </div>
+                  <div class="fbox-content">
+                    <h3>Phác đồ điều trị</h3>
+                    <p>
+                      Looks beautiful &amp; ultra-sharp on Retina Screen
+                      Displays. Retina Icons, Fonts &amp; all others graphics
+                      are optimized.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="feature-box fbox-plain">
+                  <div
+                    class="fbox-icon"
+                    data-animate="bounceIn"
+                    data-delay="400"
+                  >
+                    <a href="#"><i class="icon-medical-i-neurology"></i></a>
+                  </div>
+                  <div class="fbox-content">
+                    <h3>Chuyên gia tư vấn</h3>
+                    <p>
+                      Canvas includes tons of optimized code that are completely
+                      customizable and deliver unmatched fast performance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="feature-box fbox-plain">
+                  <div class="fbox-icon" data-animate="bounceIn">
+                    <a href="#"><i class="icon-medical-i-dental"></i></a>
+                  </div>
+                  <div class="fbox-content">
+                    <h3>Nha sĩ kinh nghiệm</h3>
+                    <p>
+                      Powerful Layout with Responsive functionality that can be
+                      adapted to any screen size. Resize browser to view.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="feature-box fbox-plain">
+                  <div
+                    class="fbox-icon"
+                    data-animate="bounceIn"
+                    data-delay="200"
+                  >
+                    <a href="#"
+                      ><i class="icon-medical-i-imaging-root-category"></i
+                    ></a>
+                  </div>
+                  <div class="fbox-content">
+                    <h3>Chụp X-Quang</h3>
+                    <p>
+                      Looks beautiful &amp; ultra-sharp on Retina Screen
+                      Displays. Retina Icons, Fonts &amp; all others graphics
+                      are optimized.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="feature-box fbox-plain">
+                  <div
+                    class="fbox-icon"
+                    data-animate="bounceIn"
+                    data-delay="400"
+                  >
+                    <a href="#"><i class="icon-medical-i-ambulance"></i></a>
+                  </div>
+                  <div class="fbox-content">
+                    <h3>Cấp cứu 24/7</h3>
+                    <p>
+                      Canvas includes tons of optimized code that are completely
+                      customizable and deliver unmatched fast performance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section row p-0 align-items-stretch dark topmargin-sm">
+            <div
+              class="col-lg-5"
+              style="
+                background: url('https://images.unsplash.com/photo-1579208570378-8c970854bc23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1222&q=80')
+                  center center no-repeat;
+                background-size: cover;
+                min-height: 250px;
+              "
+            >
+              <div>&nbsp;</div>
+            </div>
+            <div id="booking-appointment-form" class="col-lg-7 p-0">
+              <div
+                class="bg-color form-widget col-padding"
+                data-loader="button"
+              >
+                <h2>Đặt lịch</h2>
+                <div class="form-result"></div>
+                <form
+                  class="row mb-0"
+                  id="template-medical-form"
+                  name="template-medical-form"
+                  action="http://themes.semicolonweb.com/html/canvas/include/form.php"
+                  method="post"
+                >
+                  <div class="form-process">
+                    <div class="css3-spinner">
+                      <div class="css3-spinner-scaler"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-8 form-group">
+                    <label for="template-medical-name">Họ và tên:</label>
+                    <input
+                      type="text"
+                      id="template-medical-name"
+                      name="template-medical-name"
+                      class="form-control not-dark required"
+                      value=""
+                    />
+                  </div>
+                  <div class="col-md-4 form-group">
+                    <label for="template-medical-phone">Điện thoại:</label>
+                    <input
+                      type="text"
+                      id="template-medical-phone"
+                      name="template-medical-phone"
+                      class="form-control not-dark required"
+                      value=""
+                    />
+                  </div>
+                  <div class="w-100"></div>
+                  <div class="col-md-8 form-group">
+                    <label for="template-medical-email">Email:</label>
+                    <input
+                      type="email"
+                      id="template-medical-email"
+                      name="template-medical-email"
+                      class="form-control not-dark required"
+                      value=""
+                    />
+                  </div>
+                  <div class="col-md-4 form-group">
+                    <label for="template-medical-dob">Ngày sinh:</label>
+                    <input
+                      type="text"
+                      id="template-medical-dob"
+                      name="template-medical-dob"
+                      class="form-control not-dark required"
+                      value=""
+                      placeholder="DD/MM/YYYY"
+                    />
+                  </div>
+                  <div class="w-100"></div>
+                  <div class="col-md-5">
+                    <div class="row">
+                      <div class="col-12 form-group">
+                        <label for="template-medical-appoint-date"
+                          >Ngày hẹn:</label
+                        >
+                        <input
+                          type="text"
+                          id="template-medical-appoint-date"
+                          name="template-medical-appoint-date"
+                          class="form-control not-dark required"
+                          value=""
+                          placeholder="DD/MM/YYYY"
+                        />
+                      </div>
+                      <div class="col-12 form-group">
+                        <label for="template-medical-second-booking"
+                          >Đặt trước với chúng tôi?</label
+                        ><br />
+                        <label class="rightmargin-sm">
+                          <input
+                            type="radio"
+                            id="template-medical-second-booking"
+                            name="template-medical-second-booking"
+                            value="yes"
+                          />
+                          Có
+                        </label>
+                        <label>
+                          <input
+                            type="radio"
+                            name="template-medical-second-booking"
+                            value="no"
+                            checked
+                          />
+                          Không
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-7 form-group">
+                    <label for="template-medical-message">Lời nhắn:</label>
+                    <textarea
+                      id="template-medical-message"
+                      name="template-medical-message"
+                      class="form-control not-dark required"
+                      cols="30"
+                      rows="5"
+                    ></textarea>
+                  </div>
+                  <div class="w-100"></div>
+                  <div class="col-12 form-group d-none">
+                    <input
+                      type="text"
+                      name="template-medical-botcheck"
+                      value=""
+                    />
+                  </div>
+                  <div class="col-12 form-group text-end">
+                    <button
+                      class="button button-white button-light button-rounded m-0"
+                      type="submit"
+                      value="submit"
+                    >
+                      Đặt lịch
+                    </button>
+                  </div>
+                  <input
+                    type="hidden"
+                    name="prefix"
+                    value="template-medical-"
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="container clearfix">
+            <div class="row col-mb-50 mb-0">
+              <div class="col-md-7">
+                <div class="accordion accordion-lg clearfix">
+                  <div class="accordion-header">
+                    <div class="accordion-icon">
+                      <i class="accordion-closed icon-ok-circle"></i>
+                      <i class="accordion-open icon-remove-circle"></i>
+                    </div>
+                    <div class="accordion-title">Cấy ghép thận</div>
+                  </div>
+                  <div class="accordion-content clearfix">
+                    Donec sed odio dui. Nulla vitae elit libero, a pharetra
+                    augue. Nullam id dolor id nibh ultricies vehicula ut id
+                    elit. Integer posuere erat a ante venenatis dapibus posuere
+                    velit aliquet.
+                  </div>
+
+                  <div class="accordion-header">
+                    <div class="accordion-icon">
+                      <i class="accordion-closed icon-ok-circle"></i>
+                      <i class="accordion-open icon-remove-circle"></i>
+                    </div>
+                    <div class="accordion-title">Điều trị phổi</div>
+                  </div>
+                  <div class="accordion-content clearfix">
+                    Integer posuere erat a ante venenatis dapibus posuere velit
+                    aliquet. Duis mollis, est non commodo luctus. Aenean lacinia
+                    bibendum nulla sed consectetur. Cras mattis consectetur
+                    purus sit amet fermentum.
+                  </div>
+
+                  <div class="accordion-header">
+                    <div class="accordion-icon">
+                      <i class="accordion-closed icon-ok-circle"></i>
+                      <i class="accordion-open icon-remove-circle"></i>
+                    </div>
+                    <div class="accordion-title">
+                      Chăm Sóc Mắt &amp; Phẫu Thuật Lasik
+                    </div>
+                  </div>
+                  <div class="accordion-content clearfix">
+                    Nullam id dolor id nibh ultricies vehicula ut id elit.
+                    Integer posuere erat a ante venenatis dapibus posuere velit
+                    aliquet. Duis mollis, est non commodo luctus. Aenean lacinia
+                    bibendum nulla sed consectetur.
+                  </div>
+
+                  <div class="accordion-header">
+                    <div class="accordion-icon">
+                      <i class="accordion-closed icon-ok-circle"></i>
+                      <i class="accordion-open icon-remove-circle"></i>
+                    </div>
+                    <div class="accordion-title">Tai mũi họng</div>
+                  </div>
+                  <div class="accordion-content clearfix">
+                    Nullam id dolor id nibh ultricies vehicula ut id elit.
+                    Integer posuere erat a ante venenatis dapibus posuere velit
+                    aliquet. Duis mollis, est non commodo luctus. Aenean lacinia
+                    bibendum nulla sed consectetur.
+                  </div>
+
+                  <div class="accordion-header">
+                    <div class="accordion-icon">
+                      <i class="accordion-closed icon-ok-circle"></i>
+                      <i class="accordion-open icon-remove-circle"></i>
+                    </div>
+                    <div class="accordion-title">Khoa tim mạch</div>
+                  </div>
+                  <div class="accordion-content clearfix">
+                    Nullam id dolor id nibh ultricies vehicula ut id elit.
+                    Integer posuere erat a ante venenatis dapibus posuere velit
+                    aliquet. Duis mollis, est non commodo luctus. Aenean lacinia
+                    bibendum nulla sed consectetur.
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-5">
+                <h4>Phản hồi bệnh nhân<span>.</span></h4>
+                <ul class="testimonials-grid grid-1">
+                  <li class="grid-item pt-0">
+                    <div class="testimonial">
+                      <div class="testi-image">
+                        <a href="#"
+                          ><img
+                            src="images/testimonials/1.jpg"
+                            alt="Customer Testimonails"
+                        /></a>
+                      </div>
+                      <div class="testi-content">
+                        <p>Các bác sĩ rất chuyên nghiệp và tận tâm</p>
+                        <div class="testi-meta">
+                          Anh Tùng
+                          <span>Công ty XYZ</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="grid-item pb-0">
+                    <div class="testimonial">
+                      <div class="testi-image">
+                        <a href="#"
+                          ><img
+                            src="images/testimonials/2.jpg"
+                            alt="Customer Testimonails"
+                        /></a>
+                      </div>
+                      <div class="testi-content">
+                        <p>
+                          Các bác sĩ rất chuyên nghiệp và tận tâm, cơ sở vật
+                          chất rất tốt, dịch vụ không còn gì để phàn nàn
+                        </p>
+
+                        <div class="testi-meta">
+                          Anh Nam
+                          <span>Công ty XYZ</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="w-100 text-end">
+                  <a href="#" class="button button-mini button-rounded me-0"
+                    >Xem thêm</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section mt-0">
+            <div class="container clearfix">
+              <div class="row">
+                <div class="col-lg-3 col-md-6">
+                  <div
+                    class="feature-box fbox-outline fbox-dark fbox-effect clearfix"
+                  >
+                    <div class="fbox-icon">
+                      <a href="#"><i class="icon-stack i-alt"></i></a>
+                    </div>
+                    <div class="fbox-content">
+                      <div class="counter counter-small">
+                        <span
+                          data-from="100"
+                          data-to="23331"
+                          data-refresh-interval="200"
+                          data-speed="2500"
+                        ></span
+                        >+
+                      </div>
+                      <h5 class="m-0 color">Bệnh nhân chăm sóc</h5>
+                      <div
+                        class="d-block d-md-block d-lg-none bottommargin"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                  <div
+                    class="feature-box fbox-outline fbox-dark fbox-effect clearfix"
+                  >
+                    <div class="fbox-icon">
+                      <a href="#"><i class="icon-tint i-alt"></i></a>
+                    </div>
+                    <div class="fbox-content">
+                      <div class="counter counter-small">
+                        <span
+                          data-from="100"
+                          data-to="56841"
+                          data-refresh-interval="250"
+                          data-speed="2000"
+                        ></span
+                        >+
+                      </div>
+                      <h5 class="m-0 color">Chụp X-Quang</h5>
+                      <div
+                        class="d-block d-md-block d-lg-none bottommargin"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                  <div
+                    class="feature-box fbox-outline fbox-dark fbox-effect clearfix"
+                  >
+                    <div class="fbox-icon">
+                      <a href="#"><i class="icon-tint i-alt"></i></a>
+                    </div>
+                    <div class="fbox-content">
+                      <div class="counter counter-small">
+                        <span
+                          data-from="100"
+                          data-to="332"
+                          data-refresh-interval="50"
+                          data-speed="3000"
+                        ></span
+                        >+
+                      </div>
+                      <h5 class="m-0 color">Bác sĩ quốc tế</h5>
+                      <div class="d-block d-md-none bottommargin"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                  <div
+                    class="feature-box fbox-outline fbox-dark fbox-effect clearfix"
+                  >
+                    <div class="fbox-icon">
+                      <a href="#"><i class="icon-text-width i-alt"></i></a>
+                    </div>
+                    <div class="fbox-content">
+                      <div class="counter counter-small">
+                        <span
+                          data-from="100"
+                          data-to="2213"
+                          data-refresh-interval="110"
+                          data-speed="3500"
+                        ></span
+                        >+
+                      </div>
+                      <h5 class="m-0 color">Ca cứu sống</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container clearfix">
+            <div class="heading-block center border-bottom-0">
+              <h3>Đội ngũ<span>.</span></h3>
+              <span>We make sure that your Life are in Good Hands.</span>
+            </div>
+
+            <div
+              id="oc-team"
+              class="owl-carousel team-carousel carousel-widget"
+              data-margin="30"
+              data-nav="true"
+              data-pagi="true"
+              data-items-xs="1"
+              data-items-sm="2"
+              data-items-lg="3"
+              data-items-xl="4"
+            >
+              <div class="team">
+                <div class="team-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1612523138351-4643808db8f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="Dr. John Doe"
+                  />
+                </div>
+                <div class="team-desc">
+                  <div class="team-title">
+                    <h4>Dr. Tuấn</h4>
+                    <span>Nha sĩ</span>
+                  </div>
+                </div>
+              </div>
+              <div class="team">
+                <div class="team-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1612523138351-4643808db8f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="Dr. John Doe"
+                  />
+                </div>
+                <div class="team-desc">
+                  <div class="team-title">
+                    <h4>Dr. Tuấn</h4>
+                    <span>Nha sĩ</span>
+                  </div>
+                </div>
+              </div>
+              <div class="team">
+                <div class="team-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1612523138351-4643808db8f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="Dr. John Doe"
+                  />
+                </div>
+                <div class="team-desc">
+                  <div class="team-title">
+                    <h4>Dr. Tuấn</h4>
+                    <span>Nha sĩ</span>
+                  </div>
+                </div>
+              </div>
+              <div class="team">
+                <div class="team-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1612523138351-4643808db8f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="Dr. John Doe"
+                  />
+                </div>
+                <div class="team-desc">
+                  <div class="team-title">
+                    <h4>Dr. Tuấn</h4>
+                    <span>Nha sĩ</span>
+                  </div>
+                </div>
+              </div>
+              <div class="team">
+                <div class="team-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1612523138351-4643808db8f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="Dr. John Doe"
+                  />
+                </div>
+                <div class="team-desc">
+                  <div class="team-title">
+                    <h4>Dr. Tuấn</h4>
+                    <span>Nha sĩ</span>
+                  </div>
+                </div>
+              </div>
+              <div class="team">
+                <div class="team-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1612523138351-4643808db8f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="Dr. John Doe"
+                  />
+                </div>
+                <div class="team-desc">
+                  <div class="team-title">
+                    <h4>Dr. Tuấn</h4>
+                    <span>Nha sĩ</span>
+                  </div>
+                </div>
+              </div>
+              <div class="team">
+                <div class="team-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1612523138351-4643808db8f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="Dr. John Doe"
+                  />
+                </div>
+                <div class="team-desc">
+                  <div class="team-title">
+                    <h4>Dr. Tuấn</h4>
+                    <span>Nha sĩ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #content end -->
+
+      <!-- Footer
+		============================================= -->
+      <footer
+        id="footer"
+        style="
+          background-color: #f5f5f5;
+          border-top: 2px solid rgba(0, 0, 0, 0.06);
+        "
+      >
+        <div
+          class="container"
+          style="border-bottom: 1px solid rgba(0, 0, 0, 0.06)"
+        >
+          <!-- Footer Widgets
+				============================================= -->
+          <div class="footer-widgets-wrap">
+            <div class="row gutter-50 col-mb-50">
+              <div class="col-md-8">
+                <div class="widget clearfix">
+                  <div class="widget-subscribe-form-result"></div>
+                  <form
+                    id="widget-subscribe-form"
+                    action="http://themes.semicolonweb.com/html/canvas/include/subscribe.php"
+                    method="post"
+                    class="mb-0 row clearfix"
+                  >
+                    <div class="col-lg-9">
+                      <input
+                        type="email"
+                        id="widget-subscribe-form-email"
+                        name="widget-subscribe-form-email"
+                        class="sm-form-control required email"
+                        placeholder="Nhập Email để nhận tư vấn"
+                      />
+                    </div>
+                    <div class="col-lg-3">
+                      <button
+                        class="button button-rounded m-0 center w-100"
+                        type="submit"
+                      >
+                        Đăng kí
+                      </button>
+                    </div>
+                  </form>
+
+                  <div class="line line-sm"></div>
+
+                  <div class="row col-mb-30">
+                    <div class="col-lg-3 col-6 widget_links">
+                      <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Dịch vụ</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-6 widget_links">
+                      <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Dịch vụ</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-6 widget_links">
+                      <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Dịch vụ</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-6 widget_links">
+                      <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Dịch vụ</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="widget">
+                  <div class="row col-mb-30">
+                    <div class="col-lg-12">
+                      <div class="footer-big-contacts">
+                        <span>Hotline:</span>
+                        0393004567
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <div class="footer-big-contacts">
+                        <span>Email:</span>
+                        fhmvietnam@gmail.com
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="widget subscribe-widget clearfix">
+                  <div class="row col-mb-30">
+                    <div class="col-sm-6 col-md-12 col-lg-6 clearfix">
+                      <a
+                        href="#"
+                        class="social-icon si-dark si-colored si-facebook mb-0"
+                        style="margin-right: 10px"
+                      >
+                        <i class="icon-facebook"></i>
+                        <i class="icon-facebook"></i>
+                      </a>
+                      <a href="#"
+                        ><small style="display: block; margin-top: 3px"
+                          ><strong>Theo dõi</strong><br />
+                          Facebook</small
+                        ></a
+                      >
+                    </div>
+                    <div class="col-sm-6 col-md-12 col-lg-6 clearfix">
+                      <a
+                        href="#"
+                        class="social-icon si-dark si-colored si-rss mb-0"
+                        style="margin-right: 10px"
+                      >
+                        <i class="icon-rss"></i>
+                        <i class="icon-rss"></i>
+                      </a>
+                      <a href="#"
+                        ><small style="display: block; margin-top: 3px"
+                          ><strong>Đăng kí</strong><br />
+                          RSS</small
+                        ></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- .footer-widgets-wrap end -->
+        </div>
+
+        <!-- Copyrights
+			============================================= -->
+        <div id="copyrights" class="bg-transparent">
+          <div class="container clearfix">
+            <div class="row col-mb-30">
+              <div class="col-md-6 text-center text-md-start">
+                Copyrights &copy; 2022 Bản quyền thuộc về FHM Agency<br />
+                <div class="copyright-links">
+                  <a href="#">Điều khoản sử dụng</a> /
+                  <a href="#">Chính sách bảo mật</a>
+                </div>
+              </div>
+
+              <div class="col-md-6 text-center text-md-end">
+                <div class="copyrights-menu copyright-links clearfix">
+                  <a href="#">Trang chủ</a>/<a href="#">Giới thiệu</a>/<a
+                    href="#"
+                    >Tư vấn</a
+                  >/<a href="#">Bác sĩ</a>/<a href="#">FAQs</a>/<a href="#"
+                    >Liên hệ</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- #copyrights end -->
+      </footer>
+      <!-- #footer end -->
+    </div>
+    <!-- #wrapper end -->
+
+    <!-- Go To Top
+	============================================= -->
+    <div id="gotoTop" class="icon-angle-up rounded-circle"></div>
+
+    <!-- JavaScripts
+	============================================= -->
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.min.js"></script>
+
+    <!-- Footer Scripts
+	============================================= -->
+    <script src="js/functions.js"></script>
+  </body>
+
+  <!-- Mirrored from themes.semicolonweb.com/html/canvas/demo-medical.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Aug 2021 12:44:22 GMT -->
+</html>
