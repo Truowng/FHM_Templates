@@ -1,0 +1,1879 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+  <!-- Mirrored from themes.semicolonweb.com/html/canvas/demo-coworking.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Aug 2021 12:54:03 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+
+    <!-- Stylesheets
+	============================================= -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700&amp;display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="css/dark.css" type="text/css" />
+
+    <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Workspace Demo Specific Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="css/colors5533.css?color=267DF4"
+      type="text/css"
+    />
+    <!-- Theme Color -->
+    <link
+      rel="stylesheet"
+      href="demos/coworking/css/fonts.css"
+      type="text/css"
+    />
+    <!-- Theme Font -->
+    <link
+      rel="stylesheet"
+      href="demos/coworking/coworking.css"
+      type="text/css"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      #logo img {
+        height: 50px !important;
+      }
+
+      body,
+      small,
+      .sub-menu-container .menu-item > .menu-link,
+      .wp-caption,
+      .fbox-center.fbox-italic p,
+      .skills li .progress-percent .counter,
+      .nav-tree ul ul a,
+      .font-body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      #logo a,
+      .menu-link,
+      .mega-menu-style-2 .mega-menu-title > .menu-link,
+      .top-search-form input,
+      .entry-link,
+      .entry.entry-date-section span,
+      .button.button-desc,
+      .fbox-content h3,
+      .tab-nav-lg li a,
+      .counter,
+      label,
+      .widget-filter-links li a,
+      .nav-tree li a,
+      .wedding-head,
+      .font-primary,
+      .entry-link span,
+      .entry blockquote p,
+      .more-link,
+      .comment-content .comment-author span,
+      .comment-content .comment-author span a,
+      .button.button-desc span,
+      .testi-content p,
+      .team-title span,
+      .before-heading,
+      .wedding-head .first-name span,
+      .wedding-head .last-name span,
+      .font-secondary {
+        font-family: "Montserrat", sans-serif !important;
+      }
+    </style>
+    <!-- Theme CSS -->
+    <!-- / -->
+
+    <!-- Document Title
+	============================================= -->
+    <title>Coworking | FHM</title>
+  </head>
+
+  <body class="stretched">
+    <!-- Document Wrapper
+	============================================= -->
+    <div id="wrapper" class="clearfix">
+      <!-- Header
+		============================================= -->
+      <header id="header" class="border-bottom-0" data-sticky-shrink="false">
+        <div id="header-wrap">
+          <div class="container">
+            <div class="header-row">
+              <!-- Logo
+						============================================= -->
+              <div id="logo">
+                <a
+                  href="index-2.html"
+                  class="standard-logo"
+                  data-sticky-logo="https://fhmvietnam.vn/data/cms-image/logo/logo_new_dark.png"
+                  ><img
+                    src="https://fhmvietnam.vn/data/cms-image/logo/logo_new_dark.png"
+                    alt="Canvas Logo"
+                /></a>
+                <a
+                  href="index-2.html"
+                  class="retina-logo"
+                  data-sticky-logo="https://fhmvietnam.vn/data/cms-image/logo/logo_new_dark.png"
+                  ><img
+                    src="https://fhmvietnam.vn/data/cms-image/logo/logo_new_dark.png"
+                    alt="Canvas Logo"
+                /></a>
+              </div>
+              <!-- #logo end -->
+
+              <div class="header-misc">
+                <a
+                  class="top-phone"
+                  href="tel:0393004567
+"
+                  ><i class="icon-call"></i>
+                  <span class="d-none d-md-inline-block">0393004567</span></a
+                >
+              </div>
+
+              <div id="primary-menu-trigger">
+                <svg class="svg-trigger" viewBox="0 0 100 100">
+                  <path
+                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
+                  ></path>
+                  <path d="m 30,50 h 40"></path>
+                  <path
+                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Primary Navigation
+						============================================= -->
+              <nav class="primary-menu">
+                <ul class="menu-container">
+                  <li class="menu-item current">
+                    <a class="menu-link" href="demo-coworking.html"
+                      ><div>Trang chủ</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="demo-coworking-about.html"
+                      ><div>Giới thiệu</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="demo-coworking-price.html"
+                      ><div>Phản hồi</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="demo-coworking-single.html"
+                      ><div>Hỗ trợ</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="demo-coworking-contact.html"
+                      ><div>Liên hệ</div></a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <!-- #primary-menu end -->
+            </div>
+          </div>
+        </div>
+        <div class="header-wrap-clone"></div>
+      </header>
+      <!-- #header end -->
+
+      <!-- Content
+		============================================= -->
+      <section id="content">
+        <div class="content-wrap pt-3 pb-0">
+          <div class="section bg-transparent py-2">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <h2 class="display-4 fw-semibold ls--2">
+                    Chúng tôi đang tạo nên
+                    <span
+                      class="text-rotater"
+                      data-separator="|"
+                      data-rotate="fadeIn"
+                      data-speed="2000"
+                    >
+                      <span class="t-rotate"
+                        >Môi trường|Văn phòng|Cộng đồng</span
+                      >
+                    </span>
+                    tốt hơn <br />
+                    cho bạn.
+                  </h2>
+                </div>
+                <div class="col-md-5">
+                  <p class="lead text-muted">
+                    Collaboratively coordinate adaptive synergy with compelling
+                    "outside the box" thinking. Continually recaptiualize user
+                    friendly sources whereas leveraged.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="overflow-hidden parallax d-flex align-items-center"
+            data-bottom-top="background-position:0px 200px;"
+            data-top-bottom="background-position:0px -400px;"
+            style="
+              background-image: url('demos/coworking/images/hero.jpg');
+              background-size: cover;
+              height: 600px;
+              width: 100%;
+            "
+          >
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h2 class="text-white">
+                    Trung tâm là một mạng lưới gồm 9 không gian làm việc, từ 200
+                    đến 3.700m2, được Xây dựng và Thiết kế để hỗ trợ Cá nhân và
+                    Doanh nghiệp trong Thế giới Sáng tạo.
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-theme-light">
+            <div class="shadow-sm hero-features bg-color dark shadow">
+              <div class="row">
+                <div class="col-md-4 mt-3 mt-md-0">
+                  <div class="feature-box fbox-plain fbox-sm fbox-dark mb-0">
+                    <div class="fbox-icon">
+                      <i class="icon-line-circle-check"></i>
+                    </div>
+                    <div class="fbox-content">
+                      <h3 class="text-white">Thuận tiện làm việc</h3>
+                      <p class="text-white mb-0">
+                        24x7 available, Anytime & anywhere, we're always
+                        available for You.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 mt-3 mt-md-0">
+                  <div class="feature-box fbox-plain fbox-sm fbox-dark mb-0">
+                    <div class="fbox-icon">
+                      <i class="icon-line-circle-check"></i>
+                    </div>
+                    <div class="fbox-content">
+                      <h3 class="text-white">Mở cửa 24/7</h3>
+                      <p class="text-white mb-0">
+                        Get Started with our Regular, Weekly, Monthly Plan.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 mt-3 mt-md-0">
+                  <div class="feature-box fbox-plain fbox-sm fbox-dark mb-0">
+                    <div class="fbox-icon">
+                      <i class="icon-line-circle-check"></i>
+                    </div>
+                    <div class="fbox-content">
+                      <h3 class="text-white">Bảo mật &amp; An toàn</h3>
+                      <p class="text-white mb-0">
+                        Intrinsicly evisculate quality vectors befor high-impact
+                        schemas.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section mt-0 pt-md-5 pt-0">
+            <div class="container clearfix">
+              <div class="row align-items-md-center mb-5">
+                <div class="col-md-6 pe-5">
+                  <div class="heading-block mb-4 border-bottom-0">
+                    <div class="before-heading">Giới thiệu</div>
+                    <h2 class="nott fw-semibold">
+                      Làm cùng nhau, xây cùng nhau
+                    </h2>
+                  </div>
+                  <div class="row">
+                    <div class="col-6 col-sm-6 mb-4">
+                      <div class="counter color fw-semibold">
+                        <span
+                          data-from="1"
+                          data-to="3"
+                          data-refresh-interval="2"
+                          data-speed="600"
+                        ></span
+                        >+
+                      </div>
+                      <h5 class="mt-0 fw-medium">Tổ chức</h5>
+                    </div>
+
+                    <div class="col-6 col-sm-6 mb-4">
+                      <div class="counter color fw-semibold">
+                        <span
+                          data-from="1"
+                          data-to="37"
+                          data-refresh-interval="11"
+                          data-speed="900"
+                        ></span
+                        >+
+                      </div>
+                      <h5 class="mt-0 fw-medium">Studios</h5>
+                    </div>
+
+                    <div class="col-6 col-sm-6 mb-4">
+                      <div class="counter color fw-semibold">
+                        <span
+                          data-from="1"
+                          data-to="21"
+                          data-refresh-interval="3"
+                          data-speed="1000"
+                        ></span
+                        >+
+                      </div>
+                      <h5 class="mt-0 fw-medium">Sự kiện tháng</h5>
+                    </div>
+
+                    <div class="col-6 col-sm-6 mb-4">
+                      <div class="counter color fw-semibold">
+                        <span
+                          data-from="100"
+                          data-to="4500"
+                          data-refresh-interval="100"
+                          data-speed="1500"
+                        ></span
+                        >+
+                      </div>
+                      <h5 class="mt-0 fw-medium">Thành viên</h5>
+                    </div>
+                  </div>
+                  <p class="text-muted">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Assumenda praesentium eius, similique reprehenderit ab
+                    voluptatibus eaque.
+                  </p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="card shadow-sm border-light">
+                    <img
+                      src="demos/coworking/images/features/3.jpg"
+                      alt="Featured image 1"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title fw-semibold color">Phòng họp</h5>
+                      <p class="card-text">
+                        Some quick example text to build on the card title.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card shadow-sm border-light mt-4">
+                    <img
+                      src="demos/coworking/images/features/2.jpg"
+                      alt="Featured image 2"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title fw-semibold color">Phòng riêng</h5>
+                      <p class="card-text">
+                        Some quick example text. similique reprehenderit ab
+                        voluptatibus eaque.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 ps-sm-3 mt-3 mt-sm-0">
+                  <div class="card shadow-sm border-light">
+                    <img
+                      src="demos/coworking/images/features/1.jpg"
+                      alt="Featured image 3"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row justify-content-between">
+              <!-- Feature Box
+						============================================= -->
+              <div class="col-lg-4 col-md-6 my-4">
+                <i
+                  class="icon-wifi-full color ms-0 mb-4 i-plain d-block float-none"
+                ></i>
+                <h4 class="mb-3">Wifi miễn phí</h4>
+                <p class="text-muted">
+                  Add any Field to your Custom Form. Canvas's inbuilt Forms
+                  Processor will handle the rest. You will never have to touch
+                  any PHP Codes.
+                </p>
+              </div>
+
+              <!-- Feature Box
+						============================================= -->
+              <div class="col-lg-4 col-md-6 my-4">
+                <i
+                  class="icon-line2-cup color ms-0 mb-3 i-plain d-block float-none"
+                ></i>
+                <h4 class="mb-3">Cà phê miễn phí</h4>
+                <p class="text-muted">
+                  Add any Field to your Custom Form. Canvas's inbuilt Forms
+                  Processor will handle the rest. You will never have to touch
+                  any PHP Codes.
+                </p>
+              </div>
+
+              <!-- Feature Box
+						============================================= -->
+              <div class="col-lg-4 col-md-6 my-4">
+                <i
+                  class="icon-line2-screen-desktop color ms-0 mb-3 i-plain d-block float-none"
+                ></i>
+                <h4 class="mb-3">Bàn linh hoạt</h4>
+                <p class="text-muted">
+                  Add any Field to your Custom Form. Canvas's inbuilt Forms
+                  Processor will handle the rest. You will never have to touch
+                  any PHP Codes.
+                </p>
+              </div>
+
+              <!-- Feature Box
+						============================================= -->
+              <div class="col-lg-4 col-md-6 my-4">
+                <i
+                  class="icon-line2-lock color ms-0 mb-3 i-plain d-block float-none"
+                ></i>
+                <h4 class="mb-3">Khóa</h4>
+                <p class="text-muted">
+                  Add any Field to your Custom Form. Canvas's inbuilt Forms
+                  Processor will handle the rest. You will never have to touch
+                  any PHP Codes.
+                </p>
+              </div>
+
+              <!-- Feature Box
+						============================================= -->
+              <div class="col-lg-4 col-md-6 my-4">
+                <i
+                  class="icon-fingerprint color ms-0 mb-3 i-plain d-block float-none"
+                ></i>
+                <h4 class="mb-3">100% Bảo mật</h4>
+                <p class="text-muted">
+                  Add any Field to your Custom Form. Canvas's inbuilt Forms
+                  Processor will handle the rest. You will never have to touch
+                  any PHP Codes.
+                </p>
+              </div>
+
+              <!-- Feature Box
+						============================================= -->
+              <div class="col-lg-4 col-md-6 my-4">
+                <i
+                  class="icon-line2-printer color ms-0 mb-3 i-plain d-block float-none"
+                ></i>
+                <h4 class="mb-3">Máy in &amp; Máy fax</h4>
+                <p class="text-muted">
+                  Add any Field to your Custom Form. Canvas's inbuilt Forms
+                  Processor will handle the rest. You will never have to touch
+                  any PHP Codes.
+                </p>
+              </div>
+
+              <!-- Feature Box
+						============================================= -->
+              <div class="col-lg-4 col-md-6 my-4">
+                <i
+                  class="icon-couch color ms-0 mb-3 i-plain d-block float-none"
+                ></i>
+                <h4 class="mb-3">Diện tích rộng</h4>
+                <p class="text-muted">
+                  Add any Field to your Custom Form. Canvas's inbuilt Forms
+                  Processor will handle the rest. You will never have to touch
+                  any PHP Codes.
+                </p>
+              </div>
+
+              <!-- Feature Box
+						============================================= -->
+              <div class="col-lg-4 col-md-6 my-4">
+                <i
+                  class="icon-line-clock color ms-0 mb-3 i-plain d-block float-none"
+                ></i>
+                <h4 class="mb-3">Mở cửa 24/7</h4>
+                <p class="text-muted">
+                  Add any Field to your Custom Form. Canvas's inbuilt Forms
+                  Processor will handle the rest. You will never have to touch
+                  any PHP Codes.
+                </p>
+              </div>
+
+              <!-- Feature Box
+						============================================= -->
+              <div class="col-lg-4 col-md-6 my-4">
+                <i
+                  class="icon-playstation color ms-0 mb-3 i-plain d-block float-none"
+                ></i>
+                <h4 class="mb-3">Hoạt động</h4>
+                <p class="text-muted">
+                  Add any Field to your Custom Form. Canvas's inbuilt Forms
+                  Processor will handle the rest. You will never have to touch
+                  any PHP Codes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="section" style="padding: 80px 0">
+            <div class="container">
+              <div class="heading-block border-bottom-0 mb-0">
+                <div class="before-heading">Bảng giá</div>
+                <h2 class="nott fw-semibold mb-0">Dịch vụ</h2>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div
+                    id="price-carousel"
+                    class="owl-carousel carousel-widget"
+                    data-margin="30"
+                    data-nav="false"
+                    data-pagi="true"
+                    data-items-xs="1"
+                    data-items-sm="1"
+                    data-items-md="2"
+                    data-items-lg="3"
+                    data-items-xl="3"
+                  >
+                    <div class="price-list shadow-sm card border-0 rounded">
+                      <div class="position-relative">
+                        <img
+                          src="demos/coworking/images/membership/1-day.jpg"
+                          alt="Featured image 1"
+                          class="card-img-top rounded-top"
+                        />
+                        <div
+                          class="card-img-overlay dark d-flex justify-content-center flex-column p-0 center"
+                        >
+                          <h3 class="card-title mb-0 text-white">Vé ngày</h3>
+                          <p class="card-text mb-0">Trải nghiệm</p>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <div class="price-title pb-3">
+                          200.000đ<small>/ngày</small>
+                        </div>
+
+                        <ul class="list-group list-group-flush mb-4">
+                          <li class="list-group-item ps-0">
+                            <i class="icon-line-check pe-3 color"></i> Trong
+                            ngày
+                          </li>
+                          <li class="list-group-item ps-0">
+                            <i class="icon-line-check pe-3 color"></i> Wifi miễn
+                            phí
+                          </li>
+                          <li class="list-group-item ps-0 text-black-50">
+                            <i class="icon-line-check pe-3 color"></i>
+                            <del>Không khóa truy cập</del>
+                          </li>
+                        </ul>
+
+                        <a
+                          href="demo-coworking-single.html"
+                          class="button button-rounded button-large w-100 m-0 center fw-medium"
+                          >Đặt ngay</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="price-list shadow-sm card border-0 rounded">
+                      <div class="position-relative">
+                        <img
+                          src="demos/coworking/images/membership/share.jpg"
+                          alt="Featured image 1"
+                          class="card-img-top rounded-top"
+                        />
+                        <div
+                          class="card-img-overlay dark d-flex justify-content-center flex-column p-0 center"
+                        >
+                          <h3 class="card-title mb-0 text-white">
+                            Chia sẻ bàn
+                          </h3>
+                          <p class="card-text mb-0">
+                            Tiết kiệm nhưng linh hoạt
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <div class="price-title pb-3">
+                          3.000.000đ<small>/tháng</small>
+                        </div>
+
+                        <ul class="list-group list-group-flush mb-4">
+                          <li class="list-group-item ps-0">
+                            <i class="icon-line-check pe-3 color"></i> 8:00 -
+                            20:00
+                          </li>
+                          <li class="list-group-item ps-0">
+                            <i class="icon-line-check pe-3 color"></i> 100h sử
+                            dụng wifi miễn phí
+                          </li>
+                          <li class="list-group-item ps-0">
+                            <i class="icon-line-check pe-3 color"></i> Khóa truy
+                            cập
+                          </li>
+                          <li class="list-group-item ps-0 text-black-50">
+                            <i class="icon-line-check pe-3 color"></i>
+                            <del>Máy In</del>
+                          </li>
+                        </ul>
+
+                        <a
+                          href="demo-coworking-single.html"
+                          class="button button-rounded button-large w-100 m-0 center fw-medium"
+                          >Đặt ngay</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="price-list shadow-sm card border-0 rounded">
+                      <div class="position-relative">
+                        <img
+                          src="demos/coworking/images/membership/flexible.jpg"
+                          alt="Featured image 1"
+                          class="card-img-top rounded-top"
+                        />
+                        <div
+                          class="card-img-overlay dark d-flex justify-content-center flex-column p-0 center"
+                        >
+                          <h3 class="card-title mb-0 text-white">
+                            Bàn linh hoạt
+                          </h3>
+                          <p class="card-text mb-0">Chỗ ngồi tùy chọn</p>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <div class="price-title pb-3">
+                          4.000.000đ<small>/tháng</small>
+                        </div>
+
+                        <ul class="list-group list-group-flush mb-4">
+                          <li class="list-group-item ps-0">
+                            <i class="icon-line-check pe-3 color"></i> 200h wifi
+                            miễn phí
+                          </li>
+                          <li class="list-group-item ps-0">
+                            <i class="icon-line-check pe-3 color"></i> Khóa truy
+                            cập
+                          </li>
+                          <li class="list-group-item ps-0">
+                            <i class="icon-line-check pe-3 color"></i> In 50
+                            trang
+                          </li>
+                          <li class="list-group-item ps-0">
+                            <i class="icon-line-check pe-3 color"></i> 5h Skype
+                          </li>
+                          <li class="list-group-item ps-0">
+                            <i class="icon-line-check pe-3 color"></i> Địa chỉ
+                            Email
+                          </li>
+                        </ul>
+
+                        <a
+                          href="demo-coworking-single.html"
+                          class="button button-rounded button-large w-100 m-0 center fw-medium"
+                          >Đặt ngay</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="price-list shadow-sm card border-0 rounded">
+                      <div class="position-relative">
+                        <img
+                          src="demos/coworking/images/membership/private.jpg"
+                          alt="Featured image 1"
+                          class="card-img-top rounded-top"
+                        />
+                        <div
+                          class="card-img-overlay dark d-flex justify-content-center flex-column p-0 center"
+                        >
+                          <h3 class="card-title mb-0 text-white">Bàn riêng</h3>
+                          <p class="card-text mb-0">Tất cả là của bạn!</p>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <div class="price-title pb-3">
+                          6.000.000đ<small>/tháng</small>
+                        </div>
+
+                        <ul class="list-group list-group-flush mb-4">
+                          <li class="list-group-item ps-0">
+                            <i class="icon-line-check pe-3 color"></i> Bàn riêng
+                          </li>
+                          <li class="list-group-item ps-0">
+                            <i class="icon-line-check pe-3 color"></i> 500h wifi
+                            miễn phí
+                          </li>
+                          <li class="list-group-item ps-0">
+                            <i class="icon-line-check pe-3 color"></i> Sử dụng
+                            phòng họp
+                          </li>
+                          <li class="list-group-item ps-0">
+                            <i class="icon-line-check pe-3 color"></i> Không
+                            giới hạn in
+                          </li>
+                          <li class="list-group-item ps-0">
+                            <i class="icon-line-check pe-3 color"></i> Không
+                            giới hạn Skype
+                          </li>
+                          <li class="list-group-item ps-0">
+                            <i class="icon-line-check pe-3 color"></i> Địa chỉ
+                            Email
+                          </li>
+                        </ul>
+
+                        <a
+                          href="demo-coworking-single.html"
+                          class="button button-rounded button-large w-100 m-0 center fw-medium"
+                          >Đặt ngay</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-11 mt-5 offset-md-1">
+                  <h3>Điều khoản &amp; Điều kiện</h3>
+                  <ul class="ps-4 mb-0">
+                    <li class="mb-1">
+                      Hours indicated are access to the space NOT the WIFI or
+                      Internet Connection.
+                    </li>
+                    <li class="mb-1">
+                      Payment is upfront. We accept Cash and VISA/Master Cards,
+                      2% Credit Card surcharge applies.
+                    </li>
+                    <li class="mb-1">
+                      Monthly Plan starts from the point of signup for 30 days.
+                    </li>
+                    <li class="mb-1">
+                      Sorry NO Pausing Memberships and NO Cancellations.
+                    </li>
+                    <li class="mb-1">
+                      Sorry NO Upgrading Plans you need to use the hours in the
+                      plan.
+                    </li>
+                    <li class="mb-1">
+                      If you run out of hours you can buy additional hours at
+                      the rate above, through our website or front desk.
+                    </li>
+                    <li class="mb-1">
+                      If you wish to change plan once you’re on a plan this is
+                      done only at the end of the month or once you use your
+                      hours.
+                    </li>
+                    <li class="mb-1">
+                      Additional Printing is charged at &dollar;0.30 for Black
+                      and White A4 & A3 and &dollar;2 for Colour A4 & A3.
+                    </li>
+                    <li class="mb-1">
+                      Skype Booths must be booked before 1 day &amp; the keys
+                      can be collected at the frontdesk. Additional Skype Booth
+                      usage will be charged at &dollar;5 per hour.
+                    </li>
+                    <li class="mb-1">
+                      Storage Lockers are first come first serve and are subject
+                      to availability.
+                    </li>
+                    <li class="mb-1">Additional Charge for Mail Delivery.</li>
+                    <li class="mb-1">Pets are not allowed.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section clearfix bg-transparent">
+            <div class="container">
+              <div class="heading-block border-bottom-0 center">
+                <div class="before-heading">Ảnh</div>
+                <h2 class="nott fw-semibold mb-0">Thư viện ảnh</h2>
+              </div>
+            </div>
+            <div
+              id="image-carousel"
+              class="owl-carousel carousel-widget"
+              data-margin="24"
+              data-nav="true"
+              data-pagi="true"
+              data-items-xs="1"
+              data-items-sm="1"
+              data-items-md="1"
+              data-items-lg="2"
+              data-items-xl="2"
+              style="padding: 0 20px"
+              data-lightbox="gallery"
+            >
+              <div class="slide slide--1">
+                <div class="carousel-column-container">
+                  <ul class="carousel-column column-1">
+                    <li class="carousel-grid-item">
+                      <a
+                        href="demos/coworking/images/gallery/1.jpg"
+                        data-lightbox="gallery-item"
+                        class="item"
+                        style="
+                          background-image: url('demos/coworking/images/gallery/1.jpg');
+                        "
+                      ></a>
+                    </li>
+                    <li class="carousel-grid-item">
+                      <a
+                        href="demos/coworking/images/gallery/2.jpg"
+                        data-lightbox="gallery-item"
+                        class="item"
+                        style="
+                          background-image: url('demos/coworking/images/gallery/2.jpg');
+                        "
+                      ></a>
+                    </li>
+                  </ul>
+                  <ul class="carousel-column column-2">
+                    <li class="carousel-grid-item">
+                      <a
+                        href="demos/coworking/images/gallery/3.jpg"
+                        data-lightbox="gallery-item"
+                        class="item"
+                        style="
+                          background-image: url('demos/coworking/images/gallery/3.jpg');
+                          min-height: 300px;
+                        "
+                      ></a>
+                    </li>
+                    <li class="carousel-grid-item">
+                      <a
+                        href="demos/coworking/images/gallery/4.jpg"
+                        data-lightbox="gallery-item"
+                        class="item"
+                        style="
+                          background-image: url('demos/coworking/images/gallery/4.jpg');
+                          min-height: 280px;
+                        "
+                      ></a>
+                    </li>
+                    <li class="carousel-grid-item">
+                      <a
+                        href="demos/coworking/images/gallery/5.jpg"
+                        data-lightbox="gallery-item"
+                        class="item"
+                        style="
+                          background-image: url('demos/coworking/images/gallery/5.jpg');
+                          min-height: 200px;
+                        "
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="slide slide--2">
+                <div class="carousel-column-container">
+                  <ul class="carousel-column column-1">
+                    <li class="carousel-grid-item">
+                      <a
+                        href="demos/coworking/images/gallery/6.jpg"
+                        data-lightbox="gallery-item"
+                        class="item"
+                        style="
+                          background-image: url('demos/coworking/images/gallery/6.jpg');
+                          min-height: 324px;
+                        "
+                      ></a>
+                    </li>
+                    <li class="carousel-grid-item">
+                      <div
+                        class="item bg-color d-flex align-items-center px-4"
+                        style="min-height: 480px"
+                      >
+                        <blockquote class="blockquote border-0 mb-0">
+                          <p class="mb-3 text-white">
+                            "The Spirit of CoWorking Allows You to Find
+                            CoWorkers Who're Worth Working with."
+                          </p>
+                          <footer
+                            class="blockquote-footer text-white-50 fst-italic"
+                          >
+                            Cynthia Chiam
+                          </footer>
+                        </blockquote>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="carousel-column column-2">
+                    <li class="carousel-grid-item">
+                      <a
+                        href="demos/coworking/images/gallery/8.jpg"
+                        data-lightbox="gallery-item"
+                        class="item"
+                        style="
+                          background-image: url('demos/coworking/images/gallery/8.jpg');
+                        "
+                      ></a>
+                    </li>
+                    <li class="carousel-grid-item">
+                      <a
+                        href="demos/coworking/images/gallery/9.jpg"
+                        data-lightbox="gallery-item"
+                        class="item"
+                        style="
+                          background-image: url('demos/coworking/images/gallery/9.jpg');
+                        "
+                      ></a>
+                    </li>
+                    <li class="carousel-grid-item">
+                      <a
+                        href="demos/coworking/images/gallery/10.jpg"
+                        data-lightbox="gallery-item"
+                        class="item"
+                        style="
+                          background-image: url('demos/coworking/images/gallery/10.jpg');
+                        "
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="slide slide--3">
+                <div class="carousel-column-container">
+                  <ul class="carousel-column column-1">
+                    <li class="carousel-grid-item">
+                      <a
+                        href="demos/coworking/images/gallery/11.jpg"
+                        data-lightbox="gallery-item"
+                        class="item bg-color d-flex align-items-center px-4 img-overlay"
+                        style="
+                          background-image: url('demos/coworking/images/gallery/11.jpg');
+                          min-height: 350px;
+                        "
+                      >
+                        <blockquote class="blockquote border-0 mb-0">
+                          <p class="mb-3 text-white">
+                            "I Belive in Collaboration Rather Than Competition"
+                          </p>
+                          <footer
+                            class="blockquote-footer text-white-50 fst-italic"
+                          >
+                            Cynthia Chiam
+                          </footer>
+                        </blockquote>
+                      </a>
+                    </li>
+                    <li class="carousel-grid-item">
+                      <a
+                        href="demos/coworking/images/gallery/12.jpg"
+                        data-lightbox="gallery-item"
+                        class="item"
+                        style="
+                          background-image: url('demos/coworking/images/gallery/12.jpg');
+                          min-height: 453px;
+                        "
+                      ></a>
+                    </li>
+                  </ul>
+                  <ul class="carousel-column column-2">
+                    <li class="carousel-grid-item">
+                      <a
+                        href="demos/coworking/images/gallery/13.jpg"
+                        data-lightbox="gallery-item"
+                        class="item"
+                        style="
+                          background-image: url('demos/coworking/images/gallery/13.jpg');
+                        "
+                      ></a>
+                    </li>
+                    <li class="carousel-grid-item">
+                      <a
+                        href="demos/coworking/images/gallery/14.jpg"
+                        data-lightbox="gallery-item"
+                        class="item"
+                        style="
+                          background-image: url('demos/coworking/images/gallery/14.jpg');
+                        "
+                      ></a>
+                    </li>
+                    <li class="carousel-grid-item">
+                      <a
+                        href="demos/coworking/images/gallery/15.jpg"
+                        data-lightbox="gallery-item"
+                        class="item"
+                        style="
+                          background-image: url('demos/coworking/images/gallery/15.jpg');
+                        "
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section p-0 testimonials clearfix">
+            <div class="container" style="padding: 120px 0">
+              <div class="heading-block border-bottom-0 center">
+                <div class="before-heading">Phản hồi</div>
+                <h2 class="nott fw-semibold">Phản hồi khách hàng</h2>
+                <p class="mb-0 mt-1">
+                  <span class="fw-semibold">Tuyệt vời, 9.6</span> /10 dựa trên
+                  <span class="fw-semibold">2,118</span> phản hồi.
+                </p>
+              </div>
+
+              <div
+                id="testimonials-carousel"
+                class="owl-carousel carousel-widget testimonial testimonial-full bg-transparent border-0 shadow-none p-0 mx-auto text-start clearfix"
+                data-animate-in="fadeIn"
+                data-animate-out="fadeOut"
+                data-margin="24"
+                data-nav="false"
+                data-pagi="true"
+                data-items="1"
+                style="max-width: 740px"
+              >
+                <div class="slide">
+                  <div class="testi-content">
+                    <div class="testi-stars mb-4">
+                      <i class="icon-star3"></i>
+                      <i class="icon-star3"></i>
+                      <i class="icon-star3"></i>
+                      <i class="icon-star3"></i>
+                      <i class="icon-star3"></i>
+                    </div>
+                    <p>
+                      Dịch vụ, cơ sở vật chất rất tốt, đồ ăn và cà phê rất ngon.
+                      Tất cả đều thật tuyệt, không gian lí tưởng để làm việc
+                    </p>
+                    <div class="testi-meta mt-4">
+                      Anh Quang
+                      <span class="ls0">Công ty XYZ</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="testi-content">
+                    <div class="testi-stars mb-4">
+                      <i class="icon-star3"></i>
+                      <i class="icon-star3"></i>
+                      <i class="icon-star3"></i>
+                      <i class="icon-star3"></i>
+                      <i class="icon-star-half2"></i>
+                    </div>
+                    <p>
+                      Intrinsicly synergize excellent content whereas user
+                      friendly action items. Rapidiously transition multimedia
+                      based information after top-line alignments.
+                      Authoritatively integrate accurate outsourcing vis-a-vis
+                      principle-centered systems energistically
+                    </p>
+                    <div class="testi-meta mt-4">
+                      Collis Ta'eed
+                      <span class="ls0">Envato Inc.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="testi-content">
+                    <div class="testi-stars mb-4">
+                      <i class="icon-star3"></i>
+                      <i class="icon-star3"></i>
+                      <i class="icon-star3"></i>
+                      <i class="icon-star3"></i>
+                    </div>
+                    <p>
+                      Compellingly engage multimedia based niche markets via
+                      value-added manufactured products. Competently formulate
+                      goal-oriented content for installed base users. Uniquely
+                      leverage other's granular ROI without 24/365 collaboration
+                      and idea-sharing.
+                    </p>
+                    <div class="testi-meta mt-4">
+                      John Doe
+                      <span class="ls0">XYZ Inc.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section bg-transparent clearfix" style="padding: 80px 0">
+            <div class="container">
+              <div class="row justify-content-between align-items-center">
+                <div
+                  class="col-lg-8 col-md-10 offset-lg-2 offset-md-1 bottommargin-lg"
+                >
+                  <a
+                    href="https://www.youtube.com/watch?v=P3Huse9K6Xs"
+                    data-lightbox="iframe"
+                    class="play-video position-relative"
+                    ><img
+                      src="https://images.unsplash.com/photo-1589561253831-b8421dd58261?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                      alt="Video Image"
+                      class="rounded-3 shadow-lg"
+                    />
+                    <i class="icon-play"></i>
+                  </a>
+                </div>
+                <div class="col-lg-5 col-md-6 mt-0 mt-md-4">
+                  <div class="feature-box fbox-plain fbox-sm">
+                    <div class="fbox-icon">
+                      <i class="icon-line2-magic-wand"></i>
+                    </div>
+                    <div class="fbox-content">
+                      <h3>Tiện nghi làm việc</h3>
+                      <p>
+                        Quickly impact virtual testing procedures vis-a-vis
+                        viral e-commerce. Completely myocardinate seamless.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="feature-box fbox-plain fbox-sm">
+                    <div class="fbox-icon">
+                      <i class="icon-line2-clock"></i>
+                    </div>
+                    <div class="fbox-content">
+                      <h3>Mở cửa 24/7</h3>
+                      <p>
+                        Authoritatively create one-to-one relationships for B2B
+                        "outside the box" thinking. Dramatically seize.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="feature-box fbox-plain fbox-sm mb-0">
+                    <div class="fbox-icon">
+                      <i class="icon-line2-speech"></i>
+                    </div>
+                    <div class="fbox-content">
+                      <h3>Cộng đồng tuyệt vời</h3>
+                      <p>
+                        Proactively evolve user-centric paradigms rather than
+                        exceptional core. Authoritatively brand unique.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-5 col-md-6 mt-5 mt-md-0">
+                  <h2 class="ls0">Dùng thử miễn phí 1 ngày</h2>
+                  <p class="text-muted mb-5" style="font-size: 18px">
+                    Enthusiastically embrace diverse e-markets after sustainable
+                    applications. Collaboratively impact intermandated systems
+                    vis-a-vis progressive information.
+                  </p>
+                  <div class="d-flex">
+                    <a
+                      href="demo-coworking-single.html"
+                      class="button button-rounded button-xlarge d-block flex-fill m-0 center nott fw-semibold ls0"
+                      >Đăng kí</a
+                    >
+                    <a
+                      href="demo-coworking-contact.html"
+                      class="button button-rounded button-xlarge d-block flex-fill button-border m-0 ms-3 center nott fw-semibold ls0"
+                      >Liên hệ</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="line"></div>
+
+          <div class="section p-0 bg-transparent clearfix">
+            <div class="container">
+              <div class="row mb-2">
+                <div class="col-lg-6 col-md-4">
+                  <div class="heading-block border-bottom-0 mb-4">
+                    <div class="before-heading">Tìm chúng tôi</div>
+                    <h2 class="nott fw-semibold">Chi nhánh của chúng tôi</h2>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-8">
+                  <div class="row">
+                    <div class="col-sm-4 col-3">
+                      <div class="counter color fw-semibold">
+                        <span
+                          data-from="1"
+                          data-to="3"
+                          data-refresh-interval="2"
+                          data-speed="600"
+                        ></span
+                        >+
+                      </div>
+                      <h5 class="mt-0 fw-medium">Đối tác</h5>
+                    </div>
+
+                    <div class="col-sm-4 col-6">
+                      <div class="counter color fw-semibold">
+                        <span
+                          data-from="100"
+                          data-to="4500"
+                          data-refresh-interval="100"
+                          data-speed="1500"
+                        ></span
+                        >+
+                      </div>
+                      <h5 class="mt-0 fw-medium">Thành viên</h5>
+                    </div>
+
+                    <div class="col-sm-4 col-3">
+                      <div class="counter color fw-semibold">
+                        <span
+                          data-from="2"
+                          data-to="100"
+                          data-refresh-interval="30"
+                          data-speed="1500"
+                        ></span
+                        >%
+                      </div>
+                      <h5 class="mt-0 fw-medium">Bảo mật</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              id="locations-carousel"
+              class="owl-carousel carousel-widget owl-carousel-full clearfix"
+              data-animate-in="fadeIn"
+              data-animate-out="fadeOut"
+              data-speed="200"
+              data-margin="0"
+              data-nav="true"
+              data-pagi="true"
+              data-items="1"
+            >
+              <div>
+                <div
+                  class="masonry-thumbs grid-container grid-5"
+                  data-big="2"
+                  data-lightbox="gallery"
+                >
+                  <a
+                    class="grid-item"
+                    href="demos/coworking/images/location/thumbs/full/1.jpg"
+                    data-lightbox="gallery-item"
+                    ><img
+                      class="op-ts h-op-09"
+                      src="demos/coworking/images/location/thumbs/1.jpg"
+                      alt="Gallery Thumb 1"
+                  /></a>
+                  <div class="grid-item">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835253572242!2d144.95373531531297!3d-37.817327679751735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sin!4v1554124945593!5m2!1sen!2sin"
+                      width="500"
+                      height="334"
+                      allowfullscreen
+                      style="border: 0"
+                    ></iframe>
+                  </div>
+                  <a
+                    class="grid-item"
+                    href="demos/coworking/images/location/thumbs/full/2.jpg"
+                    data-lightbox="gallery-item"
+                    ><img
+                      class="op-ts h-op-09"
+                      src="demos/coworking/images/location/thumbs/2.jpg"
+                      alt="Gallery Thumb 12"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="demos/coworking/images/location/thumbs/full/3.jpg"
+                    data-lightbox="gallery-item"
+                    ><img
+                      class="op-ts h-op-09"
+                      src="demos/coworking/images/location/thumbs/3.jpg"
+                      alt="Gallery Thumb 3"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="demos/coworking/images/location/thumbs/full/4.jpg"
+                    data-lightbox="gallery-item"
+                    ><img
+                      class="op-ts h-op-09"
+                      src="demos/coworking/images/location/thumbs/4.jpg"
+                      alt="Gallery Thumb 4"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="demos/coworking/images/location/thumbs/full/5.jpg"
+                    data-lightbox="gallery-item"
+                    ><img
+                      class="op-ts h-op-09"
+                      src="demos/coworking/images/location/thumbs/5.jpg"
+                      alt="Gallery Thumb 5"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="demos/coworking/images/location/thumbs/full/6.jpg"
+                    data-lightbox="gallery-item"
+                    ><img
+                      class="op-ts h-op-09"
+                      src="demos/coworking/images/location/thumbs/6.jpg"
+                      alt="Gallery Thumb 6"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="demos/coworking/images/location/thumbs/full/7.jpg"
+                    data-lightbox="gallery-item"
+                    ><img
+                      class="op-ts h-op-09"
+                      src="demos/coworking/images/location/thumbs/7.jpg"
+                      alt="Gallery Thumb 7"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="demos/coworking/images/location/thumbs/full/8.jpg"
+                    data-lightbox="gallery-item"
+                    ><img
+                      class="op-ts h-op-09"
+                      src="demos/coworking/images/location/thumbs/8.jpg"
+                      alt="Gallery Thumb 13"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="demos/coworking/images/location/thumbs/full/9.jpg"
+                    data-lightbox="gallery-item"
+                    ><img
+                      class="op-ts h-op-09"
+                      src="demos/coworking/images/location/thumbs/9.jpg"
+                      alt="Gallery Thumb 6"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="demos/coworking/images/location/thumbs/full/10.jpg"
+                    data-lightbox="gallery-item"
+                    ><img
+                      class="op-ts h-op-09"
+                      src="demos/coworking/images/location/thumbs/10.jpg"
+                      alt="Gallery Thumb 7"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="demos/coworking/images/location/thumbs/full/11.jpg"
+                    data-lightbox="gallery-item"
+                    ><img
+                      class="op-ts h-op-09"
+                      src="demos/coworking/images/location/thumbs/11.jpg"
+                      alt="Gallery Thumb 12"
+                  /></a>
+                </div>
+                <div class="container">
+                  <div class="card shadow bg-white">
+                    <div class="card-body">
+                      <h3 class="mb-4">Hà Nội</h3>
+                      <div style="font-size: 16px">
+                        <address>
+                          2/25 Thọ Tháp,<br />Dịch Vọng, Cầu Giấy,<br />Hà Nội
+                        </address>
+                        <div class="mb-4" style="font-size: 15px">
+                          <small class="text-black-50 d-block mb-2"
+                            >Điện thoại:</small
+                          >
+                          <a
+                            href="tel:0393004567"
+                            class="text-dark d-block mb-1"
+                            >0393004567</a
+                          >
+                          <a href="tel:0393004567" class="text-dark"
+                            >0393004567</a
+                          >
+                        </div>
+
+                        <a
+                          href="mailto:noreply@canvas.com"
+                          class="button button-rounded m-0 nott fw-semibold ls0"
+                          >Email</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div
+                  class="masonry-thumbs grid-container grid-5"
+                  data-big="1,6"
+                  data-lightbox="gallery"
+                >
+                  <div class="grid-item">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835253572242!2d144.95373531531297!3d-37.817327679751735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sin!4v1554124945593!5m2!1sen!2sin"
+                      width="500"
+                      height="334"
+                      allowfullscreen
+                      style="border: 0"
+                    ></iframe>
+                  </div>
+                  <a
+                    class="grid-item"
+                    href="demos/coworking/images/location/thumbs/full/5.jpg"
+                    data-lightbox="gallery-item"
+                    ><img
+                      class="op-ts h-op-09"
+                      src="demos/coworking/images/location/thumbs/5.jpg"
+                      alt="Gallery Thumb 5"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="demos/coworking/images/location/thumbs/full/2.jpg"
+                    data-lightbox="gallery-item"
+                    ><img
+                      class="op-ts h-op-09"
+                      src="demos/coworking/images/location/thumbs/2.jpg"
+                      alt="Gallery Thumb 12"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="demos/coworking/images/location/thumbs/full/4.jpg"
+                    data-lightbox="gallery-item"
+                    ><img
+                      class="op-ts h-op-09"
+                      src="demos/coworking/images/location/thumbs/4.jpg"
+                      alt="Gallery Thumb 4"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="demos/coworking/images/location/thumbs/full/1.jpg"
+                    data-lightbox="gallery-item"
+                    ><img
+                      class="op-ts h-op-09"
+                      src="demos/coworking/images/location/thumbs/1.jpg"
+                      alt="Gallery Thumb 1"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="demos/coworking/images/location/thumbs/full/9.jpg"
+                    data-lightbox="gallery-item"
+                    ><img
+                      class="op-ts h-op-09"
+                      src="demos/coworking/images/location/thumbs/9.jpg"
+                      alt="Gallery Thumb 6"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="demos/coworking/images/location/thumbs/full/3.jpg"
+                    data-lightbox="gallery-item"
+                    ><img
+                      class="op-ts h-op-09"
+                      src="demos/coworking/images/location/thumbs/3.jpg"
+                      alt="Gallery Thumb 3"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="demos/coworking/images/location/thumbs/full/6.jpg"
+                    data-lightbox="gallery-item"
+                    ><img
+                      class="op-ts h-op-09"
+                      src="demos/coworking/images/location/thumbs/6.jpg"
+                      alt="Gallery Thumb 6"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="demos/coworking/images/location/thumbs/full/7.jpg"
+                    data-lightbox="gallery-item"
+                    ><img
+                      class="op-ts h-op-09"
+                      src="demos/coworking/images/location/thumbs/7.jpg"
+                      alt="Gallery Thumb 7"
+                  /></a>
+                </div>
+                <div class="container">
+                  <div class="card shadow bg-white">
+                    <div class="card-body">
+                      <h3 class="mb-4">Sydney</h3>
+                      <div style="font-size: 16px">
+                        <address>
+                          Bennelong Point,<br />Sydney NSW 2000,<br />Australia.
+                        </address>
+                        <div class="mb-4" style="font-size: 15px">
+                          <small class="text-black-50 d-block mb-2"
+                            >Phone Number:</small
+                          >
+                          <a
+                            href="tel:+(61)2-222-333-44"
+                            class="text-dark d-block mb-1"
+                            >+(61)2-222-333-44</a
+                          >
+                          <a href="tel:+(61)2-234-532-45" class="text-dark"
+                            >+(61)2-234-532-45</a
+                          >
+                        </div>
+
+                        <a
+                          href="mailto:noreply@canvas.com"
+                          class="button button-rounded m-0 nott fw-semibold ls0"
+                          >Email Us</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <img
+                  src="demos/coworking/images/location/perth.jpg"
+                  alt="Perth"
+                />
+                <div class="container">
+                  <div class="card shadow bg-white">
+                    <div class="card-body">
+                      <h3 class="mb-4">Perth</h3>
+                      <div style="font-size: 16px">
+                        <address>
+                          Fraser Ave,<br />Perth WA 6005,<br />Australia
+                        </address>
+                        <div class="mb-4" style="font-size: 15px">
+                          <small class="text-black-50 d-block mb-2"
+                            >Phone Number:</small
+                          >
+                          <a
+                            href="tel:+(61)8-222-333-44"
+                            class="text-dark d-block mb-1"
+                            >+(61)8-222-333-44</a
+                          >
+                          <a href="tel:+(61)8-234-532-45" class="text-dark"
+                            >+(61)8-234-532-45</a
+                          >
+                        </div>
+
+                        <div class="d-flex">
+                          <a
+                            href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54159.94533455547!2d115.81934154447853!3d-31.96098939372422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32a525098d1f2f%3A0xec4a7b90626730e7!2sKings+Park+and+Botanic+Garden!5e0!3m2!1sen!2sin!4v1554279269646!5m2!1sen!2sin"
+                            data-lightbox="iframe"
+                            class="button button-rounded button-border m-0 nott fw-medium ls0"
+                            >View Map</a
+                          >
+                          <a
+                            href="mailto:noreply@canvas.com"
+                            class="button button-rounded m-0 nott fw-semibold ls0 ms-2"
+                            >Email Us</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section bg-transparent clearfix">
+            <div class="container">
+              <div class="heading-block border-bottom-0 center">
+                <div class="before-heading">Cập nhật tin tức mới nhất</div>
+                <h2 class="nott fw-semibold">Tin tức &amp; Sự kiện</h2>
+              </div>
+
+              <div class="clear"></div>
+
+              <div class="row col-mb-30 posts-md">
+                <div class="col-md-4">
+                  <article class="entry">
+                    <div class="entry-title title-xs nott">
+                      <h3>
+                        <a href="#"
+                          >Buổi gặp mặt dành cho những người hiện đang điều hành
+                          một doanh nghiệp thương mại điện tử</a
+                        >
+                      </h3>
+                    </div>
+                    <div class="entry-content">
+                      <p>
+                        Synergistically expedite focused experiences through
+                        orthogonal "outside the box" thinking. Collaboratively
+                        reconceptualize e-commerce via effective applications.
+                        Enthusiastically conceptualize go forward
+                        functionalities vis-a-vis sticky partnerships.
+                        Distinctively underwhelm premier scenarios without
+                        synergistic best practices. Globally target
+                        cross-platform.
+                      </p>
+                    </div>
+                    <div class="author-meta d-flex align-items-center">
+                      <div class="author-image">
+                        <img
+                          src="demos/articles/images/authors/1.jpg"
+                          alt="Author Image"
+                          class="rounded-circle"
+                        />
+                      </div>
+                      <div class="entry-meta no-separator">
+                        <ul class="flex-column mb-0">
+                          <li class="mb-1">
+                            <span>Tác giả:</span> <a href="#">Anh Chiến</a>
+                          </li>
+                          <li><a href="#">11/03/2022</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="col-md-4">
+                  <article class="entry">
+                    <div class="entry-title title-xs nott">
+                      <h3>
+                        <a href="#"
+                          >Tạo nhu cầu của riêng bạn với tư cách là một người du
+                          mục kỹ thuật số</a
+                        >
+                      </h3>
+                    </div>
+                    <div class="entry-content">
+                      <p>
+                        Pellentesque hic illo beatae rhoncus sint, quis, fugiat
+                        imperdiet unde architecto magna dui hymenaeos autem
+                        lorem eligendi.
+                      </p>
+                    </div>
+                    <div class="author-meta d-flex align-items-center">
+                      <div class="author-image">
+                        <img
+                          src="demos/articles/images/authors/2.jpg"
+                          alt="Author Image"
+                          class="rounded-circle"
+                        />
+                      </div>
+                      <div class="entry-meta no-separator mb-0">
+                        <ul class="flex-column mb-0">
+                          <li class="mb-1">
+                            <span>Tác giả:</span> <a href="#">Anh Tùng</a>
+                          </li>
+                          <li><a href="#">11/03/2022</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="col-md-4">
+                  <article class="entry">
+                    <div class="entry-title title-xs nott">
+                      <h3>
+                        <a href="#">Thành công từ xa trong một đội quốc gia</a>
+                      </h3>
+                    </div>
+                    <div class="entry-content">
+                      <p>
+                        Pellentesque hic illo beatae rhoncus sint, quis, fugiat
+                        imperdiet unde architecto magna dui hymenaeos autem
+                        lorem eligendi.
+                      </p>
+                    </div>
+                    <div class="author-meta d-flex align-items-center">
+                      <div class="author-image">
+                        <img
+                          src="demos/articles/images/authors/3.jpg"
+                          alt="Author Image"
+                          class="rounded-circle"
+                        />
+                      </div>
+                      <div class="entry-meta no-separator mb-0">
+                        <ul class="flex-column mb-0">
+                          <li class="mb-1">
+                            <span>Tác giả:</span> <a href="#">Anh Tú</a>
+                          </li>
+                          <li><a href="#">11/03/2022</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="section mb-0 pb-0 bg-theme-light clearfix"
+            style="padding-top: 120px"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 offset-1">
+                  <div class="before-heading">
+                    Đừng ngại ngần liên hệ với chúng tôi
+                  </div>
+                  <h2 class="nott fw-semibold display-4">Liên hệ</h2>
+                  <h4 class="fw-light mb-4">
+                    Call us at
+                    <a href="tel:0393004567">0393004567</a>
+                  </h4>
+                  <a
+                    href="mailto:noreply@canvas.com"
+                    class="button button-rounded button-xlarge m-0 nott fw-semibold ls0 px-5"
+                    >Gửi Email</a
+                  >
+                </div>
+              </div>
+            </div>
+            <img
+              src="demos/coworking/images/footer-bg.jpg"
+              alt="Footer Image"
+              class="footer-img"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- #content end -->
+
+      <!-- Footer
+		============================================= -->
+      <footer
+        id="footer"
+        class="border-0"
+        style="background-color: #155bbc; padding-top: 80px"
+      >
+        <div class="container">
+          <!-- Footer Widgets
+				============================================= -->
+          <div class="footer-widgets-wrap dark pb-5 clearfix">
+            <div class="row">
+              <div class="col-lg-2 col-md-2 col-6">
+                <div class="widget clearfix">
+                  <h4 class="ls0 mb-4 nott text-white">Hỗ trợ</h4>
+
+                  <ul class="list-unstyled ms-0">
+                    <li class="mb-2"><a href="#">Trung tâm trợ giúp</a></li>
+                    <li class="mb-2"><a href="#">Chăm sóc khách hàng</a></li>
+                    <li class="mb-2"><a href="#">Điều khoản</a></li>
+                    <li class="mb-2"><a href="#">Liên hệ</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-2 col-6">
+                <div class="widget clearfix">
+                  <h4 class="ls0 mb-4 nott text-white">Liên kết</h4>
+
+                  <ul class="list-unstyled ms-0">
+                    <li class="mb-2"><a href="#">Trang chủ</a></li>
+                    <li class="mb-2"><a href="#">Dịch vụ</a></li>
+                    <li class="mb-2"><a href="#">FAQs</a></li>
+                    <li class="mb-2"><a href="#">Bảng giá</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-2 col-6">
+                <div class="widget clearfix">
+                  <h4 class="ls0 mb-4 nott text-white">Xu hướng</h4>
+
+                  <ul class="list-unstyled ms-0">
+                    <li class="mb-2"><a href="#">Xu hướng làm việc 2020</a></li>
+                    <li class="mb-2"><a href="#">Làm việc từ xa</a></li>
+                    <li class="mb-2"><a href="#">Chính sách</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-2 col-6">
+                <div class="widget clearfix">
+                  <h4 class="ls0 mb-4 nott text-white">Xu hướng</h4>
+
+                  <ul class="list-unstyled ms-0">
+                    <li class="mb-2"><a href="#">Xu hướng làm việc 2020</a></li>
+                    <li class="mb-2"><a href="#">Làm việc từ xa</a></li>
+                    <li class="mb-2"><a href="#">Chính sách</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-4">
+                <div id="instagram" class="widget clearfix">
+                  <img
+                    src="https://fhmvietnam.vn/data/cms-image/logo/logo_new_light.png"
+                    alt="FHM Logo"
+                    style="width: 70%"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyrights
+			============================================= -->
+        <div id="copyrights" class="bg-transparent dark pt-0">
+          <div class="line mt-0"></div>
+
+          <div class="container clearfix">
+            <div class="row">
+              <div class="col-12 d-flex flex-column align-items-center">
+                <p class="mb-2 text-white-50">
+                  Copyrights &copy; 2022 Bản quyền thuộc về FHM Agency
+                </p>
+                <div class="copyright-links text-white-50">
+                  <a href="#" class="text-white-50">Điều khoản sử dụng</a> /
+                  <a href="#" class="text-white-50">Chính sách bảo mật</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- #copyrights end -->
+      </footer>
+      <!-- #footer end -->
+    </div>
+    <!-- #wrapper end -->
+
+    <!-- Go To Top
+	============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- JavaScripts
+	============================================= -->
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.min.js"></script>
+
+    <!-- Footer Scripts
+	============================================= -->
+    <script src="js/functions.js"></script>
+  </body>
+
+  <!-- Mirrored from themes.semicolonweb.com/html/canvas/demo-coworking.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Aug 2021 12:57:17 GMT -->
+</html>
