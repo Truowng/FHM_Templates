@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+  <!-- Mirrored from themes.semicolonweb.com/html/canvas/demo-photography.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Aug 2021 13:53:45 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+
+    <!-- Stylesheets
+	============================================= -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700&amp;display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="css/swiper.css" type="text/css" />
+
+    <!-- Photography Specific Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="demos/photography/photography.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="demos/photography/css/photography-addons.css"
+      type="text/css"
+    />
+    <!-- / -->
+
+    <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="one-page/css/et-line.css" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="demos/photography/css/fonts.css"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="css/colors147b.css?color=c85e51"
+      type="text/css"
+    />
+
+    <!-- Document Title
+	============================================= -->
+    <title>Photography | FHM</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      .co-name img {
+        top: 20px;
+        height: 50px;
+      }
+
+      body,
+      small,
+      .sub-menu-container .menu-item > .menu-link,
+      .wp-caption,
+      .fbox-center.fbox-italic p,
+      .skills li .progress-percent .counter,
+      .nav-tree ul ul a,
+      .font-body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      #logo a,
+      .menu-link,
+      .mega-menu-style-2 .mega-menu-title > .menu-link,
+      .top-search-form input,
+      .entry-link,
+      .entry.entry-date-section span,
+      .button.button-desc,
+      .fbox-content h3,
+      .tab-nav-lg li a,
+      .counter,
+      label,
+      .widget-filter-links li a,
+      .nav-tree li a,
+      .wedding-head,
+      .font-primary,
+      .entry-link span,
+      .entry blockquote p,
+      .more-link,
+      .comment-content .comment-author span,
+      .comment-content .comment-author span a,
+      .button.button-desc span,
+      .testi-content p,
+      .team-title span,
+      .before-heading,
+      .wedding-head .first-name span,
+      .wedding-head .last-name span,
+      .font-secondary {
+        font-family: "Montserrat", sans-serif !important;
+      }
+    </style>
+  </head>
+
+  <body class="stretched side-header side-header-right open-header">
+    <!-- Document Wrapper
+	============================================= -->
+    <div id="wrapper" class="clearfix">
+      <div class="co-name d-none d-lg-block center">
+        <img
+          src="https://fhmvietnam.vn/data/cms-image/logo/logo_new_light.png"
+          alt="Canvas Logo"
+        />
+      </div>
+
+      <!-- Header
+		============================================= -->
+      <header id="header" class="dark">
+        <div id="header-wrap">
+          <div class="container">
+            <div class="header-row align-items-lg-start">
+              <div class="header-title d-none d-lg-block mt-4">
+                Nhiếp ảnh FHM
+              </div>
+
+              <!-- Logo
+							============================================= -->
+              <div id="logo" class="d-block d-lg-none d-xl-block">
+                <a
+                  href="demo-photography.html"
+                  class="standard-logo"
+                  data-dark-logo="https://fhmvietnam.vn/data/cms-image/logo/logo_new_light.png"
+                  ><img
+                    src="https://fhmvietnam.vn/data/cms-image/logo/logo_new_light.png"
+                    alt="Canvas Logo"
+                /></a>
+                <a
+                  href="demo-photography.html"
+                  class="retina-logo"
+                  data-dark-logo="https://fhmvietnam.vn/data/cms-image/logo/logo_new_light.png"
+                  ><img
+                    src="https://fhmvietnam.vn/data/cms-image/logo/logo_new_light.png"
+                    alt="Canvas Logo"
+                /></a>
+              </div>
+              <!-- #logo end -->
+
+              <div id="primary-menu-trigger">
+                <svg class="svg-trigger" viewBox="0 0 100 100">
+                  <path
+                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
+                  ></path>
+                  <path d="m 30,50 h 40"></path>
+                  <path
+                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Primary Navigation
+						============================================= -->
+              <nav class="primary-menu">
+                <ul class="menu-container">
+                  <li class="menu-item current">
+                    <a class="menu-link" href="#"><div>Trang chủ</div></a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="#"><div>Khám phá</div></a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="#"><div>Dịch vụ</div></a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="#"><div>FAQs</div></a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="#"><div>Thư viện</div></a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- #primary-menu end -->
+            </div>
+          </div>
+        </div>
+
+        <div id="header-trigger" class="d-none d-lg-block">
+          <i class="icon-line-menu"></i><i class="icon-line-cross"></i>
+        </div>
+      </header>
+      <!-- #header end -->
+
+      <!-- Slider
+		============================================= -->
+      <section
+        id="slider"
+        class="slider-element swiper_wrapper min-vh-75 min-vh-md-100"
+        data-loop="true"
+        data-speed="1200"
+        data-autoplay="5000"
+      >
+        <div class="slider-inner">
+          <div class="swiper-container swiper-parent">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide dark">
+                <div class="container">
+                  <div class="slider-text">
+                    <h3>Đường phố</h3>
+                    <span>Bộ sưu tập</span>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide-bg"
+                  style="
+                    background-image: url(https://images.unsplash.com/photo-1519608487953-e999c86e7455?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+                  "
+                ></div>
+              </div>
+              <div class="swiper-slide dark">
+                <div class="container">
+                  <div class="slider-text">
+                    <h3>Đường phố</h3>
+                    <span>Bộ sưu tập</span>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide-bg"
+                  style="
+                    background-image: url(https://images.unsplash.com/photo-1519608487953-e999c86e7455?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+                  "
+                ></div>
+              </div>
+              <div class="swiper-slide dark">
+                <div class="container">
+                  <div class="slider-text">
+                    <h3>Đường phố</h3>
+                    <span>Bộ sưu tập</span>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide-bg"
+                  style="
+                    background-image: url(https://images.unsplash.com/photo-1519608487953-e999c86e7455?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+                  "
+                ></div>
+              </div>
+              <div class="swiper-slide dark">
+                <div class="container">
+                  <div class="slider-text">
+                    <h3>Đường phố</h3>
+                    <span>Bộ sưu tập</span>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide-bg"
+                  style="
+                    background-image: url(https://images.unsplash.com/photo-1519608487953-e999c86e7455?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+                  "
+                ></div>
+              </div>
+              <div class="swiper-slide dark">
+                <div class="container">
+                  <div class="slider-text">
+                    <h3>Đường phố</h3>
+                    <span>Bộ sưu tập</span>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide-bg"
+                  style="
+                    background-image: url(https://images.unsplash.com/photo-1519608487953-e999c86e7455?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+                  "
+                ></div>
+              </div>
+              <div class="swiper-slide dark">
+                <div class="container">
+                  <div class="slider-text">
+                    <h3>Đường phố</h3>
+                    <span>Bộ sưu tập</span>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide-bg"
+                  style="
+                    background-image: url(https://images.unsplash.com/photo-1519608487953-e999c86e7455?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+                  "
+                ></div>
+              </div>
+              <div class="swiper-slide dark">
+                <div class="container">
+                  <div class="slider-text">
+                    <h3>Đường phố</h3>
+                    <span>Bộ sưu tập</span>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide-bg"
+                  style="
+                    background-image: url(https://images.unsplash.com/photo-1519608487953-e999c86e7455?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+                  "
+                ></div>
+              </div>
+            </div>
+            <div class="slider-arrow-left"><i class="icon-angle-left"></i></div>
+            <div class="slider-arrow-right">
+              <i class="icon-angle-right"></i>
+            </div>
+            <div class="slide-number">
+              <div class="slide-number-current"></div>
+              <span></span>
+              <div class="slide-number-total"></div>
+            </div>
+          </div>
+
+          <a
+            href="#"
+            data-scrollto="#content"
+            data-offset="0"
+            class="dark one-page-arrow"
+            ><i class="icon-line-grid"></i
+          ></a>
+        </div>
+      </section>
+      <!-- #Slider End -->
+
+      <!-- Content
+		============================================= -->
+      <section id="content" class="clearfix">
+        <div class="content-wrap">
+          <div class="container dark clearfix">
+            <div class="heading-block dark center border-0">
+              <h3>Thư viện</h3>
+              <span>Click vào ảnh để xem chi tiết</span>
+            </div>
+
+            <!-- Grid Items
+					============================================= -->
+            <div class="row grid grid-container gutter-20">
+              <div
+                class="grid-item col-12 col-sm-6 col-md-4 col-lg-3"
+                data-size="1280x853"
+              >
+                <a
+                  href="https://images.unsplash.com/photo-1672005552271-06a85766a364?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+                  class="img-wrap img-grayscale"
+                  data-animate="fadeInUp"
+                  onclick="return false;"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1672005552271-06a85766a364?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="img01"
+                  />
+                  <div class="description description-grid">
+                    <h3>Bộ sưu tập ảnh FHM</h3>
+                    <p>
+                      Mỗi khoảnh khắc là một câu chuyện khác nhau. Chúng ta cùng
+                      tìm hiểu những câu chuyện đó thông qua những bức ảnh nhé.
+                      <span>&mdash; FHM</span>
+                    </p>
+                    <div class="details">
+                      <ul>
+                        <li>
+                          <i class="icon icon-line-camera"></i
+                          ><span>Canon PowerShot S95</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-eye"></i><span>22.5mm</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-printer"></i
+                          ><span>&fnof;/5.6</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-cog"></i><span>1/1000</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-sun"></i><span>80</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="grid-item col-12 col-sm-6 col-md-4 col-lg-3"
+                data-size="1280x853"
+              >
+                <a
+                  href="https://images.unsplash.com/photo-1671611138407-f8ef6f1b7b13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+                  class="img-wrap img-grayscale"
+                  data-animate="fadeInUp"
+                  onclick="return false;"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1671611138407-f8ef6f1b7b13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="img02"
+                  />
+                  <div class="description description-grid">
+                    <h3>Bộ sưu tập ảnh FHM</h3>
+                    <p>
+                      Mỗi khoảnh khắc là một câu chuyện khác nhau. Chúng ta cùng
+                      tìm hiểu những câu chuyện đó thông qua những bức ảnh nhé.
+                      <span>&mdash; FHM</span>
+                    </p>
+                    <div class="details">
+                      <ul>
+                        <li>
+                          <i class="icon icon-line-camera"></i
+                          ><span>Canon PowerShot S95</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-eye"></i><span>22.5mm</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-printer"></i
+                          ><span>&fnof;/5.6</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-cog"></i><span>1/1000</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-sun"></i><span>80</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="grid-item col-12 col-sm-6 col-md-4 col-lg-3"
+                data-size="1280x853"
+              >
+                <a
+                  href="https://images.unsplash.com/photo-1671955100937-6c551efa6e15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                  class="img-wrap img-grayscale"
+                  data-animate="fadeInUp"
+                  onclick="return false;"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1671955100937-6c551efa6e15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="img03"
+                  />
+                  <div class="description description-grid">
+                    <h3>Bộ sưu tập ảnh FHM</h3>
+                    <p>
+                      Mỗi khoảnh khắc là một câu chuyện khác nhau. Chúng ta cùng
+                      tìm hiểu những câu chuyện đó thông qua những bức ảnh nhé.
+                      <span>&mdash; FHM</span>
+                    </p>
+                    <div class="details">
+                      <ul>
+                        <li>
+                          <i class="icon icon-line-camera"></i
+                          ><span>Canon PowerShot S95</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-eye"></i><span>22.5mm</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-printer"></i
+                          ><span>&fnof;/5.6</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-cog"></i><span>1/1000</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-sun"></i><span>80</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="grid-item col-12 col-sm-6 col-md-4 col-lg-3"
+                data-size="1280x853"
+              >
+                <a
+                  href="https://images.unsplash.com/photo-1671785637612-918c5b8f42f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                  class="img-wrap img-grayscale"
+                  data-animate="fadeInUp"
+                  onclick="return false;"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1671785637612-918c5b8f42f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="img04"
+                  />
+                  <div class="description description-grid">
+                    <h3>Bộ sưu tập ảnh FHM</h3>
+                    <p>
+                      Mỗi khoảnh khắc là một câu chuyện khác nhau. Chúng ta cùng
+                      tìm hiểu những câu chuyện đó thông qua những bức ảnh nhé.
+                      <span>&mdash; FHM</span>
+                    </p>
+                    <div class="details">
+                      <ul>
+                        <li>
+                          <i class="icon icon-line-camera"></i
+                          ><span>Canon PowerShot S95</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-eye"></i><span>22.5mm</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-printer"></i
+                          ><span>&fnof;/5.6</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-cog"></i><span>1/1000</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-sun"></i><span>80</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="grid-item col-12 col-sm-6 col-md-4 col-lg-3"
+                data-size="1280x853"
+              >
+                <a
+                  href="https://images.unsplash.com/photo-1671968919694-e23aa34865ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                  class="img-wrap img-grayscale"
+                  data-animate="fadeInUp"
+                  onclick="return false;"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1671968919694-e23aa34865ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                    alt="img05"
+                  />
+                  <div class="description description-grid">
+                    <h3>Bộ sưu tập ảnh FHM</h3>
+                    <p>
+                      Mỗi khoảnh khắc là một câu chuyện khác nhau. Chúng ta cùng
+                      tìm hiểu những câu chuyện đó thông qua những bức ảnh nhé.
+                      <span>&mdash; FHM</span>
+                    </p>
+                    <div class="details">
+                      <ul>
+                        <li>
+                          <i class="icon icon-line-camera"></i
+                          ><span>Canon PowerShot S95</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-eye"></i><span>22.5mm</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-printer"></i
+                          ><span>&fnof;/5.6</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-cog"></i><span>1/1000</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-sun"></i><span>80</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="grid-item col-12 col-sm-6 col-md-4 col-lg-3"
+                data-size="1280x853"
+              >
+                <a
+                  href="https://images.unsplash.com/photo-1671973889217-117bc2ac8c71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                  class="img-wrap img-grayscale"
+                  data-animate="fadeInUp"
+                  onclick="return false;"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1671973889217-117bc2ac8c71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="img06"
+                  />
+                  <div class="description description-grid">
+                    <h3>Bộ sưu tập ảnh FHM</h3>
+                    <p>
+                      Mỗi khoảnh khắc là một câu chuyện khác nhau. Chúng ta cùng
+                      tìm hiểu những câu chuyện đó thông qua những bức ảnh nhé.
+                      <span>&mdash; FHM</span>
+                    </p>
+                    <div class="details">
+                      <ul>
+                        <li>
+                          <i class="icon icon-line-camera"></i
+                          ><span>Canon PowerShot S95</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-eye"></i><span>22.5mm</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-printer"></i
+                          ><span>&fnof;/5.6</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-cog"></i><span>1/1000</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-sun"></i><span>80</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="grid-item col-12 col-sm-6 col-md-4 col-lg-3"
+                data-size="1280x853"
+              >
+                <a
+                  href="https://images.unsplash.com/photo-1671807755821-7d1272dfe7c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                  class="img-wrap img-grayscale"
+                  data-animate="fadeInUp"
+                  onclick="return false;"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1671807755821-7d1272dfe7c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="img07"
+                  />
+                  <div class="description description-grid">
+                    <h3>Bộ sưu tập ảnh FHM</h3>
+                    <p>
+                      Mỗi khoảnh khắc là một câu chuyện khác nhau. Chúng ta cùng
+                      tìm hiểu những câu chuyện đó thông qua những bức ảnh nhé.
+                      <span>&mdash; FHM</span>
+                    </p>
+                    <div class="details">
+                      <ul>
+                        <li>
+                          <i class="icon icon-line-camera"></i
+                          ><span>Canon PowerShot S95</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-eye"></i><span>22.5mm</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-printer"></i
+                          ><span>&fnof;/5.6</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-cog"></i><span>1/1000</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-sun"></i><span>80</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="grid-item col-12 col-sm-6 col-md-4 col-lg-3"
+                data-size="1280x853"
+              >
+                <a
+                  href="https://images.unsplash.com/photo-1671721480220-9d93d3cd6b38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2M3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                  class="img-wrap img-grayscale"
+                  data-animate="fadeInUp"
+                  onclick="return false;"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1671721480220-9d93d3cd6b38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2M3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="img08"
+                  />
+                  <div class="description description-grid">
+                    <h3>Bộ sưu tập ảnh FHM</h3>
+                    <p>
+                      Mỗi khoảnh khắc là một câu chuyện khác nhau. Chúng ta cùng
+                      tìm hiểu những câu chuyện đó thông qua những bức ảnh nhé.
+                      <span>&mdash; FHM</span>
+                    </p>
+                    <div class="details">
+                      <ul>
+                        <li>
+                          <i class="icon icon-line-camera"></i
+                          ><span>Canon PowerShot S95</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-eye"></i><span>22.5mm</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-printer"></i
+                          ><span>&fnof;/5.6</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-cog"></i><span>1/1000</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-sun"></i><span>80</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="grid-item col-12 col-sm-6 col-md-4 col-lg-3"
+                data-size="1280x853"
+              >
+                <a
+                  href="https://images.unsplash.com/photo-1671894367389-75110fb6fa07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2OXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                  class="img-wrap img-grayscale"
+                  data-animate="fadeInUp"
+                  onclick="return false;"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1671894367389-75110fb6fa07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2OXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="img09"
+                  />
+                  <div class="description description-grid">
+                    <h3>Bộ sưu tập ảnh FHM</h3>
+                    <p>
+                      Mỗi khoảnh khắc là một câu chuyện khác nhau. Chúng ta cùng
+                      tìm hiểu những câu chuyện đó thông qua những bức ảnh nhé.
+                      <span>&mdash; FHM</span>
+                    </p>
+                    <div class="details">
+                      <ul>
+                        <li>
+                          <i class="icon icon-line-camera"></i
+                          ><span>Canon PowerShot S95</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-eye"></i><span>22.5mm</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-printer"></i
+                          ><span>&fnof;/5.6</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-cog"></i><span>1/1000</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-sun"></i><span>80</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="grid-item col-12 col-sm-6 col-md-4 col-lg-3"
+                data-size="1280x853"
+              >
+                <a
+                  href="https://images.unsplash.com/photo-1671680448976-e97dcce034d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3Nnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                  class="img-wrap img-grayscale"
+                  data-animate="fadeInUp"
+                  onclick="return false;"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1671680448976-e97dcce034d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3Nnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="img10"
+                  />
+                  <div class="description description-grid">
+                    <h3>Bộ sưu tập ảnh FHM</h3>
+                    <p>
+                      Mỗi khoảnh khắc là một câu chuyện khác nhau. Chúng ta cùng
+                      tìm hiểu những câu chuyện đó thông qua những bức ảnh nhé.
+                      <span>&mdash; FHM</span>
+                    </p>
+                    <div class="details">
+                      <ul>
+                        <li>
+                          <i class="icon icon-line-camera"></i
+                          ><span>Canon PowerShot S95</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-eye"></i><span>22.5mm</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-printer"></i
+                          ><span>&fnof;/5.6</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-cog"></i><span>1/1000</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-sun"></i><span>80</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="grid-item col-12 col-sm-6 col-md-4 col-lg-3"
+                data-size="1280x853"
+              >
+                <a
+                  href="https://images.unsplash.com/photo-1671893560585-98ed59c703ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5MXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                  class="img-wrap img-grayscale"
+                  data-animate="fadeInUp"
+                  onclick="return false;"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1671893560585-98ed59c703ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5MXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="img11"
+                  />
+                  <div class="description description-grid">
+                    <h3>Bộ sưu tập ảnh FHM</h3>
+                    <p>
+                      Mỗi khoảnh khắc là một câu chuyện khác nhau. Chúng ta cùng
+                      tìm hiểu những câu chuyện đó thông qua những bức ảnh nhé.
+                      <span>&mdash; FHM</span>
+                    </p>
+                    <div class="details">
+                      <ul>
+                        <li>
+                          <i class="icon icon-line-camera"></i
+                          ><span>Canon PowerShot S95</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-eye"></i><span>22.5mm</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-printer"></i
+                          ><span>&fnof;/5.6</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-cog"></i><span>1/1000</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-sun"></i><span>80</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="grid-item col-12 col-sm-6 col-md-4 col-lg-3"
+                data-size="1280x853"
+              >
+                <a
+                  href="https://images.unsplash.com/photo-1671893560585-98ed59c703ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5MXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                  class="img-wrap img-grayscale"
+                  data-animate="fadeInUp"
+                  onclick="return false;"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1671893560585-98ed59c703ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5MXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="img12"
+                  />
+                  <div class="description description-grid">
+                    <h3>Bộ sưu tập ảnh FHM</h3>
+                    <p>
+                      Mỗi khoảnh khắc là một câu chuyện khác nhau. Chúng ta cùng
+                      tìm hiểu những câu chuyện đó thông qua những bức ảnh nhé.
+                      <span>&mdash; FHM</span>
+                    </p>
+                    <div class="details">
+                      <ul>
+                        <li>
+                          <i class="icon icon-line-camera"></i
+                          ><span>Canon PowerShot S95</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-eye"></i><span>22.5mm</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-printer"></i
+                          ><span>&fnof;/5.6</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-cog"></i><span>1/1000</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-sun"></i><span>80</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="grid-item col-12 col-sm-6 col-md-4 col-lg-3"
+                data-size="1280x853"
+              >
+                <a
+                  href="https://images.unsplash.com/photo-1671736755355-03329f23efc7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMTl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                  class="img-wrap img-grayscale"
+                  data-animate="fadeInUp"
+                  onclick="return false;"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1671736755355-03329f23efc7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMTl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="img13"
+                  />
+                  <div class="description description-grid">
+                    <h3>Bộ sưu tập ảnh FHM</h3>
+                    <p>
+                      Mỗi khoảnh khắc là một câu chuyện khác nhau. Chúng ta cùng
+                      tìm hiểu những câu chuyện đó thông qua những bức ảnh nhé.
+                      <span>&mdash; FHM</span>
+                    </p>
+                    <div class="details">
+                      <ul>
+                        <li>
+                          <i class="icon icon-line-camera"></i
+                          ><span>Canon PowerShot S95</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-eye"></i><span>22.5mm</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-printer"></i
+                          ><span>&fnof;/5.6</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-cog"></i><span>1/1000</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-sun"></i><span>80</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="grid-item col-12 col-sm-6 col-md-4 col-lg-3"
+                data-size="1280x853"
+              >
+                <a
+                  href="https://images.unsplash.com/photo-1671762672531-98470ef359e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMjd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                  class="img-wrap img-grayscale"
+                  data-animate="fadeInUp"
+                  onclick="return false;"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1671762672531-98470ef359e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMjd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="img14"
+                  />
+                  <div class="description description-grid">
+                    <h3>Bộ sưu tập ảnh FHM</h3>
+                    <p>
+                      Mỗi khoảnh khắc là một câu chuyện khác nhau. Chúng ta cùng
+                      tìm hiểu những câu chuyện đó thông qua những bức ảnh nhé.
+                      <span>&mdash; FHM</span>
+                    </p>
+                    <div class="details">
+                      <ul>
+                        <li>
+                          <i class="icon icon-line-camera"></i
+                          ><span>Canon PowerShot S95</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-eye"></i><span>22.5mm</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-printer"></i
+                          ><span>&fnof;/5.6</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-cog"></i><span>1/1000</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-sun"></i><span>80</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="grid-item col-12 col-sm-6 col-md-4 col-lg-3"
+                data-size="1280x853"
+              >
+                <a
+                  href="https://images.unsplash.com/photo-1671686673740-894ef70768e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMzR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                  class="img-wrap img-grayscale"
+                  data-animate="fadeInUp"
+                  onclick="return false;"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1671686673740-894ef70768e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMzR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="img15"
+                  />
+                  <div class="description description-grid">
+                    <h3>Bộ sưu tập ảnh FHM</h3>
+                    <p>
+                      Mỗi khoảnh khắc là một câu chuyện khác nhau. Chúng ta cùng
+                      tìm hiểu những câu chuyện đó thông qua những bức ảnh nhé.
+                      <span>&mdash; FHM</span>
+                    </p>
+                    <div class="details">
+                      <ul>
+                        <li>
+                          <i class="icon icon-line-camera"></i
+                          ><span>Canon PowerShot S95</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-eye"></i><span>22.5mm</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-printer"></i
+                          ><span>&fnof;/5.6</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-cog"></i><span>1/1000</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-sun"></i><span>80</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="grid-item col-12 col-sm-6 col-md-4 col-lg-3"
+                data-size="1280x853"
+              >
+                <a
+                  href="https://images.unsplash.com/photo-1670272498456-a9f02e3cead9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                  class="img-wrap img-grayscale"
+                  data-animate="fadeInUp"
+                  onclick="return false;"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1670272498456-a9f02e3cead9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="img16"
+                  />
+                  <div class="description description-grid">
+                    <h3>Bộ sưu tập ảnh FHM</h3>
+                    <p>
+                      Mỗi khoảnh khắc là một câu chuyện khác nhau. Chúng ta cùng
+                      tìm hiểu những câu chuyện đó thông qua những bức ảnh nhé.
+                      <span>&mdash; FHM</span>
+                    </p>
+                    <div class="details">
+                      <ul>
+                        <li>
+                          <i class="icon icon-line-camera"></i
+                          ><span>Canon PowerShot S95</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-eye"></i><span>22.5mm</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-printer"></i
+                          ><span>&fnof;/5.6</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-cog"></i><span>1/1000</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-sun"></i><span>80</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="grid-item col-12 col-sm-6 col-md-4 col-lg-3"
+                data-size="1280x853"
+              >
+                <a
+                  href="https://images.unsplash.com/photo-1671851476760-487cd6b3bb73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNDl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                  class="img-wrap img-grayscale"
+                  data-animate="fadeInUp"
+                  onclick="return false;"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1671851476760-487cd6b3bb73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNDl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="img17"
+                  />
+                  <div class="description description-grid">
+                    <h3>Bộ sưu tập ảnh FHM</h3>
+                    <p>
+                      Mỗi khoảnh khắc là một câu chuyện khác nhau. Chúng ta cùng
+                      tìm hiểu những câu chuyện đó thông qua những bức ảnh nhé.
+                      <span>&mdash; FHM</span>
+                    </p>
+                    <div class="details">
+                      <ul>
+                        <li>
+                          <i class="icon icon-line-camera"></i
+                          ><span>Canon PowerShot S95</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-eye"></i><span>22.5mm</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-printer"></i
+                          ><span>&fnof;/5.6</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-cog"></i><span>1/1000</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-sun"></i><span>80</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="grid-item col-12 col-sm-6 col-md-4 col-lg-3"
+                data-size="1280x853"
+              >
+                <a
+                  href="https://images.unsplash.com/photo-1671873570652-ed7a38d90fab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNTl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                  class="img-wrap img-grayscale"
+                  data-animate="fadeInUp"
+                  onclick="return false;"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1671873570652-ed7a38d90fab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNTl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="img18"
+                  />
+                  <div class="description description-grid">
+                    <h3>Bộ sưu tập ảnh FHM</h3>
+                    <p>
+                      Mỗi khoảnh khắc là một câu chuyện khác nhau. Chúng ta cùng
+                      tìm hiểu những câu chuyện đó thông qua những bức ảnh nhé.
+                      <span>&mdash; FHM</span>
+                    </p>
+                    <div class="details">
+                      <ul>
+                        <li>
+                          <i class="icon icon-line-camera"></i
+                          ><span>Canon PowerShot S95</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-eye"></i><span>22.5mm</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-printer"></i
+                          ><span>&fnof;/5.6</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-cog"></i><span>1/1000</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-sun"></i><span>80</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="grid-item col-12 col-sm-6 col-md-4 col-lg-3"
+                data-size="1280x853"
+              >
+                <a
+                  href="https://images.unsplash.com/photo-1671873570652-ed7a38d90fab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNTl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                  class="img-wrap img-grayscale"
+                  data-animate="fadeInUp"
+                  onclick="return false;"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1671873570652-ed7a38d90fab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNTl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="img19"
+                  />
+                  <div class="description description-grid">
+                    <h3>Bộ sưu tập ảnh FHM</h3>
+                    <p>
+                      Mỗi khoảnh khắc là một câu chuyện khác nhau. Chúng ta cùng
+                      tìm hiểu những câu chuyện đó thông qua những bức ảnh nhé.
+                      <span>&mdash; FHM</span>
+                    </p>
+                    <div class="details">
+                      <ul>
+                        <li>
+                          <i class="icon icon-line-camera"></i
+                          ><span>Canon PowerShot S95</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-eye"></i><span>22.5mm</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-printer"></i
+                          ><span>&fnof;/5.6</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-cog"></i><span>1/1000</span>
+                        </li>
+                        <li>
+                          <i class="icon icon-line-sun"></i><span>80</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- /grid -->
+            <div class="preview">
+              <button class="action action-close">
+                <i class="icon-line2-close"></i
+                ><span class="text-hidden">Close</span>
+              </button>
+              <div class="description description-preview"></div>
+            </div>
+          </div>
+
+          <div class="clear"></div>
+
+          <!-- Author area
+				============================================= -->
+          <div
+            class="section dark topmargin-lg mb-0 clearfix"
+            style="padding: 100px 0"
+          >
+            <div class="container clearfix">
+              <div class="row clearfix">
+                <div class="col-lg-4 col-md-5 offset-lg-1">
+                  <img
+                    src="https://images.unsplash.com/photo-1495745966610-2a67f2297e5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                    alt="img-author"
+                    style="border: 8px solid #333"
+                  />
+                </div>
+                <div class="col-lg-5 col-md-7 offset-lg-1">
+                  <div
+                    class="topmargin d-block d-md-none d-lg-none d-xl-block"
+                  ></div>
+                  <div class="heading-block border-0">
+                    <h2 class="ls5">Nhiếp ảnh gia FHM</h2>
+                    <span class="fw-light" style="font-size: 20px; color: #ddd"
+                      >Chụp ảnh, đóng băng một khoảnh khắc, cho thấy thực tế
+                      phong phú như thế nào..</span
+                    >
+                  </div>
+                  <p class="text-muted">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Veritatis inventore labore aperiam voluptate. Officia ipsum
+                    sint perferendis quaerat? Excepturi, nostrum?
+                  </p>
+                  <a
+                    href="#"
+                    class="button button-circle button-light button-white"
+                    >Liên hệ</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="clear"></div>
+
+          <!-- Album Area
+				============================================= -->
+          <div class="section bg-transparent footer-stick clearfix">
+            <div class="container clearfix">
+              <div class="heading-block dark center border-0">
+                <h3 class="ls1">Album ảnh</h3>
+                <span>Album ảnh chia theo chủ đề</span>
+              </div>
+              <div class="row dark clearfix">
+                <div class="col-md-3 center">
+                  <a href="#">
+                    <div
+                      style="
+                        margin: 0 auto;
+                        max-width: 235px;
+                        padding: 25px;
+                        background: url('demos/photography/images/album-bg.svg')
+                          no-repeat center center;
+                        background-size: 100%;
+                      "
+                    >
+                      <img
+                        src="https://images.unsplash.com/photo-1546032996-6dfacbacbf3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8d2VkZGluZ3xlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+                        alt="img01"
+                      />
+                    </div>
+                    <h5 class="ls1 fw-normal">Đám cưới</h5>
+                  </a>
+                </div>
+                <div class="col-md-3 center">
+                  <a href="#">
+                    <div
+                      style="
+                        margin: 0 auto;
+                        max-width: 235px;
+                        padding: 25px;
+                        background: url('demos/photography/images/album-bg.svg')
+                          no-repeat center center;
+                        background-size: 100%;
+                      "
+                    >
+                      <img
+                        src="https://images.unsplash.com/photo-1508459855340-fb63ac591728?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fG5hdHVyZXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+                        alt="img02"
+                      />
+                    </div>
+                    <h5 class="ls1 fw-normal">Thiên nhiên</h5>
+                  </a>
+                </div>
+                <div class="col-md-3 center">
+                  <a href="#">
+                    <div
+                      style="
+                        margin: 0 auto;
+                        max-width: 235px;
+                        padding: 25px;
+                        background: url('demos/photography/images/album-bg.svg')
+                          no-repeat center center;
+                        background-size: 100%;
+                      "
+                    >
+                      <img
+                        src="https://images.unsplash.com/photo-1555169062-013468b47731?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YW5pbWFsfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="img03"
+                      />
+                    </div>
+                    <h5 class="ls1 fw-normal">Động vật</h5>
+                  </a>
+                </div>
+                <div class="col-md-3 center">
+                  <a href="#">
+                    <div
+                      style="
+                        margin: 0 auto;
+                        max-width: 235px;
+                        padding: 25px;
+                        background: url('demos/photography/images/album-bg.svg')
+                          no-repeat center center;
+                        background-size: 100%;
+                      "
+                    >
+                      <img
+                        src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bW9kZWx8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="img04"
+                      />
+                    </div>
+                    <h5 class="ls1 fw-normal">Người mẫu</h5>
+                  </a>
+                </div>
+                <div class="col-md-3 center topmargin-sm">
+                  <a href="#">
+                    <div
+                      style="
+                        margin: 0 auto;
+                        max-width: 235px;
+                        padding: 25px;
+                        background: url('demos/photography/images/album-bg.svg')
+                          no-repeat center center;
+                        background-size: 100%;
+                      "
+                    >
+                      <img
+                        src="https://images.unsplash.com/photo-1568819317551-31051b37f69f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                        alt="img05"
+                      />
+                    </div>
+                    <h5 class="ls1 fw-normal">Đồ bơi</h5>
+                  </a>
+                </div>
+                <div class="col-md-3 center topmargin-sm">
+                  <a href="#">
+                    <div
+                      style="
+                        margin: 0 auto;
+                        max-width: 235px;
+                        padding: 25px;
+                        background: url('demos/photography/images/album-bg.svg')
+                          no-repeat center center;
+                        background-size: 100%;
+                      "
+                    >
+                      <img
+                        src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+                        alt="img06"
+                      />
+                    </div>
+                    <h5 class="ls1 fw-normal">Nội thất</h5>
+                  </a>
+                </div>
+                <div class="col-md-3 center topmargin-sm">
+                  <a href="#">
+                    <div
+                      style="
+                        margin: 0 auto;
+                        max-width: 235px;
+                        padding: 25px;
+                        background: url('demos/photography/images/album-bg.svg')
+                          no-repeat center center;
+                        background-size: 100%;
+                      "
+                    >
+                      <img
+                        src="https://images.unsplash.com/photo-1518022525094-218670c9b745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fHNlYXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
+                        alt="img07"
+                      />
+                    </div>
+                    <h5 class="ls1 fw-normal">Biển</h5>
+                  </a>
+                </div>
+                <div class="col-md-3 center topmargin-sm">
+                  <a href="#">
+                    <div
+                      style="
+                        margin: 0 auto;
+                        max-width: 235px;
+                        padding: 25px;
+                        background: url('demos/photography/images/album-bg.svg')
+                          no-repeat center center;
+                        background-size: 100%;
+                      "
+                    >
+                      <img
+                        src="https://images.unsplash.com/photo-1568515045052-f9a854d70bfd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                        alt="img08"
+                      />
+                    </div>
+                    <h5 class="ls1 fw-normal">Hình xăm</h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #content end -->
+
+      <div class="clear"></div>
+
+      <!-- Footer
+		============================================= -->
+      <footer id="footer" class="dark border-0 clearfix">
+        <!-- Copyrights
+			============================================= -->
+        <div id="copyrights" style="background: #222">
+          <div class="container clearfix">
+            <div class="w-100 text-center topmargin-sm">
+              <p class="mb-3">&copy; Canvas Inc. 2020. All Rights Reserved.</p>
+              <a
+                href="https://facebook.com/semicolonweb"
+                target="_blank"
+                class="social-icon inline-block si-small si-borderless si-rounded si-facebook"
+              >
+                <i class="icon-facebook"></i>
+                <i class="icon-facebook"></i>
+              </a>
+              <a
+                href="https://twitter.com/__semicolon"
+                target="_blank"
+                class="social-icon inline-block si-small si-borderless si-rounded si-twitter"
+              >
+                <i class="icon-twitter"></i>
+                <i class="icon-twitter"></i>
+              </a>
+              <a
+                href="https://instagram.com/semicolonweb"
+                target="_blank"
+                class="social-icon inline-block si-small si-borderless si-rounded si-instagram"
+              >
+                <i class="icon-instagram"></i>
+                <i class="icon-instagram"></i>
+              </a>
+              <a
+                href="mailto:noreply@canvas.com"
+                class="social-icon inline-block si-small si-borderless si-rounded si-gplus"
+              >
+                <i class="icon-envelope2"></i>
+                <i class="icon-envelope2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- #copyrights end -->
+      </footer>
+      <!-- #footer end -->
+    </div>
+    <!-- #wrapper end -->
+
+    <!-- Go To Top
+	============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- JavaScripts
+	============================================= -->
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.min.js"></script>
+    <script src="demos/photography/js/photography-addons.js"></script>
+
+    <!-- Footer Scripts
+	============================================= -->
+    <script src="js/functions.js"></script>
+
+    <script>
+      (function () {
+        var support = { transitions: Modernizr.csstransitions },
+          // transition end event name
+          transEndEventNames = {
+            WebkitTransition: "webkitTransitionEnd",
+            MozTransition: "transitionend",
+            OTransition: "oTransitionEnd",
+            msTransition: "MSTransitionEnd",
+            transition: "transitionend",
+          },
+          transEndEventName =
+            transEndEventNames[Modernizr.prefixed("transition")],
+          onEndTransition = function (el, callback) {
+            var onEndCallbackFn = function (ev) {
+              if (support.transitions) {
+                if (ev.target != this) return;
+                this.removeEventListener(transEndEventName, onEndCallbackFn);
+              }
+              if (callback && typeof callback === "function") {
+                callback.call(this);
+              }
+            };
+            if (support.transitions) {
+              el.addEventListener(transEndEventName, onEndCallbackFn);
+            } else {
+              onEndCallbackFn();
+            }
+          };
+
+        $(".grid-container").one("layoutComplete", function () {
+          new GridFx(document.querySelector(".grid"), {
+            imgPosition: {
+              x: -0.5,
+              y: 1,
+            },
+            onOpenItem: function (instance, item) {
+              instance.items.forEach(function (el) {
+                if (item != el) {
+                  var delay = Math.floor(Math.random() * 50);
+                  el.style.WebkitTransition =
+                    "opacity .5s " +
+                    delay +
+                    "ms cubic-bezier(.7,0,.3,1), -webkit-transform .5s " +
+                    delay +
+                    "ms cubic-bezier(.7,0,.3,1)";
+                  el.style.transition =
+                    "opacity .5s " +
+                    delay +
+                    "ms cubic-bezier(.7,0,.3,1), transform .5s " +
+                    delay +
+                    "ms cubic-bezier(.7,0,.3,1)";
+                  el.style.WebkitTransform = "scale3d(0.1,0.1,1)";
+                  el.style.transform = "scale3d(0.1,0.1,1)";
+                  el.style.opacity = 0;
+                }
+              });
+            },
+            onCloseItem: function (instance, item) {
+              instance.items.forEach(function (el) {
+                if (item != el) {
+                  el.style.WebkitTransition =
+                    "opacity .4s, -webkit-transform .4s";
+                  el.style.transition = "opacity .4s, transform .4s";
+                  el.style.WebkitTransform = "scale3d(1,1,1)";
+                  el.style.transform = "scale3d(1,1,1)";
+                  el.style.opacity = 1;
+
+                  onEndTransition(el, function () {
+                    el.style.transition = "none";
+                    el.style.WebkitTransform = "none";
+                  });
+                }
+              });
+            },
+          });
+        });
+      })();
+    </script>
+  </body>
+
+  <!-- Mirrored from themes.semicolonweb.com/html/canvas/demo-photography.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Aug 2021 13:56:02 GMT -->
+</html>
