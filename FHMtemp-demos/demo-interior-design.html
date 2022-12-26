@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+  <!-- Mirrored from themes.semicolonweb.com/html/canvas/demo-interior-design.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Aug 2021 13:56:02 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+
+    <!-- Stylesheets
+	============================================= -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700|Playfair+Display:700,700i,900&amp;display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="css/dark.css" type="text/css" />
+
+    <!-- Home Demo Specific Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="demos/interior-design/interior-design.css"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="demos/interior-design/css/fonts.css"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="css/colors8b24.css?color=1c85e8"
+      type="text/css"
+    />
+
+    <!-- Document Title
+	============================================= -->
+    <title>Interior Design Studio | FHM</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      .header-size-md #header-wrap #logo img {
+        height: 50px;
+      }
+
+      body,
+      small,
+      .sub-menu-container .menu-item > .menu-link,
+      .wp-caption,
+      .fbox-center.fbox-italic p,
+      .skills li .progress-percent .counter,
+      .nav-tree ul ul a,
+      .font-body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      #logo a,
+      .menu-link,
+      .mega-menu-style-2 .mega-menu-title > .menu-link,
+      .top-search-form input,
+      .entry-link,
+      .entry.entry-date-section span,
+      .button.button-desc,
+      .fbox-content h3,
+      .tab-nav-lg li a,
+      .counter,
+      label,
+      .widget-filter-links li a,
+      .nav-tree li a,
+      .wedding-head,
+      .font-primary {
+        font-family: "Montserrat", sans-serif !important;
+      }
+    </style>
+  </head>
+
+  <body class="stretched side-push-panel">
+    <div id="side-panel">
+      <div id="side-panel-trigger-close" class="side-panel-trigger">
+        <a href="#"><i class="icon-line-cross"></i></a>
+      </div>
+
+      <div class="side-panel-wrap">
+        <div class="widget clearfix">
+          <h4 class="fw-normal">Login with Social</h4>
+
+          <a
+            href="#"
+            class="button button-rounded fw-normal w-100 center si-colored ms-0 si-facebook"
+            >Facebook</a
+          >
+          <a
+            href="#"
+            class="button button-rounded fw-normal w-100 center si-colored ms-0 si-gplus"
+            >Google</a
+          >
+
+          <div class="line line-sm"></div>
+
+          <form
+            id="login-form"
+            name="login-form"
+            class="row mb-0"
+            action="#"
+            method="post"
+          >
+            <div class="col-12 form-group">
+              <label for="login-form-username" class="fw-normal"
+                >Username:</label
+              >
+              <input
+                type="text"
+                id="login-form-username"
+                name="login-form-username"
+                value=""
+                class="form-control"
+              />
+            </div>
+
+            <div class="col-12 form-group">
+              <label for="login-form-password" class="fw-normal"
+                >Password:</label
+              >
+              <input
+                type="password"
+                id="login-form-password"
+                name="login-form-password"
+                value=""
+                class="form-control"
+              />
+            </div>
+
+            <div class="col-12 form-group mb-0">
+              <button
+                class="button button-rounded fw-normal m-0"
+                id="login-form-submit"
+                name="login-form-submit"
+                value="login"
+              >
+                Login
+              </button>
+              <a href="#" class="text-muted float-end">Forgot Password?</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Document Wrapper
+	============================================= -->
+    <div id="wrapper" class="clearfix">
+      <!-- Header
+		============================================= -->
+      <header id="header" class="header-size-md" data-sticky-shrink="false">
+        <div id="header-wrap">
+          <div class="container">
+            <div class="header-row justify-content-between">
+              <!-- Logo
+						============================================= -->
+              <div id="logo" class="me-lg-0">
+                <a href="demo-interior-design.html" class="standard-logo"
+                  ><img
+                    src="https://fhmvietnam.vn/data/cms-image/logo/logo_new_dark.png"
+                    alt="Canvas Logo"
+                /></a>
+                <a href="demo-interior-design.html" class="retina-logo"
+                  ><img
+                    src="https://fhmvietnam.vn/data/cms-image/logo/logo_new_dark.png"
+                    alt="Canvas Logo"
+                /></a>
+              </div>
+              <!-- #logo end -->
+
+              <div class="header-misc">
+                <!-- Top Search
+							============================================= -->
+                <div id="side-panel-trigger" class="side-panel-trigger">
+                  <a href="#" class="d-block d-lg-none text-dark"
+                    ><i class="icon-line-arrow-right"></i
+                  ></a>
+                  <a href="#" class="d-none d-lg-block text-dark"
+                    >Đăng nhập <i class="icon-line-arrow-right"></i
+                  ></a>
+                </div>
+                <!-- #top-search end -->
+              </div>
+
+              <div id="primary-menu-trigger">
+                <svg class="svg-trigger" viewBox="0 0 100 100">
+                  <path
+                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
+                  ></path>
+                  <path d="m 30,50 h 40"></path>
+                  <path
+                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Primary Navigation
+						============================================= -->
+              <nav class="primary-menu with-arrows">
+                <ul class="menu-container">
+                  <li class="menu-item current">
+                    <a class="menu-link" href="demo-interior-design.html"
+                      ><div>Trang chủ</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="demo-interior-design-studio.html"
+                      ><div>Studio</div></a
+                    >
+                    <ul class="sub-menu-container">
+                      <li class="menu-item">
+                        <a
+                          class="menu-link"
+                          href="demo-interior-design-studio-single.html"
+                          ><div>Minsk Belarus Studio</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          class="menu-link"
+                          href="demo-interior-design-studio-single.html"
+                          ><div>Malibu Dream Airstream</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          class="menu-link"
+                          href="demo-interior-design-studio-single.html"
+                          ><div>Modern Condo in City</div></a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="demo-interior-design-about.html"
+                      ><div>Giới thiệu</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="demo-interior-design-faqs.html"
+                      ><div>FAQs</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a
+                      class="menu-link"
+                      href="demo-interior-design-contact.html"
+                      ><div>Liên hệ</div></a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <!-- #primary-menu end -->
+            </div>
+          </div>
+        </div>
+        <div class="header-wrap-clone"></div>
+      </header>
+      <!-- #header end -->
+
+      <!-- Slider
+		============================================= -->
+      <section
+        class="slider-element min-vh-75"
+        style="
+          background: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1400&q=80')
+            center center no-repeat;
+          background-size: cover;
+        "
+      >
+        <div class="slider-inner">
+          <div class="vertical-middle">
+            <div class="container">
+              <div class="center mx-auto" style="max-width: 700px">
+                <div class="emphasis-title">
+                  <h1
+                    class="font-secondary"
+                    style="
+                      color: #fff;
+                      font-size: 76px;
+                      font-weight: 900;
+                      text-shadow: 0 7px 10px rgba(0, 0, 0, 0.07),
+                        0 4px 4px rgba(0, 0, 0, 0.2);
+                    "
+                  >
+                    Thiết kế nội thất.
+                  </h1>
+                  <p
+                    style="
+                      font-weight: 300;
+                      opacity: 0.7;
+                      color: #fff;
+                      text-shadow: 0 -4px 20px rgba(0, 0, 0, 0.25);
+                    "
+                  >
+                    Biến ngôi nhà của bạn thành ngôi nhà trong mơ <br />
+                    Hiện đại, tiện nghi, tuyệt đẹp.
+                  </p>
+                </div>
+                <div class="subscribe-widget" data-loader="button">
+                  <div class="widget-subscribe-form-result"></div>
+                  <form
+                    id="widget-subscribe-form"
+                    action="http://themes.semicolonweb.com/html/canvas/include/subscribe.php"
+                    method="post"
+                    class="mb-0"
+                    data-animate="fadeInUp"
+                  >
+                    <div class="input-group mx-auto">
+                      <input
+                        type="email"
+                        id="widget-subscribe-form-email"
+                        name="widget-subscribe-form-email"
+                        class="form-control form-control-lg not-dark required email"
+                        placeholder="Email của bạn"
+                        style="border: 0; box-shadow: none; overflow: hidden"
+                      />
+                      <button
+                        href="#"
+                        class="button fw-normal"
+                        type="submit"
+                        style="border-radius: 3px"
+                      >
+                        Liên hệ
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content
+		============================================= -->
+      <section id="content">
+        <div class="content-wrap pt-0 clearfix">
+          <div class="section mt-0 clearfix" style="padding: 80px 0">
+            <div class="container clearfix">
+              <div class="mx-auto" style="max-width: 960px">
+                <div class="row clearfix">
+                  <div class="col-12 col-md-4 center customers-count">
+                    <div class="counter center counter-large font-primary">
+                      <span
+                        data-from="100"
+                        data-to="3583"
+                        data-refresh-interval="100"
+                        data-speed="2000"
+                        data-comma="true"
+                      ></span>
+                    </div>
+                    <p>Khách hàng hài lòng</p>
+                  </div>
+                  <div class="col-12 col-md-7 offset-md-1">
+                    <blockquote class="quote mb-0">
+                      <p>
+                        Tôi không còn nhận ra được ngôi nhà của mình. Mọi thứ
+                        thật đẹp, chỉnh chu như mơ ước của tôi. Thật tuyệt!
+                      </p>
+                      <footer class="color">Anh Toàn, khách hàng</footer>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container topmargin-lg bottommargin-lg clearfix">
+            <div class="mx-auto" style="max-width: 960px">
+              <div class="heading-block center border-bottom-0">
+                <h2 class="ls2 fw-bold">
+                  Ưu tiên của bạn là Ưu tiên của chúng tôi
+                </h2>
+                <span
+                  >Competently benchmark backward-compatible technologies
+                  vis-a-vis<br />parallel convergence. Rapidiously innovate
+                  stand-alone.</span
+                >
+              </div>
+              <div
+                class="tabs tabs-alt tabs-responsive tabs-justify clearfix"
+                id="tab"
+              >
+                <ul class="tab-nav clearfix">
+                  <li>
+                    <a href="#tabs-1"
+                      ><i class="icon-line2-key"></i>Hỗ trợ 24/7</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#tabs-2"
+                      ><i class="icon-line2-social-dropbox"></i>Trọn gói</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#tabs-3"><i class="icon-line2-drop"></i>Tư vấn</a>
+                  </li>
+                  <li>
+                    <a href="#tabs-4"
+                      ><i class="icon-line2-pointer"></i>Chuyên nghiệp</a
+                    >
+                  </li>
+                </ul>
+
+                <div class="tab-container">
+                  <div class="tab-content clearfix" id="tabs-1">
+                    <div class="story-box description-left clearfix">
+                      <div class="story-box-image">
+                        <img
+                          src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                          alt="story-image"
+                        />
+                      </div>
+                      <div class="story-box-info">
+                        <h3 class="story-title">Sống trong căn nhà mơ ước</h3>
+                        <div class="story-box-content">
+                          <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Impedit inventore adipisci aliquid unde, et
+                            blanditiis laudantium ducimus soluta illum aliquam
+                            placeat modi alias quas <br />
+                            voluptate molestias aspernatur incidunt libero
+                            voluptatum cupiditate magnam architecto.
+                          </p>
+                          <button class="fw-light button ms-0 button-rounded">
+                            Bắt đầu ngay
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-content clearfix" id="tabs-2">
+                    <div class="story-box clearfix">
+                      <div class="story-box-image">
+                        <img
+                          src="demos/interior-design/images/story/2.jpg"
+                          alt="story-image"
+                        />
+                      </div>
+                      <div class="story-box-info">
+                        <h3 class="story-title">
+                          Get better results tomorrow by reading this post.
+                        </h3>
+                        <div class="story-box-content">
+                          <p>
+                            Progressively streamline future-proof networks
+                            rather than virtual channels. Intrinsicly architect
+                            performance based products with B2C communities.
+                            Appropriately underwhelm integrated information via
+                            superior platforms.
+                          </p>
+                          <button class="fw-light button ms-0 button-rounded">
+                            Read More
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-content clearfix" id="tabs-3">
+                    <div class="story-box description-left clearfix">
+                      <div class="story-box-image">
+                        <img
+                          src="demos/interior-design/images/story/3.jpg"
+                          alt="story-image"
+                        />
+                      </div>
+                      <div class="story-box-info">
+                        <h3 class="story-title">
+                          TK’s recipe of the week: Guiness beef stew.
+                        </h3>
+                        <div class="story-box-content">
+                          <p>
+                            Compellingly synthesize technically sound users
+                            without technically sound vortals. Rapidiously
+                            redefine maintainable leadership with
+                            multifunctional strategic theme areas. Appropriately
+                            plagiarize business ideas vis-a-vis.
+                          </p>
+                          <button class="fw-light button ms-0 button-rounded">
+                            Read About Me
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-content clearfix" id="tabs-4">
+                    <div class="story-box clearfix">
+                      <div class="story-box-image">
+                        <img
+                          src="demos/interior-design/images/story/4.jpg"
+                          alt="story-image"
+                        />
+                      </div>
+                      <div class="story-box-info">
+                        <h3 class="story-title">
+                          We help people to create new Website.
+                        </h3>
+                        <div class="story-box-content">
+                          <p>
+                            Dynamically exploit cross-platform sources vis-a-vis
+                            scalable paradigms. Efficiently plagiarize
+                            multifunctional internal or "organic" sources before
+                            intuitive innovation. Synergistically facilitate
+                            goal-oriented ROI vis-a-vis client-focused.
+                          </p>
+                          <a href="#">Read Deanne's story</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="section bottommargin-lg dark"
+            style="
+              background: url('https://images.unsplash.com/photo-1557618159-7d6fe547ae20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')
+                center 80%;
+              background-size: cover;
+              padding: 180px 0;
+            "
+          >
+            <div class="container clearfix">
+              <div
+                class="emphasis-title mx-auto center"
+                style="max-width: 700px"
+              >
+                <h2 class="font-secondary ls1" style="font-size: 52px">
+                  Chúng tôi sẽ giúp bạn <br />
+                  sống trong ngôi nhà mơ ước
+                </h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="container clearfix">
+            <div class="emphasis-title center mx-auto" style="max-width: 800px">
+              <h2 class="font-secondary nott fw-bold">
+                3,583 chủ nhà hạnh phúc và hơn nữa...
+              </h2>
+            </div>
+
+            <div class="row bottommargin clearfix">
+              <div class="col-lg-10 offset-lg-1 col-12">
+                <div class="review-row center">
+                  <h6>Phản hồi của khách hàng</h6>
+                </div>
+              </div>
+
+              <div class="clear"></div>
+
+              <div class="col-12 reviews-lists clearfix">
+                <div
+                  id="oc-team"
+                  class="owl-carousel team-carousel bottommargin carousel-widget"
+                  data-margin="0"
+                  data-pagi="false"
+                  data-items="1"
+                  data-loop="true"
+                  data-animate-in="fadeIn"
+                  data-animate-out="fadeOut"
+                  data-autoplay="5000"
+                >
+                  <div class="oc-item">
+                    <div class="row">
+                      <div class="col-lg-10 offset-lg-1 col-12">
+                        <div class="review clearfix">
+                          <div class="row">
+                            <div class="col-12 col-md-4">
+                              <div class="review-company">Anh Chiến</div>
+                              <div class="review-id">Chủ nhà</div>
+                              <div class="rating-stars">
+                                <i class="icon-star3"></i
+                                ><i class="icon-star3"></i
+                                ><i class="icon-star3"></i
+                                ><i class="icon-star3"></i
+                                ><i class="icon-star3"></i>
+                              </div>
+                              <div class="review-date">21/09/2021</div>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <div class="review-title">
+                                <h3>
+                                  Thiết kế đẹp &amp; đội ngũ chuyên nghiệp.
+                                </h3>
+                              </div>
+                              <div class="review-content">
+                                <p>
+                                  Tôi rất hài lòng với dịch vụ của FHM Agency.
+                                  FHM Agency rất nhiệt tình, tận tâm, chuyên
+                                  nghiệp, tôi sẽ ủng hộ nhiệt tình.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="oc-item">
+                    <div class="row">
+                      <div class="col-lg-10 offset-lg-1 col-12">
+                        <div class="review clearfix">
+                          <div class="row">
+                            <div class="col-12 col-md-4">
+                              <div class="review-company">Anh Chiến</div>
+                              <div class="review-id">Chủ nhà</div>
+                              <div class="rating-stars">
+                                <i class="icon-star3"></i
+                                ><i class="icon-star3"></i
+                                ><i class="icon-star3"></i
+                                ><i class="icon-star3"></i
+                                ><i class="icon-star3"></i>
+                              </div>
+                              <div class="review-date">21/09/2021</div>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <div class="review-title">
+                                <h3>
+                                  Thiết kế đẹp &amp; đội ngũ chuyên nghiệp.
+                                </h3>
+                              </div>
+                              <div class="review-content">
+                                <p>
+                                  Tôi rất hài lòng với dịch vụ của FHM Agency.
+                                  FHM Agency rất nhiệt tình, tận tâm, chuyên
+                                  nghiệp, tôi sẽ ủng hộ nhiệt tình.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="oc-item">
+                    <div class="row">
+                      <div class="col-lg-10 offset-lg-1 col-12">
+                        <div class="review clearfix">
+                          <div class="row">
+                            <div class="col-12 col-md-4">
+                              <div class="review-company">Anh Chiến</div>
+                              <div class="review-id">Chủ nhà</div>
+                              <div class="rating-stars">
+                                <i class="icon-star3"></i
+                                ><i class="icon-star3"></i
+                                ><i class="icon-star3"></i
+                                ><i class="icon-star3"></i
+                                ><i class="icon-star3"></i>
+                              </div>
+                              <div class="review-date">21/09/2021</div>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <div class="review-title">
+                                <h3>
+                                  Thiết kế đẹp &amp; đội ngũ chuyên nghiệp.
+                                </h3>
+                              </div>
+                              <div class="review-content">
+                                <p>
+                                  Tôi rất hài lòng với dịch vụ của FHM Agency.
+                                  FHM Agency rất nhiệt tình, tận tâm, chuyên
+                                  nghiệp, tôi sẽ ủng hộ nhiệt tình.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row justify-content-center col-mb-50">
+              <div class="col-sm-6 col-lg-4">
+                <div class="feature-box fbox-center fbox-plain">
+                  <div class="fbox-icon">
+                    <i class="icon-line2-home"></i>
+                  </div>
+                  <div class="fbox-content">
+                    <h3 class="ls0 fw-normal nott" style="font-size: 20px">
+                      Tiện nghi
+                    </h3>
+                    <p style="font-size: 16px">
+                      Proactively reintermediate B2C infomediaries before
+                      multimedia methods of empowerment.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div class="feature-box fbox-center fbox-plain">
+                  <div class="fbox-icon">
+                    <i class="icon-line2-compass"></i>
+                  </div>
+                  <div class="fbox-content">
+                    <h3 class="ls0 fw-normal nott" style="font-size: 20px">
+                      Hài hòa
+                    </h3>
+                    <p style="font-size: 16px">
+                      Uniquely formulate principle-centered applications after
+                      just in time opportunities.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div class="feature-box fbox-center fbox-plain">
+                  <div class="fbox-icon">
+                    <i class="icon-line2-directions"></i>
+                  </div>
+                  <div class="fbox-content">
+                    <h3 class="ls0 fw-normal nott" style="font-size: 20px">
+                      Tuyệt đẹp
+                    </h3>
+                    <p style="font-size: 16px">
+                      Collaboratively reinvent ubiquitous functionalities vis
+                      future-proof systems.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #content end -->
+
+      <!-- Footer
+		============================================= -->
+      <footer id="footer" class="border-0" style="background-color: #f5f5f5">
+        <div class="container clearfix">
+          <!-- Footer Widgets
+				============================================= -->
+          <div class="footer-widgets-wrap">
+            <div class="row col-mb-50">
+              <div class="col-sm-6 col-lg-3">
+                <div class="widget clearfix">
+                  <div
+                    class="fw-normal mb-0"
+                    style="font-size: 36px; letter-spacing: -1px"
+                  >
+                    FHM
+                  </div>
+                  <p class="text-muted fw-light">@2021</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-3">
+                <div class="widget widget_links widget-li-noicon">
+                  <h4>Liên kết</h4>
+                  <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Dịch vụ</a></li>
+                    <li><a href="#">Hỗ trợ</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-3">
+                <div class="widget widget_links widget-li-noicon">
+                  <h4>Liên kết</h4>
+                  <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Dịch vụ</a></li>
+                    <li><a href="#">Hỗ trợ</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-3">
+                <div class="widget widget_links widget-li-noicon">
+                  <h4>Liên kết</h4>
+                  <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Dịch vụ</a></li>
+                    <li><a href="#">Hỗ trợ</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- .footer-widgets-wrap end -->
+        </div>
+
+        <div class="line m-0"></div>
+
+        <!-- Copyrights
+			============================================= -->
+        <div id="copyrights" style="background-color: #fff">
+          <div class="container clearfix">
+            <div class="w-100 center m-0">
+              <span>Copyrights &copy; 2022 Bản quyền thuộc về FHM Agency.</span>
+            </div>
+          </div>
+        </div>
+        <!-- #copyrights end -->
+      </footer>
+      <!-- #footer end -->
+    </div>
+    <!-- #wrapper end -->
+
+    <!-- Go To Top
+	============================================= -->
+    <div id="gotoTop" class="icon-angle-up rounded-circle"></div>
+
+    <!-- JavaScripts
+	============================================= -->
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.min.js"></script>
+
+    <!-- Footer Scripts
+	============================================= -->
+    <script src="js/functions.js"></script>
+  </body>
+
+  <!-- Mirrored from themes.semicolonweb.com/html/canvas/demo-interior-design.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Aug 2021 13:56:44 GMT -->
+</html>
