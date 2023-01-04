@@ -1,0 +1,77 @@
+/* START PRODUCT IMAGE */
+.sale-flash {
+  color: #fff;
+  background-color: #6a6e49;
+  top: 20px;
+  left: 20px;
+}
+/* END PRODUCT IMAGE */
+
+/* START PRODUCT DESC */
+.single-product .product-price {
+  font-size: 20px;
+}
+
+.product p,
+.iconlist li {
+  font-size: 14px;
+}
+
+.add-to-cart.button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #000;
+  padding: 0;
+  text-shadow: none;
+  transition: all ease 0.3s;
+  width: fit-content;
+  letter-spacing: unset;
+}
+.add-to-cart.button:hover {
+  border-bottom: 1px solid #000;
+}
+
+.quantity .minus,
+.quantity .plus {
+  background-color: transparent;
+}
+
+.quantity .qty {
+  border-color: transparent;
+  background-color: transparent;
+}
+/* END PRODUCT DESC */
+
+/* START CARE INTRUCTION */
+.care-intruction-container {
+  background-color: #f1efeb;
+}
+
+.care-intruction-img-container {
+  padding: 80px;
+  background-color: #6a6e49;
+  position: relative;
+}
+
+.care-intruction-img-container::before {
+  content: "FHM Flowers";
+  position: absolute;
+  right: 6%;
+  bottom: 5%;
+  font-size: 14px;
+  color: #fff;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.care-intruction-img-container::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100px;
+  background-color: #fff;
+  left: 7%;
+  top: 5%;
+}
+
+/* END CARE INTRUCTION */

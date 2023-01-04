@@ -1,0 +1,1936 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+  <!-- Mirrored from themes.semicolonweb.com/html/canvas/demo-writer.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Aug 2021 13:56:44 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+
+    <!-- Stylesheets
+	============================================= -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Lato:300,400,600,700|Parisienne&amp;display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="css/swiper.css" type="text/css" />
+    <link rel="stylesheet" href="one-page/onepage.css" type="text/css" />
+
+    <!-- Writer Demo Specific Stylesheet -->
+    <link rel="stylesheet" href="demos/writer/writer.css" type="text/css" />
+    <!-- / -->
+
+    <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="one-page/css/et-line.css" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+    <!-- Writer Demo Specific Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="css/colors4d28.css?color=FFC013"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="demos/writer/css/fonts.css" type="text/css" />
+    <!-- / -->
+
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- fhm flowers css -->
+    <link rel="stylesheet" href="fhm_flowers.css" />
+    <link rel="stylesheet" href="fhm_flowers-shop.css" />
+
+    <!-- SLIDER REVOLUTION 5.x CSS SETTINGS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="include/rs-plugin/css/settings.css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="include/rs-plugin/css/layers.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="include/rs-plugin/css/navigation.css"
+    />
+
+    <!-- ADD-ONS CSS FILES -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="include/rs-plugin/css/addons/revolution.addon.beforeafter.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="include/rs-plugin/css/addons/revolution.addon.particles.css"
+    />
+
+    <!-- Document Title
+	============================================= -->
+    <title>FHM Flowers</title>
+
+    <style>
+      .demos-filter {
+        margin: 0;
+        text-align: right;
+      }
+
+      .demos-filter li {
+        list-style: none;
+        margin: 10px 0px;
+      }
+
+      .demos-filter li a {
+        display: block;
+        border: 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #444;
+      }
+
+      .demos-filter li a:hover,
+      .demos-filter li.activeFilter a {
+        color: #1abc9c;
+      }
+
+      @media (max-width: 991px) {
+        .demos-filter {
+          text-align: center;
+        }
+
+        .demos-filter li {
+          float: left;
+          width: 33.3%;
+          padding: 0 20px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .demos-filter li {
+          width: 50%;
+        }
+      }
+
+      .tiny_bullet_slider .tp-bullet:before {
+        content: " ";
+        position: absolute;
+        width: 100%;
+        height: 25px;
+        top: -12px;
+        left: 0px;
+        background: transparent;
+      }
+      #rev_slider_103_1 .uranus.tparrows {
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0);
+      }
+      #rev_slider_103_1 .uranus.tparrows:before {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 40px;
+        transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+      }
+      #rev_slider_103_1 .uranus.tparrows:hover:before {
+        opacity: 0.75;
+      }
+      .bullet-bar.tp-bullets {
+      }
+      .bullet-bar.tp-bullets:before {
+        content: " ";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        padding: 10px;
+        margin-left: -10px;
+        margin-top: -10px;
+        box-sizing: content-box;
+      }
+      .bullet-bar .tp-bullet {
+        width: 60px;
+        height: 3px;
+        position: absolute;
+        background: #aaa;
+        background: rgba(204, 204, 204, 0.5);
+        cursor: pointer;
+        box-sizing: content-box;
+      }
+      .bullet-bar .tp-bullet:hover,
+      .bullet-bar .tp-bullet.selected {
+        background: rgba(204, 204, 204, 1);
+      }
+      .bullet-bar .tp-bullet-image {
+      }
+      .bullet-bar .tp-bullet-title {
+      }
+    </style>
+  </head>
+
+  <body class="stretched">
+    <!-- Document Wrapper
+	============================================= -->
+    <div id="wrapper" class="clearfix">
+      <!-- Header
+		============================================= -->
+      <header
+        id="header"
+        class="transparent-header header-size-custom"
+        data-sticky-shrink="false"
+        data-sticky-class="semi-transparent"
+      >
+        <div id="header-wrap">
+          <div class="container">
+            <div class="header-row justify-content-lg-between">
+              <!-- Logo
+						============================================= -->
+              <div id="logo" class="col-auto me-lg-0 order-lg-2">
+                <a href="#" class="standard-logo"
+                  ><img
+                    src="https://fhmvietnam.vn/data/cms-image/logo/logo_new_dark.png"
+                    alt="FHM Logo"
+                /></a>
+                <a href="#" class="retina-logo"
+                  ><img
+                    src="https://fhmvietnam.vn/data/cms-image/logo/logo_new_dark.png"
+                    alt="FHM Logo"
+                /></a>
+              </div>
+              <!-- #logo end -->
+
+              <div id="primary-menu-trigger">
+                <svg class="svg-trigger" viewBox="0 0 100 100">
+                  <path
+                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
+                  ></path>
+                  <path d="m 30,50 h 40"></path>
+                  <path
+                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Primary Navigation
+						============================================= -->
+              <nav class="primary-menu not-dark col-lg-auto order-lg-1">
+                <ul class="menu-container">
+                  <li class="menu-item">
+                    <a class="menu-link font-secondary" href="demo-writer.html"
+                      ><div>Trang chủ</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a
+                      class="menu-link font-secondary"
+                      href="demo-writer-article-single.html"
+                      ><div>Shop</div></a
+                    >
+                    <ul class="sub-menu-container">
+                      <li class="menu-item">
+                        <a
+                          class="menu-link font-secondary"
+                          href="demo-writer-article-single.html"
+                          ><div>A Key of Mind</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          class="menu-link font-secondary"
+                          href="demo-writer-article-single.html"
+                          ><div>Knight of the Light</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          class="menu-link font-secondary"
+                          href="demo-writer-article-single.html"
+                          ><div>Jars &amp; The Ten Killer</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          class="menu-link font-secondary"
+                          href="demo-writer-article-single.html"
+                          ><div>Love without Flaws</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          class="menu-link font-secondary"
+                          href="demo-writer-article-single.html"
+                          ><div>Pirates of Water</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          class="menu-link font-secondary"
+                          href="demo-writer-article-single.html"
+                          ><div>Amusing the Jungle</div></a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <a
+                      class="menu-link font-secondary"
+                      href="demo-writer-about-me.html"
+                      ><div>Dịch vụ</div></a
+                    >
+                  </li>
+                </ul>
+              </nav>
+
+              <nav class="primary-menu not-dark col-lg-auto order-lg-3">
+                <ul class="menu-container justify-content-lg-end">
+                  <li class="menu-item">
+                    <a
+                      class="menu-link font-secondary"
+                      href="demo-writer-testimonials.html"
+                      ><div>Giới thiệu</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a
+                      class="menu-link font-secondary"
+                      href="demo-writer-contact.html"
+                      ><div>Blogs</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <!-- <a
+                      class="menu-link font-secondary"
+                      href="demo-writer-login.html"
+                      ><div>Liên hệ</div></a
+                    > -->
+                    <div class="header-misc">
+                      <!-- Top Search
+							============================================= -->
+                      <div id="top-search" class="header-misc-icon">
+                        <a href="#" id="top-search-trigger"
+                          ><i class="icon-line-search"></i
+                          ><i class="icon-line-cross"></i
+                        ></a>
+                      </div>
+                      <!-- #top-search end -->
+
+                      <!-- Top Cart
+							============================================= -->
+                      <div
+                        id="top-cart"
+                        class="header-misc-icon d-none d-sm-block"
+                      >
+                        <a href="#" id="top-cart-trigger"
+                          ><i class="icon-line-bag"></i
+                          ><span class="top-cart-number">5</span></a
+                        >
+                        <div class="top-cart-content">
+                          <div class="top-cart-title">
+                            <h4>Shopping Cart</h4>
+                          </div>
+                          <div class="top-cart-items">
+                            <div class="top-cart-item">
+                              <div class="top-cart-item-image">
+                                <a href="#"
+                                  ><img
+                                    src="images/shop/small/1.jpg"
+                                    alt="Blue Round-Neck Tshirt"
+                                /></a>
+                              </div>
+                              <div class="top-cart-item-desc">
+                                <div class="top-cart-item-desc-title">
+                                  <a href="#"
+                                    >Blue Round-Neck Tshirt with a Button</a
+                                  >
+                                  <span class="top-cart-item-price d-block"
+                                    >$19.99</span
+                                  >
+                                </div>
+                                <div class="top-cart-item-quantity">x 2</div>
+                              </div>
+                            </div>
+                            <div class="top-cart-item">
+                              <div class="top-cart-item-image">
+                                <a href="#"
+                                  ><img
+                                    src="images/shop/small/6.jpg"
+                                    alt="Light Blue Denim Dress"
+                                /></a>
+                              </div>
+                              <div class="top-cart-item-desc">
+                                <div class="top-cart-item-desc-title">
+                                  <a href="#">Light Blue Denim Dress</a>
+                                  <span class="top-cart-item-price d-block"
+                                    >$24.99</span
+                                  >
+                                </div>
+                                <div class="top-cart-item-quantity">x 3</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="top-cart-action">
+                            <span class="top-checkout-price">$114.95</span>
+                            <a
+                              href="#"
+                              class="button button-3d button-small m-0"
+                              >View Cart</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <!-- #top-cart end -->
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+              <!-- #primary-menu end -->
+            </div>
+          </div>
+        </div>
+        <div class="header-wrap-clone"></div>
+      </header>
+      <!-- #header end -->
+
+      <!-- Content
+		============================================= -->
+      <section id="content">
+        <!-- Slider
+		============================================= -->
+        <section
+          id="slider"
+          class="slider-element revslider-wrap h-auto include-header"
+        >
+          <div
+            id="rev_slider_103_1_wrapper"
+            class="rev_slider_wrapper fullscreen-container"
+            data-alias="mask-showcase"
+            data-source="gallery"
+            style="background: #aaaaaa; padding: 0px"
+          >
+            <!-- START REVOLUTION SLIDER 5.4.5 fullscreen mode -->
+            <div
+              id="rev_slider_103_1"
+              class="rev_slider fullscreenbanner"
+              style="display: none"
+              data-version="5.4.5"
+            >
+              <ul>
+                <!-- SLIDE 1  -->
+                <li
+                  data-index="rs-225"
+                  data-transition="fade"
+                  data-slotamount="default"
+                  data-hideafterloop="0"
+                  data-hideslideonmobile="off"
+                  data-easein="default"
+                  data-easeout="default"
+                  data-masterspeed="300"
+                  data-thumb=""
+                  data-rotate="0"
+                  data-saveperformance="off"
+                  data-title="Slide"
+                  data-param1=""
+                  data-param2=""
+                  data-param3=""
+                  data-param4=""
+                  data-param5=""
+                  data-param6=""
+                  data-param7=""
+                  data-param8=""
+                  data-param9=""
+                  data-param10=""
+                  data-description=""
+                >
+                  <!-- MAIN IMAGE -->
+                  <img
+                    src="include/rs-plugin/demos/assets/images/transparent.png"
+                    data-bgcolor="#fff"
+                    style="background-color: #fff"
+                    alt="Image"
+                    data-bgposition="center center"
+                    data-bgfit="cover"
+                    data-bgrepeat="no-repeat"
+                    data-bgparallax="off"
+                    class="rev-slidebg"
+                    data-no-retina
+                  />
+                  <!-- LAYERS -->
+
+                  <!-- LAYER NR. 1 -->
+                  <!-- <div
+                    class="tp-caption rev-btn tp-resizeme"
+                    id="slide-225-layer-4"
+                    data-x="['left','left','left','left']"
+                    data-hoffset="['170','120','70','40']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-voffset="['150','150','150','110']"
+                    data-width="none"
+                    data-height="none"
+                    data-whitespace="normal"
+                    data-type="button"
+                    data-responsive_offset="on"
+                    data-frames='[{"delay":500,"speed":1000,"sfxcolor":"#ffff58","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"sfxcolor":"#ffffff","sfx_effect":"blocktoleft","frame":"999","to":"z:0;","ease":"Power4.easeOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(0,0,0);bg:rgb(255,255,255);"}]'
+                    data-textAlign="['inherit','inherit','inherit','inherit']"
+                    data-paddingtop="[0,0,0,0]"
+                    data-paddingright="[30,30,30,30]"
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[30,30,30,30]"
+                    style="
+                      z-index: 5;
+                      white-space: normal;
+                      width: fit-content;
+                      font-size: 30px;
+                      line-height: 30px;
+                      font-weight: 400;
+                      color: rgba(255, 255, 255, 1);
+                      letter-spacing: 2px;
+                      font-family: Menata;
+                      border-color: rgb(255, 255, 255);
+                      border-style: solid;
+                      border-width: 1px 1px 1px 1px;
+                      outline: none;
+                      box-shadow: none;
+                      box-sizing: border-box;
+                      -moz-box-sizing: border-box;
+                      -webkit-box-sizing: border-box;
+                      cursor: pointer;
+                    "
+                  >
+                    Xem thêm
+                  </div> -->
+
+                  <!-- LAYER NR. 2 -->
+                  <div
+                    class="tp-caption tp-resizeme rs-parallaxlevel-2"
+                    id="slide-225-layer-1"
+                    data-x="['center','center','center','center']"
+                    data-hoffset="['500','500','390','220']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-voffset="['0','0','0','0']"
+                    data-width="none"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-type="image"
+                    data-responsive_offset="on"
+                    data-frames='[{"delay":400,"speed":750,"sfxcolor":"#f1efeb","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"sfxcolor":"#ffffff","sfx_effect":"blocktoleft","frame":"999","to":"z:0;","ease":"Power4.easeOut"}]'
+                    data-textAlign="['inherit','inherit','inherit','inherit']"
+                    data-paddingtop="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    style="z-index: 6"
+                  >
+                    <img
+                      src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                      alt="Image"
+                      data-ww="['1000px','1000px','800px','500px']"
+                      data-hh="['563px','563px','450','281']"
+                      data-no-retina
+                    />
+                  </div>
+
+                  <!-- LAYER NR. 3 -->
+                  <div
+                    class="tp-caption tp-resizeme"
+                    id="slide-225-layer-3"
+                    data-x="['left','left','left','left']"
+                    data-hoffset="['150','100','50','20']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-voffset="['-177','-177','-177','-157']"
+                    data-width="none"
+                    data-height="none"
+                    data-whitespace="normal"
+                    data-type="text"
+                    data-responsive_offset="on"
+                    data-frames='[{"delay":300,"speed":750,"sfxcolor":"#6a6e49","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"sfxcolor":"#ffffff","sfx_effect":"blocktoleft","frame":"999","to":"z:0;","ease":"Power4.easeOut"}]'
+                    data-textAlign="['left','left','left','left']"
+                    data-paddingtop="[10,10,10,10]"
+                    data-paddingright="[20,20,20,20]"
+                    data-paddingbottom="[10,10,10,10]"
+                    data-paddingleft="[20,20,20,20]"
+                    style="
+                      z-index: 7;
+                      white-space: normal;
+                      font-size: 40px;
+                      line-height: 40px;
+                      font-weight: 400;
+                      color: #000;
+                      letter-spacing: 2px;
+                      font-family: Menata;
+                    "
+                  >
+                    Flowers
+                  </div>
+
+                  <!-- LAYER NR. 4 -->
+                  <div
+                    class="tp-caption tp-resizeme"
+                    id="slide-225-layer-2"
+                    data-x="['left','left','left','left']"
+                    data-hoffset="['150','100','50','20']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-voffset="['-30','-30','-30','-30']"
+                    data-fontsize="['70','70','70','50']"
+                    data-lineheight="['70','70','70','50']"
+                    data-width="['650','650','620','380']"
+                    data-height="none"
+                    data-whitespace="normal"
+                    data-type="text"
+                    data-responsive_offset="on"
+                    data-frames='[{"delay":200,"speed":750,"sfxcolor":"#6a6e49","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"sfxcolor":"#ffffff","sfx_effect":"blocktoleft","frame":"999","to":"z:0;","ease":"Power4.easeOut"}]'
+                    data-textAlign="['left','left','left','left']"
+                    data-paddingtop="[20,20,20,20]"
+                    data-paddingright="[20,20,20,20]"
+                    data-paddingbottom="[30,30,30,30]"
+                    data-paddingleft="[20,20,20,20]"
+                    style="
+                      z-index: 8;
+                      min-width: 650px;
+                      max-width: 650px;
+                      white-space: normal;
+                      font-size: 100px;
+                      line-height: 70px;
+                      font-weight: 400;
+                      color: #000;
+                      letter-spacing: -2px;
+                      font-family: Menata;
+                    "
+                  >
+                    Mỗi bông hoa là một câu chuyện.
+                  </div>
+                </li>
+                <!-- SLIDE 2  -->
+                <li
+                  data-index="rs-226"
+                  data-transition="fade"
+                  data-slotamount="default"
+                  data-hideafterloop="0"
+                  data-hideslideonmobile="off"
+                  data-easein="default"
+                  data-easeout="default"
+                  data-masterspeed="300"
+                  data-thumb=""
+                  data-rotate="0"
+                  data-saveperformance="off"
+                  data-title="Slide"
+                  data-param1=""
+                  data-param2=""
+                  data-param3=""
+                  data-param4=""
+                  data-param5=""
+                  data-param6=""
+                  data-param7=""
+                  data-param8=""
+                  data-param9=""
+                  data-param10=""
+                  data-description=""
+                >
+                  <!-- MAIN IMAGE -->
+                  <img
+                    src="include/rs-plugin/demos/assets/images/transparent.png"
+                    data-bgcolor="#fff"
+                    style="background: #fff"
+                    alt="Image"
+                    data-bgposition="center center"
+                    data-bgfit="cover"
+                    data-bgrepeat="no-repeat"
+                    data-bgparallax="off"
+                    class="rev-slidebg"
+                    data-no-retina
+                  />
+                  <!-- LAYERS -->
+
+                  <!-- LAYER NR. 5 -->
+                  <div
+                    class="tp-caption tp-resizeme rs-parallaxlevel-2"
+                    id="slide-226-layer-1"
+                    data-x="['center','center','center','center']"
+                    data-hoffset="['-500','-500','-390','-220']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-voffset="['0','0','0','0']"
+                    data-width="none"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-type="image"
+                    data-responsive_offset="on"
+                    data-frames='[{"delay":200,"speed":750,"sfxcolor":"#6a6e49","sfx_effect":"blockfromright","frame":"0","from":"z:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"sfxcolor":"#ffffff","sfx_effect":"blocktoright","frame":"999","to":"z:0;","ease":"Power4.easeOut"}]'
+                    data-textAlign="['inherit','inherit','inherit','inherit']"
+                    data-paddingtop="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    style="z-index: 5"
+                  >
+                    <img
+                      src="https://images.unsplash.com/photo-1556557753-4d7eb13e06c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1223&q=80"
+                      alt="Image"
+                      data-ww="['1000px','1000px','800px','500px']"
+                      data-hh="['563px','563px','450px','281px']"
+                      data-no-retina
+                    />
+                  </div>
+
+                  <!-- LAYER NR. 6 -->
+                  <!-- <div
+                    class="tp-caption rev-btn tp-resizeme"
+                    id="slide-226-layer-4"
+                    data-x="['left','left','left','left']"
+                    data-hoffset="['880','760','600','330']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-voffset="['150','150','150','110']"
+                    data-width="none"
+                    data-height="none"
+                    data-whitespace="normal"
+                    data-type="button"
+                    data-responsive_offset="on"
+                    data-frames='[{"delay":500,"speed":750,"sfxcolor":"#cbbacc","sfx_effect":"blockfromright","frame":"0","from":"z:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"sfxcolor":"#ffffff","sfx_effect":"blocktoright","frame":"999","to":"z:0;","ease":"Power4.easeOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(0,0,0);bg:rgb(255,255,255);"}]'
+                    data-textAlign="['inherit','inherit','inherit','inherit']"
+                    data-paddingtop="[0,0,0,0]"
+                    data-paddingright="[30,30,30,30]"
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[30,30,30,30]"
+                    style="
+                      z-index: 6;
+                      white-space: normal;
+                      font-size: 15px;
+                      line-height: 50px;
+                      font-weight: 400;
+                      color: rgba(255, 255, 255, 1);
+                      letter-spacing: 2px;
+                      font-family: Menata;
+                      border-color: rgb(255, 255, 255);
+                      border-style: solid;
+                      border-width: 1px 1px 1px 1px;
+                      outline: none;
+                      box-shadow: none;
+                      box-sizing: border-box;
+                      -moz-box-sizing: border-box;
+                      -webkit-box-sizing: border-box;
+                      cursor: pointer;
+                    "
+                  >
+                    Launch
+                  </div> -->
+
+                  <!-- LAYER NR. 7 -->
+                  <div
+                    class="tp-caption tp-resizeme"
+                    id="slide-226-layer-3"
+                    data-x="['left','left','left','left']"
+                    data-hoffset="['820','700','540','270']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-voffset="['-177','-177','-177','-157']"
+                    data-width="none"
+                    data-height="none"
+                    data-whitespace="normal"
+                    data-type="text"
+                    data-responsive_offset="on"
+                    data-frames='[{"delay":400,"speed":750,"sfxcolor":"#f1efeb","sfx_effect":"blockfromright","frame":"0","from":"z:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"sfxcolor":"#ffffff","sfx_effect":"blocktoright","frame":"999","to":"z:0;","ease":"Power4.easeOut"}]'
+                    data-textAlign="['left','left','left','left']"
+                    data-paddingtop="[10,10,10,10]"
+                    data-paddingright="[20,20,20,20]"
+                    data-paddingbottom="[10,10,10,10]"
+                    data-paddingleft="[20,20,20,20]"
+                    style="
+                      z-index: 7;
+                      white-space: normal;
+                      font-size: 40px;
+                      line-height: 40px;
+                      font-weight: 400;
+                      color: #000;
+                      letter-spacing: 2px;
+                      font-family: Menata;
+                    "
+                  >
+                    Flowers
+                  </div>
+
+                  <!-- LAYER NR. 8 -->
+                  <div
+                    class="tp-caption tp-resizeme"
+                    id="slide-226-layer-2"
+                    data-x="['left','left','left','left']"
+                    data-hoffset="['360','240','110','80']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-voffset="['-30','-30','-30','-30']"
+                    data-fontsize="['70','70','70','50']"
+                    data-lineheight="['70','70','70','50']"
+                    data-width="['650','650','620','380']"
+                    data-height="none"
+                    data-whitespace="normal"
+                    data-type="text"
+                    data-responsive_offset="on"
+                    data-frames='[{"delay":300,"speed":750,"sfxcolor":"#f1efeb","sfx_effect":"blockfromright","frame":"0","from":"z:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"sfxcolor":"#ffffff","sfx_effect":"blocktoright","frame":"999","to":"z:0;","ease":"Power4.easeOut"}]'
+                    data-textAlign="['right','right','right','right']"
+                    data-paddingtop="[20,20,20,20]"
+                    data-paddingright="[20,20,20,20]"
+                    data-paddingbottom="[30,30,30,30]"
+                    data-paddingleft="[20,20,20,20]"
+                    style="
+                      z-index: 8;
+                      min-width: 650px;
+                      max-width: 650px;
+                      white-space: normal;
+                      font-size: 100px;
+                      line-height: 100px;
+                      font-weight: 400;
+                      color: #000;
+                      letter-spacing: -2px;
+                      font-family: Menata;
+                    "
+                  >
+                    Mỗi bông hoa mang trong mình một câu chuyện khác nhau.
+                  </div>
+                </li>
+                <!-- SLIDE 3  -->
+                <li
+                  data-index="rs-227"
+                  data-transition="fade"
+                  data-slotamount="default"
+                  data-hideafterloop="0"
+                  data-hideslideonmobile="off"
+                  data-easein="default"
+                  data-easeout="default"
+                  data-masterspeed="300"
+                  data-thumb=""
+                  data-rotate="0"
+                  data-saveperformance="off"
+                  data-title="Slide"
+                  data-param1=""
+                  data-param2=""
+                  data-param3=""
+                  data-param4=""
+                  data-param5=""
+                  data-param6=""
+                  data-param7=""
+                  data-param8=""
+                  data-param9=""
+                  data-param10=""
+                  data-description=""
+                >
+                  <!-- MAIN IMAGE -->
+                  <img
+                    src="include/rs-plugin/demos/assets/images/transparent.png"
+                    data-bgcolor="#fff"
+                    style="background: #fff"
+                    alt="Image"
+                    data-bgposition="center center"
+                    data-bgfit="cover"
+                    data-bgrepeat="no-repeat"
+                    data-bgparallax="off"
+                    class="rev-slidebg"
+                    data-no-retina
+                  />
+                  <!-- LAYERS -->
+
+                  <!-- LAYER NR. 9 -->
+                  <div
+                    class="tp-caption tp-resizeme rs-parallaxlevel-2"
+                    id="slide-227-layer-1"
+                    data-x="['center','center','center','center']"
+                    data-hoffset="['0','0','0','0']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-voffset="['255','255','265','185']"
+                    data-width="none"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-type="image"
+                    data-responsive_offset="on"
+                    data-frames='[{"delay":500,"speed":750,"sfxcolor":"#f1efeb","sfx_effect":"blockfromtop","frame":"0","from":"z:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"sfxcolor":"#ffffff","sfx_effect":"blocktotop","frame":"999","to":"z:0;","ease":"Power4.easeOut"}]'
+                    data-textAlign="['inherit','inherit','inherit','inherit']"
+                    data-paddingtop="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    style="z-index: 5"
+                  >
+                    <img
+                      src="https://images.unsplash.com/photo-1592685776885-97a964ad8293?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                      alt="Image"
+                      data-ww="['1000px','1000px','800px','800px']"
+                      data-hh="['563px','563px','450px','450px']"
+                      data-no-retina
+                    />
+                  </div>
+
+                  <!-- LAYER NR. 10 -->
+                  <div
+                    class="tp-caption tp-resizeme"
+                    id="slide-227-layer-2"
+                    data-x="['center','center','center','center']"
+                    data-hoffset="['0','0','0','0']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-voffset="['-100','-100','-100','-90']"
+                    data-fontsize="['70','70','70','50']"
+                    data-lineheight="['70','70','70','50']"
+                    data-width="['650','650','620','380']"
+                    data-height="none"
+                    data-whitespace="normal"
+                    data-type="text"
+                    data-responsive_offset="on"
+                    data-frames='[{"delay":200,"speed":750,"sfxcolor":"#6a6e49","sfx_effect":"blockfromtop","frame":"0","from":"z:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"sfxcolor":"#ffffff","sfx_effect":"blocktotop","frame":"999","to":"z:0;","ease":"Power4.easeOut"}]'
+                    data-textAlign="['center','center','center','center']"
+                    data-paddingtop="[20,20,20,20]"
+                    data-paddingright="[20,20,20,20]"
+                    data-paddingbottom="[30,30,30,30]"
+                    data-paddingleft="[20,20,20,20]"
+                    style="
+                      z-index: 6;
+                      min-width: 650px;
+                      max-width: 650px;
+                      white-space: normal;
+                      font-size: 100px;
+                      line-height: 100px;
+                      font-weight: 400;
+                      color: #000;
+                      letter-spacing: -2px;
+                      font-family: Menata;
+                    "
+                  >
+                    Mỗi loài hoa khác nhau đều mang cho mình một vẻ đẹp riêng.
+                  </div>
+
+                  <!-- LAYER NR. 11 -->
+                  <div
+                    class="tp-caption tp-resizeme"
+                    id="slide-227-layer-3"
+                    data-x="['center','center','center','center']"
+                    data-hoffset="['0','0','0','0']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-voffset="['-247','-247','-247','-217']"
+                    data-width="none"
+                    data-height="none"
+                    data-whitespace="normal"
+                    data-type="text"
+                    data-responsive_offset="on"
+                    data-frames='[{"delay":300,"speed":750,"sfxcolor":"#6a6e49","sfx_effect":"blockfromtop","frame":"0","from":"z:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"sfxcolor":"#ffffff","sfx_effect":"blocktotop","frame":"999","to":"z:0;","ease":"Power4.easeOut"}]'
+                    data-textAlign="['left','left','left','left']"
+                    data-paddingtop="[10,10,10,10]"
+                    data-paddingright="[20,20,20,20]"
+                    data-paddingbottom="[10,10,10,10]"
+                    data-paddingleft="[20,20,20,20]"
+                    style="
+                      z-index: 7;
+                      white-space: normal;
+                      font-size: 50px;
+                      line-height: 50px;
+                      font-weight: 400;
+                      color: #000;
+                      letter-spacing: 2px;
+                      font-family: Menata;
+                    "
+                  >
+                    Flowers
+                  </div>
+
+                  <!-- LAYER NR. 12 -->
+                  <!-- <div
+                    class="tp-caption rev-btn tp-resizeme"
+                    id="slide-227-layer-4"
+                    data-x="['center','center','center','center']"
+                    data-hoffset="['0','0','0','0']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-voffset="['80','80','80','50']"
+                    data-width="none"
+                    data-height="none"
+                    data-whitespace="normal"
+                    data-type="button"
+                    data-responsive_offset="on"
+                    data-frames='[{"delay":400,"speed":750,"sfxcolor":"#058a9b","sfx_effect":"blockfromtop","frame":"0","from":"z:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"sfxcolor":"#ffffff","sfx_effect":"blocktotop","frame":"999","to":"z:0;","ease":"Power4.easeOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(0,0,0);bg:rgb(255,255,255);"}]'
+                    data-textAlign="['inherit','inherit','inherit','inherit']"
+                    data-paddingtop="[0,0,0,0]"
+                    data-paddingright="[30,30,30,30]"
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[30,30,30,30]"
+                    style="
+                      z-index: 8;
+                      white-space: normal;
+                      font-size: 15px;
+                      line-height: 50px;
+                      font-weight: 400;
+                      color: rgba(255, 255, 255, 1);
+                      letter-spacing: 2px;
+                      font-family: Menata;
+                      border-color: rgb(255, 255, 255);
+                      border-style: solid;
+                      border-width: 1px 1px 1px 1px;
+                      outline: none;
+                      box-shadow: none;
+                      box-sizing: border-box;
+                      -moz-box-sizing: border-box;
+                      -webkit-box-sizing: border-box;
+                      cursor: pointer;
+                    "
+                  >
+                    Launch
+                  </div> -->
+                </li>
+                <!-- SLIDE 4 -->
+                <li
+                  data-index="rs-228"
+                  data-transition="fade"
+                  data-slotamount="default"
+                  data-hideafterloop="0"
+                  data-hideslideonmobile="off"
+                  data-easein="default"
+                  data-easeout="default"
+                  data-masterspeed="300"
+                  data-thumb=""
+                  data-rotate="0"
+                  data-saveperformance="off"
+                  data-title="Slide"
+                  data-param1=""
+                  data-param2=""
+                  data-param3=""
+                  data-param4=""
+                  data-param5=""
+                  data-param6=""
+                  data-param7=""
+                  data-param8=""
+                  data-param9=""
+                  data-param10=""
+                  data-description=""
+                >
+                  <!-- MAIN IMAGE -->
+                  <img
+                    src="include/rs-plugin/demos/assets/images/transparent.png"
+                    data-bgcolor="#fff"
+                    style="background: #fff"
+                    alt="Image"
+                    data-bgposition="center center"
+                    data-bgfit="cover"
+                    data-bgrepeat="no-repeat"
+                    data-bgparallax="off"
+                    class="rev-slidebg"
+                    data-no-retina
+                  />
+                  <!-- LAYERS -->
+
+                  <!-- LAYER NR. 13 -->
+                  <div
+                    class="tp-caption tp-resizeme rs-parallaxlevel-2"
+                    id="slide-228-layer-1"
+                    data-x="['center','center','center','center']"
+                    data-hoffset="['0','0','0','0']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-voffset="['-255','-255','-265','-185']"
+                    data-width="none"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-type="image"
+                    data-responsive_offset="on"
+                    data-frames='[{"delay":200,"speed":750,"sfxcolor":"#6a6e49","sfx_effect":"blockfrombottom","frame":"0","from":"z:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"sfxcolor":"#ffffff","sfx_effect":"blocktobottom","frame":"999","to":"z:0;","ease":"Power4.easeOut"}]'
+                    data-textAlign="['inherit','inherit','inherit','inherit']"
+                    data-paddingtop="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    style="z-index: 5"
+                  >
+                    <img
+                      src="https://images.unsplash.com/photo-1543157145-f78c636d023d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                      alt="Image"
+                      data-ww="['1000px','1000px','800px','800px']"
+                      data-hh="['563px','563px','450px','450px']"
+                      data-no-retina
+                    />
+                  </div>
+
+                  <!-- LAYER NR. 14 -->
+                  <div
+                    class="tp-caption tp-resizeme"
+                    id="slide-228-layer-2"
+                    data-x="['center','center','center','center']"
+                    data-hoffset="['0','0','0','0']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-voffset="['100','100','50','96']"
+                    data-fontsize="['70','70','70','50']"
+                    data-lineheight="['70','70','70','50']"
+                    data-width="['650','650','620','380']"
+                    data-height="none"
+                    data-whitespace="normal"
+                    data-type="text"
+                    data-responsive_offset="on"
+                    data-frames='[{"delay":300,"speed":750,"sfxcolor":"#f1efeb","sfx_effect":"blockfrombottom","frame":"0","from":"z:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"sfxcolor":"#ffffff","sfx_effect":"blocktobottom","frame":"999","to":"z:0;","ease":"Power4.easeOut"}]'
+                    data-textAlign="['center','center','center','center']"
+                    data-paddingtop="[20,20,20,20]"
+                    data-paddingright="[20,20,20,20]"
+                    data-paddingbottom="[30,30,30,30]"
+                    data-paddingleft="[20,20,20,20]"
+                    style="
+                      z-index: 6;
+                      min-width: 650px;
+                      max-width: 650px;
+                      white-space: normal;
+                      font-size: 100px;
+                      line-height: 100px;
+                      font-weight: 400;
+                      color: #000;
+                      letter-spacing: -2px;
+                      font-family: Menata;
+                    "
+                  >
+                    Kì quan vĩ đại của mẹ thiên nhiên gói gọn trong một bông
+                    hoa.
+                  </div>
+
+                  <!-- LAYER NR. 15 -->
+                  <div
+                    class="tp-caption tp-resizeme"
+                    id="slide-228-layer-3"
+                    data-x="['center','center','center','center']"
+                    data-hoffset="['0','0','0','0']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-voffset="['-47','-47','-97','-57']"
+                    data-width="none"
+                    data-height="none"
+                    data-whitespace="normal"
+                    data-type="text"
+                    data-responsive_offset="on"
+                    data-frames='[{"delay":400,"speed":750,"sfxcolor":"#f1efeb","sfx_effect":"blockfrombottom","frame":"0","from":"z:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"sfxcolor":"#ffffff","sfx_effect":"blocktobottom","frame":"999","to":"z:0;","ease":"Power4.easeOut"}]'
+                    data-textAlign="['left','left','left','left']"
+                    data-paddingtop="[10,10,10,10]"
+                    data-paddingright="[20,20,20,20]"
+                    data-paddingbottom="[10,10,10,10]"
+                    data-paddingleft="[20,20,20,20]"
+                    style="
+                      z-index: 7;
+                      white-space: normal;
+                      font-size: 50px;
+                      line-height: 50px;
+                      font-weight: 400;
+                      color: #000;
+                      letter-spacing: 2px;
+                      font-family: Menata;
+                    "
+                  >
+                    Flowers
+                  </div>
+
+                  <!-- LAYER NR. 16 -->
+                  <!-- <div
+                    class="tp-caption rev-btn tp-resizeme"
+                    id="slide-228-layer-4"
+                    data-x="['center','center','center','center']"
+                    data-hoffset="['0','0','0','0']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-voffset="['280','280','230','260']"
+                    data-width="none"
+                    data-height="none"
+                    data-whitespace="normal"
+                    data-type="button"
+                    data-responsive_offset="on"
+                    data-frames='[{"delay":500,"speed":750,"sfxcolor":"#ff1361","sfx_effect":"blockfrombottom","frame":"0","from":"z:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"sfxcolor":"#ffffff","sfx_effect":"blocktobottom","frame":"999","to":"z:0;","ease":"Power4.easeOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(0,0,0);bg:rgb(255,255,255);"}]'
+                    data-textAlign="['inherit','inherit','inherit','inherit']"
+                    data-paddingtop="[0,0,0,0]"
+                    data-paddingright="[30,30,30,30]"
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[30,30,30,30]"
+                    style="
+                      z-index: 8;
+                      white-space: normal;
+                      font-size: 15px;
+                      line-height: 50px;
+                      font-weight: 400;
+                      color: rgba(255, 255, 255, 1);
+                      letter-spacing: 2px;
+                      font-family: Menata;
+                      border-color: rgb(255, 255, 255);
+                      border-style: solid;
+                      border-width: 1px 1px 1px 1px;
+                      outline: none;
+                      box-shadow: none;
+                      box-sizing: border-box;
+                      -moz-box-sizing: border-box;
+                      -webkit-box-sizing: border-box;
+                      cursor: pointer;
+                    "
+                  >
+                    Launch
+                  </div> -->
+                </li>
+              </ul>
+              <div
+                class="tp-bannertimer"
+                style="height: 3px; background-color: #6a6e49"
+              ></div>
+            </div>
+          </div>
+          <!-- END REVOLUTION SLIDER -->
+        </section>
+        <div class="content-wrap pb-0">
+          <!-- START INTRODUCE -->
+          <div id="introduce" class="section bg-transparent">
+            <div class="container">
+              <div class="row d-flex justify-content-center">
+                <div
+                  class="introduce-col col-lg-10 d-flex flex-column align-items-center"
+                >
+                  <img
+                    src="https://fiore.vamtam.com/wp-content/uploads/2022/01/flower.png"
+                    alt=""
+                  />
+                  <p class="font-secondary fw-light text-center mt-5">
+                    Những bông hoa đẹp nhất được chọn lọc bởi FHM Flowers. Chúng
+                    tôi mang đến cho bạn những tinh túy nhất của loài hoa, có
+                    thể cảm nhận được qua hương thơm, vẻ đẹp mà tạo hóa đã ban
+                    tặng cho chúng.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END INTRODUCE -->
+
+          <!-- START CATEGORY -->
+          <div id="product-category" class="section bg-transparent">
+            <div class="container heading">
+              <h3
+                class="display-2 text-capitalize text-center font-secondary fst-normal"
+              >
+                danh mục sản phẩm
+              </h3>
+
+              <div class="clear mb-5"></div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <a href="#" class="col-lg-4 col-sm-12 mt-6">
+                  <div class="product-category-img">
+                    <img
+                      src="https://fiore.vamtam.com/wp-content/uploads/2022/04/pexels-micheilecom-__-visual-stories-6270383.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p class="font-secondary text-center text-capitalize">
+                    Giáng sinh
+                  </p>
+                </a>
+                <a href="#" class="col-lg-4 col-sm-12">
+                  <div class="product-category-img">
+                    <img
+                      src="https://fiore.vamtam.com/wp-content/uploads/2022/04/pexels-алекке-блажин-7565711.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p class="font-secondary text-center text-capitalize">
+                    Sinh nhật
+                  </p>
+                  <div class="vertical-divider"></div>
+                </a>
+                <a href="#" class="col-lg-4 col-sm-12 mt-6">
+                  <div class="product-category-img">
+                    <img
+                      src="https://fiore.vamtam.com/wp-content/uploads/2022/04/pexels-алекке-блажин-7618410.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p class="font-secondary text-center text-capitalize">
+                    Mùa thu
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center">
+                  <a href="#" class="button fw-normal">Xem tất cả</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END CATEGORY -->
+
+          <!-- START CONTACT -->
+          <div id="contact" class="section p-0">
+            <img
+              src="https://fiore.vamtam.com/wp-content/uploads/2022/01/pexels-%D0%B0%D0%BB%D0%B5%D0%BA%D0%BA%D0%B5-%D0%B1%D0%BB%D0%B0%D0%B6%D0%B8%D0%BD-7700226.jpg"
+              alt=""
+            />
+            <div class="contact-description-container">
+              <img
+                src="https://fiore.vamtam.com/wp-content/uploads/2022/01/flower-1-copy.png"
+                alt=""
+              />
+              <p class="font-secondary dark">
+                Dòng hoa <br />
+                "Signature"
+              </p>
+              <a href="#" class="button fw-light">Liên hệ</a>
+            </div>
+          </div>
+          <!-- END CONTACT -->
+
+          <!-- START PRODUCT -->
+          <div id="product" class="section bg-transparent">
+            <div class="container heading">
+              <h3
+                class="display-2 text-capitalize text-center font-secondary fst-normal"
+              >
+                sản phẩm nổi bật
+              </h3>
+
+              <div class="clear mb-5"></div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <a href="#" class="col-lg-4 col-sm-12">
+                  <div class="product-img">
+                    <img
+                      src="https://fiore.vamtam.com/wp-content/uploads/2022/02/9-630x630.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p
+                    class="font-secondary text-center text-capitalize mb-1 mt-3"
+                  >
+                    Bisous
+                  </p>
+                  <p class="product-price text-center fw-normal">300.000VND</p>
+                </a>
+                <a href="#" class="col-lg-4 col-sm-12">
+                  <div class="vertical-divider"></div>
+                  <div class="product-img">
+                    <img
+                      src="https://fiore.vamtam.com/wp-content/uploads/2022/02/8-630x630.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p
+                    class="font-secondary text-center text-capitalize mb-1 mt-3"
+                  >
+                    Grace
+                  </p>
+                  <p class="product-price text-center fw-normal">300.000VND</p>
+                </a>
+                <a href="#" class="col-lg-4 col-sm-12">
+                  <div class="product-img">
+                    <img
+                      src="https://fiore.vamtam.com/wp-content/uploads/2022/02/7-630x630.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p
+                    class="font-secondary text-center text-capitalize mb-1 mt-3"
+                  >
+                    Lisee
+                  </p>
+                  <p class="product-price text-center fw-normal">300.000VND</p>
+                </a>
+              </div>
+            </div>
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center">
+                  <a href="#" class="button fw-normal">Xem tất cả</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END PRODUCT -->
+
+          <!-- START SERVICE -->
+          <div id="service" class="section py-0">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6 col-sm-12 service-img"></div>
+                <div class="col-lg-6 col-sm-12 service-content-container">
+                  <div
+                    class="fslider"
+                    data-animation="fade"
+                    data-arrows="false"
+                  >
+                    <div class="flexslider">
+                      <div class="slider-wrap">
+                        <div class="slide">
+                          <h3
+                            class="font-secondary fw-normal display-3 text-capitalize"
+                          >
+                            Đám cưới
+                          </h3>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Sunt provident repellendus itaque soluta
+                            voluptatem nisi ducimus praesentium obcaecati sit
+                            voluptates!
+                          </p>
+                          <a href="#" class="button fw-normal">Xem thêm</a>
+                        </div>
+                        <div class="slide">
+                          <h3
+                            class="font-secondary fw-normal display-3 text-capitalize"
+                          >
+                            Sự kiện đặc biệt
+                          </h3>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Sunt provident repellendus itaque soluta
+                            voluptatem nisi ducimus praesentium obcaecati sit
+                            voluptates!
+                          </p>
+                          <a href="#" class="button fw-normal">Xem thêm</a>
+                        </div>
+                        <div class="slide">
+                          <h3
+                            class="font-secondary fw-normal display-3 text-capitalize"
+                          >
+                            Sự kiện công ty
+                          </h3>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Sunt provident repellendus itaque soluta
+                            voluptatem nisi ducimus praesentium obcaecati sit
+                            voluptates!
+                          </p>
+                          <a href="#" class="button fw-normal">Xem thêm</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END SERVICE -->
+
+          <!-- START BLOGS  -->
+          <div id="blog" class="section bg-transparent">
+            <div class="container heading">
+              <h3
+                class="display-2 text-capitalize text-center font-secondary fst-normal"
+              >
+                Blogs
+              </h3>
+
+              <div class="clear mb-5"></div>
+            </div>
+            <div class="container">
+              <div class="row position-relative">
+                <a href="#" class="read-more-button">
+                  <span class="read-more-letter font-secondary">X</span>
+                  <span class="read-more-text font-secondary">Xem thêm</span>
+                </a>
+                <a href="#" class="col-lg-6 col-sm-12">
+                  <div class="blog-img-container" style="height: 600px">
+                    <img
+                      src="https://fiore.vamtam.com/wp-content/uploads/2022/01/iStock-1283633123.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="fw-normal font-secondary mt-4 mb-2">
+                    Loạt phim theo mùa với tòa án
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Nisi recusandae earum possimus facere libero, voluptatem
+                    odit sunt maiores vel.
+                  </p>
+                </a>
+                <a href="#" class="col-lg-3 col-sm-12">
+                  <div class="blog-img-container" style="height: 300px">
+                    <img
+                      src="https://fiore.vamtam.com/wp-content/uploads/2022/02/2-7.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="fw-normal font-secondary mt-4 mb-2">
+                    Những bó hoa hồng đẹp nhất Valentine này
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </a>
+                <a href="#" class="col-lg-3 col-sm-12">
+                  <div class="blog-img-container" style="height: 300px">
+                    <img
+                      src="https://fiore.vamtam.com/wp-content/uploads/2022/01/pexels-roman-odintsov-8514224.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="fw-normal font-secondary mt-4 mb-2">
+                    Yêu thích theo mùa: hoa mẫu đơn
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center">
+                  <a href="#" class="button fw-normal">Xem tất cả</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END BLOGS  -->
+        </div>
+      </section>
+      <!-- #content end -->
+
+      <!-- Footer
+		============================================= -->
+      <!-- <footer id="footer">
+     
+        <div id="copyrights">
+          <div class="container">
+            <div class="row justify-content-between col-mb-30">
+              <div
+                class="col-12 col-lg-auto text-center text-lg-start order-last order-lg-first"
+              >
+                <img
+                  src="https://fhmvietnam.vn/data/cms-image/logo/logo_new_dark.png"
+                  alt="Image"
+                  class="mb-4"
+                  style="width: 30%"
+                /><br />
+                Copyrights &copy; 2022 Bản quyền thuộc về FHM Agency.
+              </div>
+
+              <div class="col-12 col-lg-auto text-center text-lg-end">
+                <div class="copyrights-menu copyright-links">
+                  <a href="#">Trang chủ</a>
+                  |<a href="#">Giới thiệu</a> |<a href="#">Dịch vụ</a> |<a
+                    href="#"
+                    >Liên hệ</a
+                  >
+                  |<a href="#">Hỗ trợ</a>
+                </div>
+                <a
+                  href="#"
+                  class="social-icon inline-block si-small si-borderless mb-0 si-facebook"
+                >
+                  <i class="icon-facebook"></i>
+                  <i class="icon-facebook"></i>
+                </a>
+
+                <a
+                  href="#"
+                  class="social-icon inline-block si-small si-borderless mb-0 si-twitter"
+                >
+                  <i class="icon-twitter"></i>
+                  <i class="icon-twitter"></i>
+                </a>
+
+                <a
+                  href="#"
+                  class="social-icon inline-block si-small si-borderless mb-0 si-gplus"
+                >
+                  <i class="icon-gplus"></i>
+                  <i class="icon-gplus"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer> -->
+
+      <footer id="footer" class="">
+        <img
+          src="https://fiore.vamtam.com/wp-content/uploads/2022/01/leaf-footer.svg"
+          alt=""
+          class="leaf-img"
+        />
+        <div class="shape-divider" data-shape="wave-4" data-height="80">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1000 100"
+            preserveAspectRatio="none"
+            class="op-ts op-1"
+          >
+            <path
+              class="shape-divider-fill"
+              d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7 c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4 c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"
+            ></path>
+          </svg>
+        </div>
+        <div class="container pt-6">
+          <!-- Footer Widgets
+				============================================= -->
+          <div class="footer-widgets-wrap">
+            <div class="row col-mb-50">
+              <div class="col-lg-5">
+                <div class="widget clearfix">
+                  <img
+                    src="https://fhmvietnam.vn/data/cms-image/logo/logo_new_dark.png"
+                    alt="Image"
+                    class="footer-logo"
+                    style="width: 30%"
+                  />
+
+                  <div
+                    class="py-2"
+                    style="
+                      background: url('images/world-map.png') no-repeat center
+                        center;
+                    "
+                  >
+                    <div class="row col-mb-30">
+                      <div class="col-6">
+                        <address class="mb-0">
+                          <abbr
+                            title="Headquarters"
+                            style="display: inline-block; margin-bottom: 7px"
+                            ><strong>Địa chỉ:</strong></abbr
+                          ><br />
+                          2/25 Thọ Tháp, Dịch Vọng,<br />
+                          Cầu Giấy, Hà Nội<br />
+                        </address>
+                      </div>
+                      <div class="col-6">
+                        <abbr title="Phone Number"
+                          ><strong>Hotline:</strong></abbr
+                        >
+                        0393004567
+                        <br />
+                        <abbr title="Email Address"
+                          ><strong>Email:</strong></abbr
+                        >
+                        fhmvietnam@gmail.com
+                      </div>
+                    </div>
+                  </div>
+
+                  <a
+                    href="#"
+                    class="social-icon si-small si-rounded topmargin-sm si-facebook"
+                  >
+                    <i class="icon-facebook"></i>
+                    <i class="icon-facebook"></i>
+                  </a>
+
+                  <a
+                    href="#"
+                    class="social-icon si-small si-rounded topmargin-sm si-twitter"
+                  >
+                    <i class="icon-twitter"></i>
+                    <i class="icon-twitter"></i>
+                  </a>
+
+                  <a
+                    href="#"
+                    class="social-icon si-small si-rounded topmargin-sm si-gplus"
+                  >
+                    <i class="icon-gplus"></i>
+                    <i class="icon-gplus"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-2">
+                <div class="widget clearfix widget_links">
+                  <h4
+                    class="font-secondary text-capitalize fw-normal"
+                    style="font-size: 25px; line-height: 1; letter-spacing: 1px"
+                  >
+                    Liên kết
+                  </h4>
+
+                  <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Dịch vụ</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-2">
+                <div class="widget clearfix widget_links">
+                  <h4
+                    class="font-secondary text-capitalize fw-normal"
+                    style="font-size: 25px; line-height: 1; letter-spacing: 1px"
+                  >
+                    Liên kết
+                  </h4>
+
+                  <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Dịch vụ</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-3">
+                <div class="widget quick-contact-widget form-widget clearfix">
+                  <h4
+                    class="font-secondary text-capitalize fw-normal"
+                    style="font-size: 25px; line-height: 1; letter-spacing: 1px"
+                  >
+                    Liên hệ
+                  </h4>
+
+                  <div class="form-result"></div>
+
+                  <form
+                    id="quick-contact-form"
+                    name="quick-contact-form"
+                    action="http://themes.semicolonweb.com/html/canvas/include/form.php"
+                    method="post"
+                    class="quick-contact-form mb-0"
+                  >
+                    <div class="form-process">
+                      <div class="css3-spinner">
+                        <div class="css3-spinner-scaler"></div>
+                      </div>
+                    </div>
+
+                    <div class="input-group mx-auto">
+                      <input
+                        type="text"
+                        class="required form-control email"
+                        id="quick-contact-form-email"
+                        name="quick-contact-form-email"
+                        value=""
+                        placeholder="Email"
+                        style="
+                          background-color: transparent;
+                          border-right: none;
+                          font-size: 14px;
+                        "
+                      />
+                      <button
+                        type="submit"
+                        id="quick-contact-form-submit"
+                        name="quick-contact-form-submit"
+                        class="btn m-0 font-secondary"
+                        value="submit"
+                        style="
+                          border: 1px solid #ccc;
+                          border-radius: 0px;
+                          border-left: none;
+                          font-size: 20px;
+                        "
+                      >
+                        &rarr;
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- .footer-widgets-wrap end -->
+        </div>
+
+        <!-- Copyrights
+			============================================= -->
+        <div id="copyrights">
+          <div class="container">
+            <div class="w-100 text-center">
+              Copyrights &copy; 2022 Bản quyền thuộc về FHM Agency.
+            </div>
+          </div>
+        </div>
+        <!-- #copyrights end -->
+      </footer>
+      <!-- #footer end -->
+    </div>
+    <!-- #wrapper end -->
+
+    <!-- Go To Top
+	============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- JavaScripts
+	============================================= -->
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.min.js"></script>
+    <script src="demos/writer/js/hover3d.js"></script>
+
+    <!-- Footer Scripts
+	============================================= -->
+    <script src="js/functions.js"></script>
+
+    <!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
+    <script src="include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script src="include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+    <!-- SLIDER REVOLUTION EXTENSIONS  -->
+    <script src="include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="include/rs-plugin/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="include/rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="include/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+
+    <!-- ADD-ONS JS FILES -->
+    <script>
+      var revapi103,
+        tpj = jQuery;
+      var $ = jQuery.noConflict();
+
+      tpj(document).ready(function () {
+        if (tpj("#rev_slider_103_1").revolution == undefined) {
+          revslider_showDoubleJqueryError("#rev_slider_103_1");
+        } else {
+          revapi103 = tpj("#rev_slider_103_1")
+            .show()
+            .revolution({
+              sliderType: "standard",
+              jsFileLocation: "include/rs-plugin/js/",
+              sliderLayout: "fullscreen",
+              dottedOverlay: "none",
+              delay: 9000,
+              navigation: {
+                keyboardNavigation: "off",
+                keyboard_direction: "horizontal",
+                mouseScrollNavigation: "off",
+                mouseScrollReverse: "default",
+                onHoverStop: "off",
+                touch: {
+                  touchenabled: "on",
+                  touchOnDesktop: "off",
+                  swipe_threshold: 75,
+                  swipe_min_touches: 1,
+                  swipe_direction: "horizontal",
+                  drag_block_vertical: false,
+                },
+                arrows: {
+                  style: "uranus",
+                  enable: true,
+                  hide_onmobile: true,
+                  hide_under: 778,
+                  hide_onleave: false,
+                  tmp: "",
+                  left: {
+                    h_align: "left",
+                    v_align: "center",
+                    h_offset: 15,
+                    v_offset: 0,
+                  },
+                  right: {
+                    h_align: "right",
+                    v_align: "center",
+                    h_offset: 15,
+                    v_offset: 0,
+                  },
+                },
+                bullets: {
+                  enable: true,
+                  hide_onmobile: false,
+                  style: "bullet-bar",
+                  hide_onleave: false,
+                  direction: "horizontal",
+                  h_align: "center",
+                  v_align: "bottom",
+                  h_offset: 0,
+                  v_offset: 30,
+                  space: 5,
+                  tmp: "",
+                },
+              },
+              responsiveLevels: [1240, 1024, 778, 480],
+              visibilityLevels: [1240, 1024, 778, 480],
+              gridwidth: [1240, 1024, 778, 480],
+              gridheight: [868, 768, 960, 720],
+              lazyType: "none",
+              parallax: {
+                type: "scroll",
+                origo: "slidercenter",
+                speed: 2000,
+                speedbg: 0,
+                speedls: 0,
+                levels: [
+                  5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 51, 55,
+                ],
+              },
+              shadow: 0,
+              spinner: "off",
+              stopLoop: "off",
+              stopAfterLoops: -1,
+              stopAtSlide: -1,
+              shuffle: "off",
+              autoHeight: "off",
+              fullScreenAutoWidth: "off",
+              fullScreenAlignForce: "off",
+              fullScreenOffsetContainer: "",
+              fullScreenOffset: "0",
+              hideThumbsOnMobile: "off",
+              hideSliderAtLimit: 0,
+              hideCaptionAtLimit: 0,
+              hideAllCaptionAtLilmit: 0,
+              debugMode: false,
+              fallbacks: {
+                simplifyAll: "off",
+                nextSlideOnWindowFocus: "off",
+                disableFocusListener: false,
+              },
+            });
+          revapi103.on("revolution.slide.onloaded", function (e) {
+            revapi103.addClass("tiny_bullet_slider");
+          });
+        }
+      }); /*ready*/
+    </script>
+
+    <!-- <script>
+      jQuery(document).ready(function () {
+        if (!jQuery("body").hasClass("device-touch")) {
+          var lFollowX = 0,
+            lFollowY = 0,
+            x = 0,
+            y = 0,
+            friction = 1 / 30;
+
+          function moveBackground() {
+            x += (lFollowX - x) * friction;
+            y += (lFollowY - y) * friction;
+
+            translate = "translate(" + x + "px, " + y + "px) scale(1.1)";
+
+            jQuery(".move-bg").css({
+              "-webit-transform": translate,
+              "-moz-transform": translate,
+              transform: translate,
+            });
+
+            window.requestAnimationFrame(moveBackground);
+          }
+
+          jQuery(window).on("mousemove click", function (e) {
+            var lMouseX = Math.max(
+              -100,
+              Math.min(100, jQuery(window).width() / 2 - e.clientX)
+            );
+            var lMouseY = Math.max(
+              -100,
+              Math.min(100, jQuery(window).height() / 2 - e.clientY)
+            );
+            lFollowX = (10 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+            lFollowY = (10 * lMouseY) / 100;
+          });
+
+          moveBackground();
+
+          jQuery(".book-wrap").hover3d({
+            selector: ".book-card",
+            shine: false,
+          });
+        }
+      });
+    </script> -->
+  </body>
+
+  <!-- Mirrored from themes.semicolonweb.com/html/canvas/demo-writer.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Aug 2021 13:58:30 GMT -->
+</html>

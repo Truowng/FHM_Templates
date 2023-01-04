@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: Menata;
+  src: url("./css/fonts/Menata.otf");
+}
+
+body,
+small,
+.sub-menu-container .menu-item > .menu-link,
+.wp-caption,
+.fbox-center.fbox-italic p,
+.skills li .progress-percent .counter,
+.nav-tree ul ul a,
+.font-body {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.font-secondary {
+  font-family: Menata !important;
+}
+
+.vertical-divider {
+  height: 100px;
+  width: 1px;
+  background-color: #6e6c6c;
+  margin: 0 auto 20px;
+}
+
+a,
+h1 > span:not(.nocolor):not(.badge),
+h2 > span:not(.nocolor):not(.badge),
+h3 > span:not(.nocolor):not(.badge),
+h4 > span:not(.nocolor):not(.badge),
+h5 > span:not(.nocolor):not(.badge),
+h6 > span:not(.nocolor):not(.badge),
+.header-extras li .he-text span,
+.menu-item:hover > .menu-link,
+.menu-item.current > .menu-link,
+.dark .menu-item:hover > .menu-link,
+.dark .menu-item.current > .menu-link,
+.top-cart-item-desc a:hover,
+.top-cart-action .top-checkout-price,
+.breadcrumb a:hover,
+.grid-filter li:not(.activeFilter) a:hover,
+.portfolio-desc h3 a:hover,
+#portfolio-navigation a:hover,
+.entry-title h2 a:hover,
+.entry-title h3 a:hover,
+.entry-title h4 a:hover,
+.post-timeline .entry:hover .entry-timeline,
+.post-timeline .entry:hover .timeline-divider,
+.comment-content .comment-author a:hover,
+.product-title h3 a:hover,
+.single-product .product-title h2 a:hover,
+.product-price ins,
+.single-product .product-price,
+.process-steps li.active h5,
+.process-steps li.ui-tabs-active h5,
+.tab-nav-lg li.ui-tabs-active a,
+.team-title span,
+.btn-link,
+.page-link,
+.page-link:hover,
+.page-link:focus,
+.fbox-plain .fbox-icon i,
+.fbox-plain .fbox-icon img,
+.fbox-border .fbox-icon i,
+.fbox-border .fbox-icon img,
+.iconlist > li [class^="icon-"]:first-child,
+.dark .menu-item:hover > .menu-link,
+.dark .menu-item.current > .menu-link,
+.dark .top-cart-item-desc a:hover,
+.dark .breadcrumb a:hover,
+.dark .portfolio-desc h3 a:hover,
+.dark #portfolio-navigation a:hover,
+.dark .entry-title h2 a:hover,
+.dark .entry-title h3 a:hover,
+.dark .entry-title h4 a:hover,
+.dark .product-title h3 a:hover,
+.dark .single-product .product-title h2 a:hover,
+.dark .product-price ins,
+.dark .tab-nav-lg li.ui-tabs-active a {
+  color: unset;
+}
+
+.tparrows:before {
+  color: #e0dddd !important;
+}
+
+/* START HEADER */
+.menu-container > .menu-item > .menu-link {
+  font-size: 23px;
+  color: #000;
+}
+
+#header.transparent-header:not(.sticky-header) #header-wrap {
+  border-bottom-color: transparent !important;
+}
+
+#header.sticky-header.semi-transparent #header-wrap {
+  background-color: #f1efeb !important;
+  border-bottom-color: transparent !important;
+}
+#header.sticky-header.semi-transparent
+  #header-wrap
+  .menu-container
+  > .menu-item
+  > .menu-link {
+  color: #000;
+}
+
+.header-size-custom #logo img {
+  height: 40px;
+}
+/* END HEADER */
+
+/* START INTRODUCE */
+#introduce p {
+  font-size: 70px;
+  line-height: 70px;
+}
+
+.introduce-col {
+  background-color: #f1efeb;
+  padding: 250px 100px 100px;
+  border-radius: 50% 50% 0 0;
+}
+/* END INTRODUCE */
+
+/* START CATEGORY */
+.product-category-img {
+  overflow: hidden;
+}
+
+.product-category-img img {
+  width: 100%;
+  transition: all ease 1s;
+}
+
+.product-category-img:hover img {
+  transform: scale(1.1);
+}
+
+#product-category p {
+  font-size: 35px;
+}
+
+#product-category .button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #000;
+  padding: 0;
+  text-shadow: none;
+  transition: all ease 0.3s;
+  width: fit-content;
+}
+#product-category .button:hover {
+  border-bottom: 1px solid #000;
+}
+/* END CATEGORY */
+
+/* START CONTACT */
+#contact > img {
+  width: 100%;
+}
+
+#contact {
+  position: relative;
+}
+
+.contact-description-container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 45%;
+  background: url("https://fiore.vamtam.com/wp-content/uploads/2022/01/flower.png"),
+    #6a6e49;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 180px 50px 50px;
+}
+
+.contact-description-container p {
+  font-size: 70px;
+  line-height: 1 !important;
+}
+
+.contact-description-container img {
+  position: absolute;
+  top: -15%;
+  width: 20%;
+}
+
+#contact .button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #fff;
+  padding: 0;
+  text-shadow: none;
+  transition: all ease 0.3s;
+  width: fit-content;
+}
+#contact .button:hover {
+  border-bottom: 1px solid #fff;
+}
+/* END CONTACT */
+
+/* START PRODUCT */
+.product-img {
+  overflow: hidden;
+}
+
+.product-img img {
+  width: 100%;
+  transition: all ease 1s;
+}
+
+.product-img:hover img {
+  transform: scale(1.1);
+}
+
+#product p {
+  font-size: 35px;
+  line-height: 1;
+}
+
+#product .product-price {
+  font-size: 16px;
+  color: #6e6c6c;
+}
+
+#product .button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #000;
+  padding: 0;
+  text-shadow: none;
+  transition: all ease 0.3s;
+  width: fit-content;
+}
+#product .button:hover {
+  border-bottom: 1px solid #000;
+}
+/* END PRODUCT */
+
+/* START SERVICE */
+#section {
+  background-color: #e6e8d6;
+}
+
+#service .row {
+  height: 100vh;
+}
+
+.service-img {
+  background-image: url("https://images.unsplash.com/photo-1562050147-fda1cc9a6378?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.service-content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 80px;
+}
+
+#service .button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #000;
+  padding: 0;
+  text-shadow: none;
+  transition: all ease 0.3s;
+  width: fit-content;
+}
+#service .button:hover {
+  border-bottom: 1px solid #000;
+}
+
+.flex-control-nav li a.flex-active,
+.flex-control-nav li:hover a {
+  background-color: #000;
+}
+
+.flex-control-nav li a {
+  border-color: #000;
+}
+
+.flex-control-nav {
+  right: 0;
+  bottom: 10px;
+  top: unset;
+}
+
+/* END SERVICE */
+
+/* START BLOG */
+.blog-img-container {
+  overflow: hidden;
+}
+
+.blog-img-container img {
+  transition: all ease 1s;
+  width: 100%;
+}
+
+.blog-img-container:hover img {
+  transform: scale(1.1);
+}
+
+#blog a h3 {
+  font-size: 30px;
+  line-height: 1;
+}
+
+#blog p {
+  font-size: 14px;
+}
+
+#blog .button {
+  display: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #000;
+  padding: 0;
+  text-shadow: none;
+  transition: all ease 0.3s;
+  width: fit-content;
+}
+#blog .button:hover {
+  border-bottom: 1px solid #000;
+}
+
+.read-more-button {
+  position: absolute;
+  bottom: 0;
+  right: 18%;
+  width: fit-content;
+  z-index: 1;
+}
+
+.read-more-letter {
+  font-size: 300px;
+  color: #ccc;
+  line-height: 0.8;
+  transition: all ease 0.5s;
+}
+
+.read-more-button:hover .read-more-letter {
+  color: #000;
+}
+
+.read-more-button:hover .read-more-text {
+  color: transparent;
+}
+
+.read-more-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  transition: all ease 0.5s;
+}
+
+/* END BLOG */
+
+/* START FOOTER */
+
+#footer {
+  border-top: 1px;
+  position: relative;
+}
+
+.leaf-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+#copyrights {
+  background-color: transparent;
+  border-top: 1px solid #ccc;
+}
+
+.input-group-text,
+.form-control {
+  border-radius: 0px;
+}
+/* END FOOTER */
+
+/* REPSONSIVE */
+
+@media (max-width: 992px) {
+  .vertical-divider {
+    display: none;
+  }
+
+  /* START INTRODUCE */
+  #introduce p {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  /* END INTRODUCE */
+
+  /* START CATEGORY */
+  #product-category .col-lg-4:nth-child(2) {
+    margin-top: 80px;
+  }
+  /* END CATEGORY */
+
+  /* START CONTACT */
+  .contact-description-container {
+    width: 49%;
+    padding: 65px 50px 50px;
+  }
+  /* END CONTACT */
+
+  /* START PRODUCT */
+  #product .col-lg-4:nth-child(2) {
+    margin: 80px 0;
+  }
+  /* END PRODUCT */
+
+  /* START BLOG */
+  #blog .col-lg-3 .blog-img-container {
+    height: 500px !important;
+  }
+
+  .read-more-button {
+    display: none;
+  }
+  #blog .button {
+    display: block;
+  }
+
+  /* END BLOG */
+}
