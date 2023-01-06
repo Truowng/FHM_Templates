@@ -1,0 +1,311 @@
+body,
+small,
+.sub-menu-container .menu-item > .menu-link,
+.wp-caption,
+.fbox-center.fbox-italic p,
+.skills li .progress-percent .counter,
+.nav-tree ul ul a,
+.font-body,
+.entry-link span,
+.entry blockquote p,
+.more-link,
+.comment-content .comment-author span,
+.comment-content .comment-author span a,
+.button.button-desc span,
+.testi-content p,
+.team-title span,
+.before-heading,
+.wedding-head .first-name span,
+.wedding-head .last-name span,
+.font-secondary {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.more-link,
+.tabs-bb .tab-nav li.ui-tabs-active a,
+.title-bottom-border h1,
+.title-bottom-border h2,
+.title-bottom-border h3,
+.title-bottom-border h4,
+.title-bottom-border h5,
+.title-bottom-border h6 {
+  border-bottom-color: #ddd;
+}
+
+.fancy-title {
+  margin-bottom: 3rem;
+}
+
+/* START HEADER */
+
+.header-size-md #header-wrap #logo img {
+  height: 55px;
+}
+
+.sticky-header-shrink #header-wrap #logo img {
+  height: 40px;
+}
+/* END HEADER */
+
+/* START BANNER */
+#slider .button {
+  border-radius: 30px;
+  letter-spacing: unset;
+}
+
+.slider-caption h2 {
+  letter-spacing: unset;
+}
+/* END BANNER */
+
+/* START NEW PRODUCT */
+
+.new-product-item {
+  padding: 25px;
+  border-radius: 8px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transition: all ease 0.8s;
+}
+
+.new-product-item:hover {
+  background-size: 120%;
+}
+
+.new-product-item .button {
+  background-color: transparent;
+  color: #000;
+  text-shadow: none;
+  width: fit-content !important;
+  transition: all ease 0.3s;
+  border-bottom: 1px solid transparent;
+  padding: 0;
+  letter-spacing: unset;
+}
+
+.new-product-item .button:hover {
+  border-bottom: 1px solid #000;
+}
+
+#new-product .col-lg-4:nth-child(3) .new-product-item .button:hover {
+  border-bottom: 1px solid #fff;
+}
+
+/* END NEW PRODUCT */
+
+/* START PRODUCT CATEGORY */
+.product-category-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.product-category-item img {
+  width: 100%;
+  transition: all ease 0.8s;
+}
+
+.product-category-item:hover img {
+  transform: scale(1.1);
+}
+
+.product-category-item p {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+/* END PRODUCT CATEGORY */
+
+/* START BEST DEAL */
+.fslider .flexslider {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.flex-control-nav.flex-control-thumbs {
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 10px 0 0;
+}
+
+.flex-viewport {
+  width: 100%;
+}
+
+.flex-control-nav.flex-control-thumbs li,
+.flex-control-nav.flex-control-thumbs li img {
+  width: 70px !important;
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.flex-control-nav.flex-control-thumbs li img.flex-active,
+.flex-control-nav.flex-control-thumbs li:hover img {
+  border: 2px solid #000;
+}
+
+.best-deal-badge {
+  font-size: 12px;
+}
+
+.product-price {
+  font-size: 18px;
+}
+
+.best-deal-right-content .product-price,
+.best-deal-right-content .product-rating i {
+  font-size: 12px;
+}
+
+/* END BEST DEAL */
+
+/* START SPECIFIC CATEGORY */
+
+.specific-category-left .specific-category-item {
+  overflow: hidden;
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.specific-category-left .specific-category-content {
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  background-image: url("https://minimog-4437.kxcdn.com/supergear/wp-content/uploads/sites/2/2022/02/shop-banner-01.jpg");
+  background-position: center;
+  background-size: 100%;
+  -webkit-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+  background-repeat: no-repeat;
+}
+
+.specific-category-left .specific-category-content:hover {
+  background-size: 120%;
+}
+
+.specific-category-left .specific-category-content .button {
+  border-radius: 30px;
+  transition: all ease 0.5s;
+  letter-spacing: unset;
+}
+
+.specific-category-left .specific-category-content .button:hover {
+  transform: scale(1.1);
+}
+
+.specific-category-right .specific-category-content {
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all ease 0.8s;
+  padding: 30px 10px;
+  height: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.specific-category-right .specific-category-content:hover {
+  background-size: 120%;
+}
+
+.specific-category-right .specific-category-item:nth-child(1),
+.specific-category-right .specific-category-item:nth-child(2),
+.specific-category-right .specific-category-item:nth-child(3) {
+  margin-bottom: 10px;
+}
+.specific-category-right .specific-category-item:nth-child(4),
+.specific-category-right .specific-category-item:nth-child(5),
+.specific-category-right .specific-category-item:nth-child(6) {
+  margin-top: 10px;
+}
+
+/* END SPECIFIC CATEGORY */
+
+/* START PRODUCT */
+#product .product {
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: all ease 0.3s;
+}
+#product .product:hover {
+  border: 2px solid #000;
+}
+
+.product .product-title h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#product .product-price {
+  font-size: 14px;
+}
+
+/* END PRODUCT */
+
+/* START PROMO BOX */
+#promo-box .btn-lg {
+  border-radius: 30px;
+}
+
+#promo-box .promo {
+  background-image: url("https://images.unsplash.com/photo-1491024579037-7484729a4420?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=980&q=80");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* END PROMO BOX */
+
+/* START BLOG */
+.portfolio-item .portfolio-image {
+  border-radius: 8px;
+}
+/* END BLOG */
+
+/* START FOOTER */
+#footer .form-control {
+  border-top-left-radius: 30px !important;
+  border-bottom-left-radius: 30px !important;
+}
+
+body:not(.device-touch) #footer .button {
+  border-top-right-radius: 30px !important;
+  border-bottom-right-radius: 30px !important;
+}
+/* END FOOTER */
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  /* START NEW PRODUCT */
+  #new-product .col-lg-4 {
+    margin-bottom: 20px;
+  }
+  /* END NEW PRODUCT */
+
+  /* START BEST DEAL */
+  #best-deal .col-lg-8 {
+    margin-bottom: 30px;
+  }
+  /* END BEST DEAL */
+
+  /* START SPECIFIC CATEGORY */
+  .specific-category-left {
+    margin-bottom: 10px;
+  }
+
+  .specific-category-right .specific-category-item {
+    margin: 10px 0;
+  }
+
+  /* END SPECIFIC CATEGORY */
+}
