@@ -1,0 +1,21 @@
+.single-product .button {
+  border-radius: 30px;
+  letter-spacing: unset;
+}
+
+.quantity .minus {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.quantity .plus {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.tab-content .button {
+  border-radius: 30px;
+}
+
+#page-title h1 {
+  letter-spacing: unset;
+}
