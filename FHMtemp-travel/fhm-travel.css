@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.menu-link,
+.fbox-content h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-secondary {
+  font-family: "Anton", sans-serif;
+}
+
+.titular-sub-title {
+  letter-spacing: 0;
+}
+
+.text-primary {
+  color: #bbb !important;
+}
+
+h2.titular-title {
+  font-size: 3.75rem;
+}
+
+h1 > span:not(.nocolor):not(.badge),
+h2 > span:not(.nocolor):not(.badge),
+h3 > span:not(.nocolor):not(.badge),
+h4 > span:not(.nocolor):not(.badge),
+h5 > span:not(.nocolor):not(.badge),
+h6 > span:not(.nocolor):not(.badge) {
+  color: #59815b;
+}
+
+.owl-carousel .owl-nav [class*="owl-"]:hover {
+  background-color: #59815b !important;
+}
+
+#logo img {
+  height: 60px !important;
+}
+.sticky-header-shrink #header-wrap #logo img {
+  height: 40px !important;
+}
+
+/* START ESSENTIALS TIP */
+#essentials-tip {
+  background-image: url("https://wanderland.qodeinteractive.com/wp-content/uploads/2019/10/h1-bckg-02.jpg?id=102");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#essentials-tip h2 span {
+  color: #59815b;
+}
+
+#essentials-tip .essentials-tip-img {
+  width: 100%;
+}
+
+#essentials-tip .essentials-tip-text {
+  width: 80%;
+}
+
+#essentials-tip .essentials-tip-text h3 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+#essentials-tip .button {
+  background-color: transparent;
+  color: #444;
+  text-shadow: none;
+}
+
+#essentials-tip .button:hover {
+  background-color: transparent;
+  color: #bbb;
+}
+/* END ESSENTIALS TIP */
+
+/* START NEWSLETTER */
+#newsletter {
+  position: relative;
+  padding: 120px 0;
+  background-color: #edeae1;
+}
+
+#newsletter::after,
+#newsletter::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-image: url("https://wanderland.qodeinteractive.com/wp-content/uploads/2019/11/h1-rev-bottom.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0;
+}
+
+#newsletter::after {
+  bottom: -40%;
+  transform: translate(0, -50%);
+}
+
+#newsletter::before {
+  top: 0;
+  transform: translate(0, -50%) rotate(180deg);
+}
+
+#newsletter .form-control {
+  padding: 20px;
+  border-radius: 0px;
+}
+
+#newsletter .btn {
+  background-color: #59815b;
+  color: #fff;
+  border-radius: 0px;
+  padding: 20px 40px;
+}
+/* END NEWSLETTER */
+
+/* START BLOG */
+#blog {
+  background-image: url("https://wanderland.qodeinteractive.com/wp-content/uploads/2019/10/h1-bckg-02.jpg?id=102");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#blog .entry-title h3 {
+  font-size: 17px;
+}
+
+#blog .entry-title a {
+  color: 17px;
+  transition: all ease 0.3s;
+}
+
+#blog .entry-title a:hover {
+  text-decoration: underline !important;
+  color: #444;
+}
+/* END BLOG */
+
+/* START DESTINATION */
+#destination {
+  padding: 120px 0;
+}
+
+#destination::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-image: url("https://wanderland.qodeinteractive.com/wp-content/uploads/2019/11/h1-rev-bottom.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0;
+}
+
+#destination::before {
+  top: 0;
+  transform: translate(0, -50%) rotate(180deg);
+}
+
+#destination .media-box.fbox-bg .fbox-content {
+  border: unset;
+  background: transparent;
+}
+
+#destination .media-box .fbox-media a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#destination .media-box.fbox-bg .fbox-media img {
+  width: 60%;
+}
+
+/* END DESTINATION */
+
+/* START FOOTER */
+#footer .btn {
+  background-color: #59815b;
+  color: #fff;
+  border-radius: 0px;
+  padding: 20px 40px;
+}
+/* END FOOTER */
