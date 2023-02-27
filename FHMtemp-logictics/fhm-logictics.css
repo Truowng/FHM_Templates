@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.menu-link,
+.top-search-form input {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+/* START HEADER  */
+.sticky-header-shrink #header-wrap #logo img {
+  height: 40px !important;
+}
+#logo img {
+  height: 60px !important;
+}
+/* END HEADER  */
+
+/* START SLIDER */
+
+.slider-caption h2 {
+  text-transform: unset;
+}
+/* END SLIDER */
+
+/* START ADVANTAGE */
+#advantage .heading-block h2 {
+  font-size: 25px;
+  text-transform: unset;
+}
+/* END ADVANTAGE */
+
+/* START INTRODUCE */
+#introduce .introduce-title-container {
+  border-right: 1px solid #ccc;
+  height: 100%;
+  padding: 10px;
+}
+
+#introduce .heading-block h2 {
+  text-transform: unset;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+#introduce .introduce-content-img {
+  margin-bottom: 50px;
+}
+
+#introduce .introduce-content-img img {
+  width: 100%;
+}
+
+#introduce .introduce-content-number {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  border-bottom: 1px solid #ccc;
+  padding-left: 30px;
+}
+
+#introduce .introduce-content-number:last-child {
+  border-bottom: none;
+}
+
+#introduce .introduce-content-number .number {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+/* END INTRODUCE */
+
+/* START SERVICE */
+#service .heading-block h2 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: unset;
+}
+
+#service .service-item-container {
+  overflow: hidden;
+  position: relative;
+}
+
+#service .service-item-img {
+  position: relative;
+  width: 100%;
+}
+
+#service .service-item-img-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+#service .service-item-img-text p {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+#service .service-item-img-text h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+}
+
+#service .service-content-container {
+  background-color: #292929;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 20px 20px 40px;
+  transform: translateX(-100%);
+  transition: all ease 0.4s;
+  opacity: 0;
+}
+
+#service .service-item-container:hover .service-content-container {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+#service .service-content-container .title {
+  font-size: 40px;
+  transition: all ease 0.5s;
+  opacity: 0;
+  transform: translateX(10%);
+  line-height: 50px;
+}
+
+#service .service-item-container:hover .service-content-container .title {
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: 0.4s;
+}
+
+#service .service-content-container .desc {
+  font-size: 20px;
+  transition: all ease 0.5s;
+  transform: translateX(10%);
+  opacity: 0;
+}
+
+#service .service-item-container:hover .service-content-container .desc {
+  transform: translateX(0);
+  transition-delay: 0.5s;
+  opacity: 1;
+}
+
+#service .service-content-container .button {
+  width: fit-content;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  text-transform: unset;
+  margin-top: 20px;
+  transform: translateX(10%);
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+
+#service .service-item-container:hover .service-content-container .button {
+  transform: translateX(0);
+  transition-delay: 0.6s;
+  opacity: 1;
+}
+
+#service .service-content-container .button i {
+  font-size: 40px;
+  padding: 19px 11px;
+  border-radius: 30px;
+  background-color: #f7c600;
+  transition: all ease 0.3s;
+  width: fit-content;
+  color: #000;
+  text-shadow: none;
+}
+
+#service .service-content-container .button:hover i {
+  transform: rotate(90deg);
+}
+
+#service .service-content-container .button span {
+  display: block;
+  font-size: 18px;
+}
+
+/* END SERVICE */
+
+/* START CLIENT */
+#client .heading-block h2 {
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: unset;
+  margin-bottom: 50px;
+}
+/* END CLIENT */
+
+/* START TESTIMONIALS */
+#testimonials {
+  background-image: url("https://images.unsplash.com/photo-1562147685-51d350221afe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 300px 0 100px;
+}
+
+#testimonials .testimonials-icon {
+  fill: transparent;
+  stroke: #fff;
+  margin-bottom: 40px;
+}
+
+#testimonials .testimonial {
+  background-color: transparent;
+  box-shadow: unset;
+  border: unset;
+  padding: 0;
+}
+
+#testimonials .testimonial .comment {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 45px;
+}
+
+#testimonials .testimonials-user {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+#testimonials .testimonials-user .testimonials-img {
+  width: 100px;
+  border-radius: 50px;
+}
+
+#testimonials .testimonials-user .testimonials-img img {
+  width: 100%;
+}
+
+#testimonials .testimonials-user .testimonials-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+#testimonials .testimonials-user .testimonials-name .company {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+#testimonials .testimonials-user .testimonials-name .name {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+#testimonials .testimonial .flex-control-nav li {
+  width: fit-content;
+  height: fit-content;
+}
+
+#testimonials .testimonial .flex-control-nav li a {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+#testimonials .testimonial.testimonial-full .flex-control-nav {
+  height: fit-content;
+  margin-top: 50px;
+}
+
+/* END TESTIMONIALS */
+
+/* START BLOG */
+#blog {
+  margin: 100px 0;
+}
+
+#blog .heading-block h2 {
+  text-align: center;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: unset;
+}
+
+#blog .entry-title h3 a {
+  font-size: 22px;
+}
+
+/* END BLOG */
+
+/* START FORM */
+#form .btn {
+  color: #fff;
+  background-color: #f7c600;
+}
+#form .image-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+#form .image-wrap img {
+  width: 100%;
+}
+
+/* END FORM */
+
+/* START FOOTER */
+#footer {
+  border-top: none;
+  background-color: transparent;
+}
+
+#copyrights {
+  border-top: 1px solid #ccc;
+  background-color: transparent;
+}
+/* END FOOTER */
