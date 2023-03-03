@@ -1,0 +1,36 @@
+/* START ALL PROJECT */
+#all-project .all-project-item {
+  position: relative;
+}
+
+#all-project .all-project-item:hover .all-project-img img {
+  transform: scale(1.1);
+}
+
+#all-project .all-project-img {
+  width: 100%;
+  overflow: hidden;
+}
+
+#all-project .all-project-img img {
+  width: 101%;
+  transition: all ease 1s;
+}
+
+#all-project .all-project-text {
+  position: absolute;
+  bottom: 8%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 15px;
+  backdrop-filter: blur(15px);
+}
+
+#all-project .all-project-text * {
+  color: #fff;
+  margin: 0;
+}
+
+/* END ALL PROJECT */

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+  <!-- Mirrored from themes.semicolonweb.com/html/canvas/demo-construction.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Aug 2021 12:33:47 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+
+    <!-- Stylesheets
+	============================================= -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,500,700&amp;display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="css/swiper.css" type="text/css" />
+
+    <!-- Construction Demo Specific Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="demos/construction/construction.css"
+      type="text/css"
+    />
+    <!-- / -->
+
+    <link rel="stylesheet" href="css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="demos/construction/css/fonts.css"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="css/colors6bbb.css?color=F18052"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="icity.css" type="text/css" />
+    <link rel="stylesheet" href="icity-project-detail.css" type="text/css" />
+
+    <!-- Document Title
+	============================================= -->
+    <title>iCity Project Detail</title>
+  </head>
+
+  <body class="stretched">
+    <!-- Document Wrapper
+	============================================= -->
+    <div id="wrapper" class="clearfix">
+      <!-- Header
+		============================================= -->
+      <header id="header" class="header-size-sm" data-sticky-shrink="false">
+        <div class="container">
+          <div class="header-row">
+            <!-- Logo
+					============================================= -->
+            <div id="logo" class="ms-auto me-lg-auto">
+              <a href="index-2.html" class="standard-logo"
+                ><img src="./ICity Logo.png" alt="iCity Logo"
+              /></a>
+              <a href="index-2.html" class="retina-logo"
+                ><img src="./ICity Logo.png" alt="iCity Logo"
+              /></a>
+            </div>
+            <!-- #logo end -->
+          </div>
+        </div>
+
+        <div id="header-wrap">
+          <div class="container">
+            <div
+              class="header-row justify-content-between flex-row-reverse flex-lg-row justify-content-lg-center"
+            >
+              <div class="header-misc">
+                <div id="top-language" class="header-misc-icon">
+                  <button class="english-btn">
+                    <img src="./images/usa.png" alt="Tiếng anh" />
+                  </button>
+                  <button class="vietnam-btn">
+                    <img src="./images/vietnam.png" alt="Tiếng việt" />
+                  </button>
+                </div>
+
+                <!-- Top Search
+							============================================= -->
+                <div id="top-search" class="header-misc-icon">
+                  <a href="#" id="top-search-trigger"
+                    ><i class="icon-line-search"></i
+                    ><i class="icon-line-cross"></i
+                  ></a>
+                </div>
+                <!-- #top-search end -->
+              </div>
+
+              <div id="primary-menu-trigger">
+                <svg class="svg-trigger" viewBox="0 0 100 100">
+                  <path
+                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
+                  ></path>
+                  <path d="m 30,50 h 40"></path>
+                  <path
+                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Primary Navigation
+						============================================= -->
+              <nav class="primary-menu with-arrows">
+                <ul class="menu-container">
+                  <li class="menu-item current">
+                    <a class="menu-link" href="demo-construction.html"
+                      ><div>Trang chủ</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="demo-construction-services.html"
+                      ><div>Dự án</div></a
+                    >
+                    <ul class="sub-menu-container">
+                      <li class="menu-item">
+                        <a class="menu-link" href="#"
+                          ><div>Housing Management</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="#"
+                          ><div>Construction Planning</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="#"><div>Green Homes</div></a>
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="#"
+                          ><div>Architecture Design</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="#"
+                          ><div>Interior Planning</div></a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="menu-item">
+                    <a class="menu-link" href="demo-construction-projects.html"
+                      ><div>Hoạt động</div></a
+                    >
+                    <ul class="sub-menu-container">
+                      <li class="menu-item">
+                        <a
+                          class="menu-link"
+                          href="demo-construction-projects-2.html"
+                          ><div>2 Columns</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          class="menu-link"
+                          href="demo-construction-projects-3.html"
+                          ><div>3 Columns</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          class="menu-link"
+                          href="demo-construction-projects.html"
+                          ><div>4 Columns</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          class="menu-link"
+                          href="demo-construction-projects-5.html"
+                          ><div>5 Columns</div></a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="demo-construction-investors.html"
+                      ><div>Liên hệ</div></a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <!-- #primary-menu end -->
+
+              <form
+                class="top-search-form"
+                action="http://themes.semicolonweb.com/html/canvas/search.html"
+                method="get"
+              >
+                <input
+                  type="text"
+                  name="q"
+                  class="form-control"
+                  value=""
+                  placeholder="Tìm kiếm dự án"
+                  autocomplete="off"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="header-wrap-clone"></div>
+      </header>
+      <!-- #header end -->
+
+      <!-- Content
+		============================================= -->
+      <section id="content">
+        <div class="content-wrap py-0">
+          <!-- START PROJECT DETAIL -->
+          <div id="project-detail" class="section bg-transparent pt-0">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-5 col-sm-12">
+                  <div class="project-detail-text">
+                    <h2>Tân Hoàng Minh Group | Smart City Phuc Yen</h2>
+                    <div class="project-detail-dims">
+                      <p>Chủ đầu tư: Tân Hoàng Minh Group</p>
+                      <p>Năm: 2020</p>
+                      <p>Quy mô: 283 Ha</p>
+                      <p>Địa điểm: Phúc Yên, Vĩnh Phúc</p>
+                    </div>
+                    <p>
+                      Quy hoạch chi tiết Khu đô thị thông minh Phúc Yên New –
+                      Gen Residence là một trong những dự án quan trọng của tập
+                      đoàn Tân Hoàng Minh. Dự án có tổng diện tích hơn 283 ha
+                      với hệ thống các công trình chung cư cao tầng ứng dụng
+                      công nghệ I.C.T hiện đại, công nghệ cảm ứng, cảm biến và
+                      tự ứng phó trong đô thị.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-sm-12">
+                  <div class="project-detail-img">
+                    <div
+                      id="oc-slider"
+                      class="owl-carousel carousel-widget"
+                      data-margin="0"
+                      data-items="1"
+                      data-animate-in="fadeIn"
+                      data-speed="450"
+                      data-animate-out="fadeOut"
+                    >
+                      <a href="#"
+                        ><img
+                          src="./images/Web/Anh du an/central ego.jpg"
+                          alt="Slider"
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="./images/Web/Anh du an/central hill.jpg"
+                          alt="Slider"
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="./images/Web/Anh du an/khu dan cu ngoc thien.jpg"
+                          alt="Slider"
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="./images/Web/Anh du an/khu dan cu van ho.jpg"
+                          alt="Slider"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END PROJECT DETAIL -->
+
+          <!-- START RELATE PROJECT -->
+          <div id="relate-project" class="section bg-transparent my-0 pt-0">
+            <div class="container">
+              <div class="heading-block">
+                <h2>Dự án khác</h2>
+              </div>
+              <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="relate-project-item">
+                    <div class="relate-project-img">
+                      <img
+                        src="./images/Web/Anh du an/khu dan cu ngoc thien.jpg"
+                        alt="Dự án"
+                      />
+                    </div>
+                    <div class="relate-project-text">
+                      <h3>Central Hill</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="relate-project-item">
+                    <div class="relate-project-img">
+                      <img
+                        src="./images/Web/Anh du an/khu dan cu ngoc thien.jpg"
+                        alt="Dự án"
+                      />
+                    </div>
+                    <div class="relate-project-text">
+                      <h3>Central Hill</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="relate-project-item">
+                    <div class="relate-project-img">
+                      <img
+                        src="./images/Web/Anh du an/khu dan cu ngoc thien.jpg"
+                        alt="Dự án"
+                      />
+                    </div>
+                    <div class="relate-project-text">
+                      <h3>Central Hill</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="relate-project-item">
+                    <div class="relate-project-img">
+                      <img
+                        src="./images/Web/Anh du an/khu dan cu ngoc thien.jpg"
+                        alt="Dự án"
+                      />
+                    </div>
+                    <div class="relate-project-text">
+                      <h3>Central Hill</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END RELATE PROJECT -->
+        </div>
+      </section>
+      <!-- #content end -->
+
+      <!-- Footer
+		============================================= -->
+      <footer id="footer" class="dark">
+        <div class="container">
+          <!-- Footer Widgets
+				============================================= -->
+          <div class="footer-widgets-wrap">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="widget clearfix">
+                  <!-- <img
+                    src="https://fhmvietnam.vn/data/cms-image/logo/logo_new_light.png"
+                    alt="Image"
+                    class="alignleft"
+                    style="
+                      margin-top: 8px;
+                      padding-right: 18px;
+                      border-right: 1px solid #4a4a4a;
+                      width: 16%;
+                    "
+                  />
+
+                  <p>Tập đoàn hàng đầu Việt Nam về lĩnh vực xây dựng</p>
+
+                  <div class="line" style="margin: 30px 0"></div> -->
+
+                  <div class="row col-mb-30">
+                    <div class="col-lg-3 col-6 widget_links">
+                      <h3>Về chúng tôi</h3>
+                      <ul>
+                        <li><a href="#">Về chúng tôi</a></li>
+                        <li><a href="#">Nhân sự</a></li>
+                        <li><a href="#">Khách hàng</a></li>
+                        <li><a href="#">Dự án</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3 col-6 widget_links">
+                      <h3>Dự án</h3>
+                      <ul>
+                        <li><a href="#">Về chúng tôi</a></li>
+                        <li><a href="#">Nhân sự</a></li>
+                        <li><a href="#">Khách hàng</a></li>
+                        <li><a href="#">Dự án</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3 col-6 widget_links">
+                      <h3>Hoạt động</h3>
+                      <ul>
+                        <li><a href="#">Về chúng tôi</a></li>
+                        <li><a href="#">Nhân sự</a></li>
+                        <li><a href="#">Khách hàng</a></li>
+                        <li><a href="#">Dự án</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-5 mt-5 mt-lg-0">
+                <div class="widget clearfix">
+                  <div class="row col-mb-30">
+                    <div class="col-12">
+                      <div class="footer-big-contacts">
+                        <span>Địa chỉ:</span>
+                        2/25 Thọ Tháp, Dịch Vọng <br />Cầu Giấy, Hà Nội
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="footer-big-contacts">
+                        <span>Hotline:</span>
+                        0393004567
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="footer-big-contacts">
+                        <span>Email:</span>
+                        fhmvietnam@gmail.com
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- .footer-widgets-wrap end -->
+        </div>
+      </footer>
+      <!-- #footer end -->
+    </div>
+    <!-- #wrapper end -->
+
+    <!-- Go To Top
+	============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- JavaScripts
+	============================================= -->
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.min.js"></script>
+
+    <!-- Footer Scripts
+	============================================= -->
+    <script src="js/functions.js"></script>
+  </body>
+
+  <!-- Mirrored from themes.semicolonweb.com/html/canvas/demo-construction.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Aug 2021 12:38:30 GMT -->
+</html>

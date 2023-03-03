@@ -1,0 +1,47 @@
+/* START PROJECT DETAIL */
+#project-detail .project-detail-dims * {
+  margin: 0;
+}
+
+#project-detail .project-detail-dims {
+  margin-bottom: 25px;
+}
+
+/* END PROJECT DETAIL */
+
+/* START RELATE PROJECT */
+#relate-project .relate-project-item {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+#relate-project .relate-project-item:hover .relate-project-img img {
+  transform: scale(1.1);
+}
+
+#relate-project .relate-project-img {
+  width: 100%;
+  overflow: hidden;
+}
+
+#relate-project .relate-project-img img {
+  width: 100%;
+  transition: all ease 1s;
+}
+
+#relate-project .relate-project-text {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  backdrop-filter: blur(15px);
+  padding: 10px 15px;
+  width: 90%;
+}
+
+#relate-project .relate-project-text h3 {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+/* END RELATE PROJECT */
