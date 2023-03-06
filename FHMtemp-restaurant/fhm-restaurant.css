@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.menu-link,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.font-secondary {
+  font-family: "Lora", serif !important;
+}
+:root {
+  --primary-color: #dd5903;
+}
+
+.text-primary {
+  color: #dd5903 !important;
+}
+
+.titular-sub-title {
+  letter-spacing: 2px;
+}
+
+/* START HEADER */
+#logo img {
+  height: 60px !important;
+}
+
+.sticky-header-shrink #header-wrap #logo img {
+  height: 40px !important;
+}
+/* END HEADER */
+
+/* START SLIDER */
+
+.slider-caption.slider-caption-center {
+  max-width: unset;
+}
+
+.slider-caption h2 {
+  font-size: 80px;
+  letter-spacing: 0px;
+  text-transform: capitalize;
+  font-weight: 500;
+  line-height: unset;
+}
+/* END SLIDER */
+
+/* START INTRODUCE */
+#introduce .introduce-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+#introduce .introduce-content-img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+#introduce .introduce-content-img img {
+  width: 100%;
+}
+
+#introduce .introduce-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#introduce .introduce-img img {
+  width: 80%;
+}
+/* END INTRODUCE */
+
+/* START MENU */
+#menu .menu-item {
+  padding: 0 15px;
+  margin-bottom: 100px;
+}
+
+#menu .col-lg-4:last-of-type .menu-item {
+  margin-bottom: 0;
+}
+
+#menu .menu-item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+}
+#menu .menu-item-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+#menu .menu-item-list-item .name {
+  flex: 1;
+}
+
+#menu .menu-item-list-item .name *,
+#menu .menu-item-list-item .price * {
+  margin-bottom: 0;
+}
+
+#menu .menu-item-list-item .name h3 {
+  font-weight: 400;
+  font-size: 25px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+#menu .menu-item-list-item .name h3 span {
+  display: block;
+  flex: 0.9;
+  height: 1px;
+  background-color: #ddd;
+}
+
+#menu .menu-item-list-item .name p {
+  font-size: 18px;
+  color: #9c9c9c;
+}
+
+#menu .menu-item-list-item .price {
+  align-self: flex-start;
+}
+
+#menu .menu-item-list-item .price p {
+  font-size: 20px;
+}
+
+#menu .button {
+  border: 1px solid #000;
+  background-color: transparent;
+  color: #000;
+  text-shadow: none;
+  font-size: 15px;
+  margin-top: 50px;
+  width: fit-content;
+  padding: 10px 20px;
+  transition: all ease 0.3s;
+}
+
+#menu .button:hover {
+  background-color: #000;
+  color: #fff;
+}
+/* END MENU */
+
+/* START CATEGORY */
+#category p,
+#category h3 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: #fff;
+  width: fit-content;
+  text-align: center;
+}
+
+#category h3 {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+#category p {
+  font-weight: 600;
+}
+
+#category .button {
+  background-color: transparent;
+  text-shadow: none;
+  width: fit-content;
+  margin: 20px 0 0;
+  font-size: 18px;
+  text-transform: unset;
+  padding: 5px 0;
+  position: relative;
+  display: block;
+  font-weight: normal;
+}
+
+#category .button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary-color);
+  transition: all ease 0.3s;
+}
+
+#category .button:hover::after {
+  width: 0%;
+}
+
+#category .category {
+  position: relative;
+  height: 100%;
+}
+
+#category .category:hover .category-img img {
+  transform: scale(1.1);
+}
+
+#category .category-img {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+#category .category-img img {
+  width: 100%;
+  transition: all ease 1s;
+  max-width: unset;
+}
+
+#category .category.rcm .category-text,
+#category .category.wines .category-text {
+  position: absolute;
+  z-index: 1;
+}
+
+#category .category.rcm .category-text {
+  bottom: 5%;
+  left: 5%;
+}
+
+#category .category.wines .category-img img {
+  height: 100%;
+}
+
+#category .category.wines .category-text {
+  bottom: 5%;
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+#category .category.wines .category-text h3 {
+  text-align: end;
+}
+
+#category .category.wines .category-text a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#category .category .category-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#category .category-text.normal {
+  background-color: #000;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 250px;
+}
+/* END CATEGORY */
+
+/* START ABOUT US */
+
+#about-us .about-us-content {
+  padding: 40px;
+}
+#about-us .about-us-content .desc {
+  font-size: 20px;
+  width: 80%;
+}
+
+#about-us .about-us-content .button {
+  text-shadow: none;
+  font-size: 18px;
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  border: 1px solid var(--primary-color);
+  transition: all ease 0.3s;
+}
+
+#about-us .about-us-content .button:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+}
+
+#about-us .about-us-img {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+#about-us .about-us-img img {
+  width: 49%;
+  height: 100%;
+}
+/* END ABOUT US */
+
+/* START BOOKING */
+#booking {
+  background: url(https://patiotime.loftocean.com/wp-content/uploads/2022/03/alaksiej-carankievic-JBDYs80RTcs-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 150px 0;
+}
+
+#booking form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#booking input {
+  border-radius: 0px;
+}
+
+#booking button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 0px;
+}
+/* END BOOKING */
