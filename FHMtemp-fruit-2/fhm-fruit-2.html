@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+  <!-- Mirrored from themes.semicolonweb.com/html/canvas/demo-movers.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Aug 2021 13:14:14 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+
+    <!-- Stylesheets
+	============================================= -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&amp;display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <link rel="stylesheet" href="css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+
+    <!-- Movers Demo Specific Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="css/colors2d89.css?color=0F66DD"
+      type="text/css"
+    />
+    <!-- Theme Color -->
+    <link rel="stylesheet" href="demos/movers/css/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="demos/movers/movers.css" type="text/css" />
+    <!-- / -->
+
+    <link rel="stylesheet" href="fhm-fruit-2.css" type="text/css" />
+
+    <!-- DatePicker CSS -->
+    <link
+      rel="stylesheet"
+      href="css/components/datepicker.css"
+      type="text/css"
+    />
+
+    <meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
+
+    <!-- Document Title
+	============================================= -->
+    <title>FHM Fruit</title>
+  </head>
+
+  <body class="stretched">
+    <!-- Document Wrapper
+	============================================= -->
+    <div id="wrapper" class="clearfix">
+      <!-- Header
+		============================================= -->
+      <header
+        id="header"
+        class="dark header-size-sm"
+        data-sticky-shrink="false"
+      >
+        <div class="container">
+          <div class="header-row">
+            <!-- Logo
+					============================================= -->
+            <div id="logo" class="ms-auto ms-md-0">
+              <a
+                href="index-2.html"
+                class="standard-logo"
+                data-dark-logo="https://fhmvietnam.vn/data/cms-image/logo/logo_new_light.png"
+                ><img
+                  class="mx-auto"
+                  src="https://fhmvietnam.vn/data/cms-image/logo/logo_new_light.png"
+                  alt="FHM Logo"
+              /></a>
+              <a
+                href="index-2.html"
+                class="retina-logo"
+                data-dark-logo="https://fhmvietnam.vn/data/cms-image/logo/logo_new_light.png"
+                ><img
+                  class="mx-auto"
+                  src="https://fhmvietnam.vn/data/cms-image/logo/logo_new_light.png"
+                  alt="FHM Logo"
+              /></a>
+            </div>
+            <!-- #logo end -->
+
+            <ul
+              class="header-extras d-none d-sm-flex mx-auto mx-md-0 mb-4 mb-md-0"
+            >
+              <li>
+                <i class="i-plain icon-call m-0"></i>
+                <div class="he-text fw-normal text-white-50">
+                  Liên hệ:
+                  <span
+                    ><a href="tel:0393004567" class="text-white fw-medium"
+                      >0393004567</a
+                    ></span
+                  >
+                </div>
+              </li>
+              <li>
+                <i class="i-plain icon-line2-envelope m-0"></i>
+                <div class="he-text fw-normal text-white-50">
+                  Email:
+                  <span
+                    ><a
+                      href="mailto:fhmvietnam@gmail.com"
+                      target="_top"
+                      class="text-white fw-medium"
+                      >fhmvietnam@gmail.com</a
+                    ></span
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="header-wrap">
+          <div class="container">
+            <div
+              class="header-row justify-content-between flex-row-reverse flex-lg-row"
+            >
+              <div class="header-misc">
+                <!-- Top Search
+							============================================= -->
+                <div id="top-search" class="header-misc-icon">
+                  <a href="#" id="top-search-trigger"
+                    ><i class="icon-line-search"></i
+                    ><i class="icon-line-cross"></i
+                  ></a>
+                </div>
+                <!-- #top-search end -->
+
+                <!-- Header Buttons
+							============================================= -->
+                <div class="header-buttons d-none d-sm-inline-block">
+                  <a
+                    href="#slider"
+                    data-scrollto="#slider"
+                    data-offset="-80"
+                    class="button button-rounded button-white button-light button-small m-0"
+                    >Liên hệ</a
+                  >
+                </div>
+              </div>
+
+              <div id="primary-menu-trigger">
+                <svg class="svg-trigger" viewBox="0 0 100 100">
+                  <path
+                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
+                  ></path>
+                  <path d="m 30,50 h 40"></path>
+                  <path
+                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Primary Navigation
+						============================================= -->
+              <nav class="primary-menu with-arrows not-dark">
+                <ul class="menu-container">
+                  <li class="menu-item current">
+                    <a class="menu-link" href="demo-movers.html"
+                      ><div>Trang chủ</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="demo-movers-company.html"
+                      ><div>Sản phẩm</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="demo-movers-rates.html"
+                      ><div>Bán chạy</div></a
+                    >
+                    <ul class="sub-menu-container">
+                      <li class="menu-item">
+                        <a class="menu-link" href="demo-movers-rates.html"
+                          ><div>
+                            <i class="icon-line2-home"></i>Home Moving
+                          </div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="demo-movers-rates.html"
+                          ><div>
+                            <i class="icon-building2"></i>Office Moving
+                          </div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="demo-movers-rates.html"
+                          ><div>
+                            <i class="icon-line2-globe"></i>International Moving
+                          </div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="demo-movers-rates.html"
+                          ><div><i class="icon-paw"></i>Pet Shifting</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="demo-movers-rates.html"
+                          ><div><i class="icon-car"></i>Car Shifting</div></a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="demo-movers-rates.html"
+                          ><div><i class="icon-truck1"></i>Hire Truck</div></a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="demo-movers-team.html"
+                      ><div>Thực phẩm sạch</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="demo-movers-faqs.html"
+                      ><div>Giao hàng</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="demo-movers-blog.html"
+                      ><div>Chính sách</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="demo-movers-contact.html"
+                      ><div>Liên hệ</div></a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <!-- #primary-menu end -->
+
+              <form
+                class="top-search-form"
+                action="http://themes.semicolonweb.com/html/canvas/search.html"
+                method="get"
+              >
+                <input
+                  type="text"
+                  name="q"
+                  class="form-control"
+                  value=""
+                  placeholder="Tìm kiếm sản phẩm"
+                  autocomplete="off"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="header-wrap-clone"></div>
+      </header>
+      <!-- #header end -->
+
+      <!-- Content
+		============================================= -->
+      <section id="content">
+        <div class="content-wrap pb-0 pt-3">
+          <!-- START SLIDER -->
+          <div id="slider" class="section bg-transparent my-0 py-0">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-8 col-md-12 col-sm-12">
+                  <div
+                    id="oc-slider"
+                    class="owl-carousel carousel-widget"
+                    data-margin="0"
+                    data-items="1"
+                    data-animate-in="fadeIn"
+                    data-speed="450"
+                    data-animate-out="fadeOut"
+                  >
+                    <a href="#"
+                      ><img
+                        src="https://themepanthers.com/wp/nest/d1/wp-content/uploads/2022/05/slider-2-min.png"
+                        alt="Slider"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="https://themepanthers.com/wp/nest/d1/wp-content/uploads/2022/05/slider-1-min.png"
+                        alt="Slider"
+                    /></a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-0">
+                  <div class="slider-img">
+                    <img
+                      src="https://botble.b-cdn.net/themes/nest/imgs/banner/banner-11.png"
+                      alt="Image"
+                    />
+                    <h3>Mang thiên nhiên đến với ngôi nhà của bạn</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END SLIDER -->
+
+          <!-- START CATEGORY -->
+          <div id="category" class="section bg-transparent my-0 pb-0">
+            <div class="container">
+              <div class="fancy-title title-center">
+                <h2>Danh mục sản phẩm</h2>
+              </div>
+
+              <div class="row col-mb-30">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                  <div class="category-item">
+                    <a href="#">
+                      <div class="category-item-img">
+                        <img
+                          src="https://themepanthers.com/wp/nest/d1/wp-content/uploads/2022/05/cat-12.png"
+                          alt="Image 1"
+                        />
+                      </div>
+                      <div class="text">
+                        <h3>Oganic Kiwi</h3>
+                      </div></a
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                  <div class="category-item">
+                    <a href="#">
+                      <div class="category-item-img">
+                        <img
+                          src="https://themepanthers.com/wp/nest/d1/wp-content/uploads/2022/05/cat-13.png"
+                          alt="Image 1"
+                        />
+                      </div>
+                      <div class="text">
+                        <h3>Bánh & Sữa</h3>
+                      </div></a
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                  <div class="category-item">
+                    <a href="#">
+                      <div class="category-item-img">
+                        <img
+                          src="https://themepanthers.com/wp/nest/d1/wp-content/uploads/2022/05/cat-11.png"
+                          alt="Image 1"
+                        />
+                      </div>
+                      <div class="text">
+                        <h3>Đào</h3>
+                      </div></a
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                  <div class="category-item">
+                    <a href="#">
+                      <div class="category-item-img">
+                        <img
+                          src="https://themepanthers.com/wp/nest/d1/wp-content/uploads/2022/05/cat-9.png"
+                          alt="Image 1"
+                        />
+                      </div>
+                      <div class="text">
+                        <h3>Táo</h3>
+                      </div></a
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                  <div class="category-item">
+                    <a href="#">
+                      <div class="category-item-img">
+                        <img
+                          src="https://themepanthers.com/wp/nest/d1/wp-content/uploads/2022/05/cat-3.png"
+                          alt="Image 1"
+                        />
+                      </div>
+                      <div class="text">
+                        <h3>Ăn vặt</h3>
+                      </div></a
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                  <div class="category-item">
+                    <a href="#">
+                      <div class="category-item-img">
+                        <img
+                          src="https://themepanthers.com/wp/nest/d1/wp-content/uploads/2022/05/cat-1.png"
+                          alt="Image 1"
+                        />
+                      </div>
+                      <div class="text">
+                        <h3>Rau củ</h3>
+                      </div></a
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                  <div class="category-item">
+                    <a href="#">
+                      <div class="category-item-img">
+                        <img
+                          src="https://themepanthers.com/wp/nest/d1/wp-content/uploads/2022/05/cat-12.png"
+                          alt="Image 1"
+                        />
+                      </div>
+                      <div class="text">
+                        <h3>Oganic Kiwi</h3>
+                      </div></a
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                  <div class="category-item">
+                    <a href="#">
+                      <div class="category-item-img">
+                        <img
+                          src="https://themepanthers.com/wp/nest/d1/wp-content/uploads/2022/05/cat-13.png"
+                          alt="Image 1"
+                        />
+                      </div>
+                      <div class="text">
+                        <h3>Bánh & Sữa</h3>
+                      </div></a
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                  <div class="category-item">
+                    <a href="#">
+                      <div class="category-item-img">
+                        <img
+                          src="https://themepanthers.com/wp/nest/d1/wp-content/uploads/2022/05/cat-11.png"
+                          alt="Image 1"
+                        />
+                      </div>
+                      <div class="text">
+                        <h3>Đào</h3>
+                      </div></a
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                  <div class="category-item">
+                    <a href="#">
+                      <div class="category-item-img">
+                        <img
+                          src="https://themepanthers.com/wp/nest/d1/wp-content/uploads/2022/05/cat-9.png"
+                          alt="Image 1"
+                        />
+                      </div>
+                      <div class="text">
+                        <h3>Táo</h3>
+                      </div></a
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                  <div class="category-item">
+                    <a href="#">
+                      <div class="category-item-img">
+                        <img
+                          src="https://themepanthers.com/wp/nest/d1/wp-content/uploads/2022/05/cat-3.png"
+                          alt="Image 1"
+                        />
+                      </div>
+                      <div class="text">
+                        <h3>Ăn vặt</h3>
+                      </div></a
+                    >
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                  <div class="category-item">
+                    <a href="#">
+                      <div class="category-item-img">
+                        <img
+                          src="https://themepanthers.com/wp/nest/d1/wp-content/uploads/2022/05/cat-1.png"
+                          alt="Image 1"
+                        />
+                      </div>
+                      <div class="text">
+                        <h3>Rau củ</h3>
+                      </div></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-lg-4 col-sm-12">
+                  <div class="category-container">
+                    <div class="category-img">
+                      <img
+                        src="
+                      https://themepanthers.com/wp/nest/d1/wp-content/uploads/2022/05/banner-1.png"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="category-text">
+                      <h3>Thực phẩm sạch mỗi ngày</h3>
+                      <a href="#"> Mua ngay </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                  <div class="category-container">
+                    <div class="category-img">
+                      <img
+                        src="
+                     https://themepanthers.com/wp/nest/d1/wp-content/uploads/2022/05/banner-2.png"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="category-text">
+                      <h3>Bữa sáng nhanh chóng và dinh dưỡng</h3>
+                      <a href="#"> Mua ngay </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                  <div class="category-container">
+                    <div class="category-img">
+                      <img
+                        src="
+                      https://themepanthers.com/wp/nest/d1/wp-content/uploads/2022/05/banner-3.png"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="category-text">
+                      <h3>Chế độ ăn dinh dưỡng khỏe mạnh</h3>
+                      <a href="#"> Mua ngay </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END CATEGORY -->
+
+          <!-- START BEST SELL -->
+          <div id="best-sell" class="section bg-transparent my-0 pb-0">
+            <div class="container">
+              <div class="fancy-title title-center">
+                <h2>Sản phẩm bán chạy</h2>
+              </div>
+              <div class="row">
+                <div class="col-lg-9 col-md-12 col-sm-12">
+                  <div
+                    id="oc-products"
+                    class="owl-carousel products-carousel carousel-widget"
+                    data-pagi="false"
+                    data-items-xs="1"
+                    data-items-sm="2"
+                    data-items-md="3"
+                    data-items-lg="4"
+                  >
+                    <div class="oc-item">
+                      <div class="product">
+                        <div class="product-image">
+                          <a href="#"
+                            ><img
+                              src="https://botble.b-cdn.net/nest/storage/products/4-1-800x800.jpg"
+                              alt="Image 1"
+                          /></a>
+                          <a href="#"
+                            ><img
+                              src="https://botble.b-cdn.net/nest/storage/products/4-800x800.jpg"
+                              alt="Image 1"
+                          /></a>
+                          <div class="sale-flash badge">8%</div>
+                          <div class="bg-overlay">
+                            <div
+                              class="bg-overlay-content align-items-end justify-content-between"
+                              data-hover-animate="fadeIn"
+                              data-hover-speed="400"
+                            >
+                              <a href="#" class="btn btn-dark me-2"
+                                ><i class="icon-shopping-basket"></i
+                              ></a>
+                              <a
+                                href="demos/shop/ajax/shop-item.html"
+                                class="btn btn-dark"
+                                data-lightbox="ajax"
+                                ><i class="icon-line-expand"></i
+                              ></a>
+                            </div>
+                            <div class="bg-overlay-bg bg-transparent"></div>
+                          </div>
+                        </div>
+                        <div class="product-desc">
+                          <div class="product-title mb-1">
+                            <h3><a href="#">Đậu phộng nướng</a></h3>
+                          </div>
+                          <div class="product-price font-primary">
+                            <del class="me-1">$24.99</del> <ins>$12.49</ins>
+                          </div>
+                          <div class="product-rating">
+                            <i class="icon-star3"></i>
+                            <i class="icon-star3"></i>
+                            <i class="icon-star3"></i>
+                            <i class="icon-star-half-full"></i>
+                            <i class="icon-star-empty"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="oc-item">
+                      <div class="product">
+                        <div class="product-image">
+                          <a href="#"
+                            ><img
+                              src="https://botble.b-cdn.net/nest/storage/products/4-1-800x800.jpg"
+                              alt="Image 1"
+                          /></a>
+                          <a href="#"
+                            ><img
+                              src="https://botble.b-cdn.net/nest/storage/products/4-800x800.jpg"
+                              alt="Image 1"
+                          /></a>
+                          <div class="sale-flash badge">8%</div>
+                          <div class="bg-overlay">
+                            <div
+                              class="bg-overlay-content align-items-end justify-content-between"
+                              data-hover-animate="fadeIn"
+                              data-hover-speed="400"
+                            >
+                              <a href="#" class="btn btn-dark me-2"
+                                ><i class="icon-shopping-basket"></i
+                              ></a>
+                              <a
+                                href="demos/shop/ajax/shop-item.html"
+                                class="btn btn-dark"
+                                data-lightbox="ajax"
+                                ><i class="icon-line-expand"></i
+                              ></a>
+                            </div>
+                            <div class="bg-overlay-bg bg-transparent"></div>
+                          </div>
+                        </div>
+                        <div class="product-desc">
+                          <div class="product-title mb-1">
+                            <h3><a href="#">Đậu phộng nướng</a></h3>
+                          </div>
+                          <div class="product-price font-primary">
+                            <del class="me-1">$24.99</del> <ins>$12.49</ins>
+                          </div>
+                          <div class="product-rating">
+                            <i class="icon-star3"></i>
+                            <i class="icon-star3"></i>
+                            <i class="icon-star3"></i>
+                            <i class="icon-star-half-full"></i>
+                            <i class="icon-star-empty"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="oc-item">
+                      <div class="product">
+                        <div class="product-image">
+                          <a href="#"
+                            ><img
+                              src="https://botble.b-cdn.net/nest/storage/products/4-1-800x800.jpg"
+                              alt="Image 1"
+                          /></a>
+                          <a href="#"
+                            ><img
+                              src="https://botble.b-cdn.net/nest/storage/products/4-800x800.jpg"
+                              alt="Image 1"
+                          /></a>
+                          <div class="sale-flash badge">8%</div>
+                          <div class="bg-overlay">
+                            <div
+                              class="bg-overlay-content align-items-end justify-content-between"
+                              data-hover-animate="fadeIn"
+                              data-hover-speed="400"
+                            >
+                              <a href="#" class="btn btn-dark me-2"
+                                ><i class="icon-shopping-basket"></i
+                              ></a>
+                              <a
+                                href="demos/shop/ajax/shop-item.html"
+                                class="btn btn-dark"
+                                data-lightbox="ajax"
+                                ><i class="icon-line-expand"></i
+                              ></a>
+                            </div>
+                            <div class="bg-overlay-bg bg-transparent"></div>
+                          </div>
+                        </div>
+                        <div class="product-desc">
+                          <div class="product-title mb-1">
+                            <h3><a href="#">Đậu phộng nướng</a></h3>
+                          </div>
+                          <div class="product-price font-primary">
+                            <del class="me-1">$24.99</del> <ins>$12.49</ins>
+                          </div>
+                          <div class="product-rating">
+                            <i class="icon-star3"></i>
+                            <i class="icon-star3"></i>
+                            <i class="icon-star3"></i>
+                            <i class="icon-star-half-full"></i>
+                            <i class="icon-star-empty"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="oc-item">
+                      <div class="product">
+                        <div class="product-image">
+                          <a href="#"
+                            ><img
+                              src="https://botble.b-cdn.net/nest/storage/products/4-1-800x800.jpg"
+                              alt="Image 1"
+                          /></a>
+                          <a href="#"
+                            ><img
+                              src="https://botble.b-cdn.net/nest/storage/products/4-800x800.jpg"
+                              alt="Image 1"
+                          /></a>
+                          <div class="sale-flash badge">8%</div>
+                          <div class="bg-overlay">
+                            <div
+                              class="bg-overlay-content align-items-end justify-content-between"
+                              data-hover-animate="fadeIn"
+                              data-hover-speed="400"
+                            >
+                              <a href="#" class="btn btn-dark me-2"
+                                ><i class="icon-shopping-basket"></i
+                              ></a>
+                              <a
+                                href="demos/shop/ajax/shop-item.html"
+                                class="btn btn-dark"
+                                data-lightbox="ajax"
+                                ><i class="icon-line-expand"></i
+                              ></a>
+                            </div>
+                            <div class="bg-overlay-bg bg-transparent"></div>
+                          </div>
+                        </div>
+                        <div class="product-desc">
+                          <div class="product-title mb-1">
+                            <h3><a href="#">Đậu phộng nướng</a></h3>
+                          </div>
+                          <div class="product-price font-primary">
+                            <del class="me-1">$24.99</del> <ins>$12.49</ins>
+                          </div>
+                          <div class="product-rating">
+                            <i class="icon-star3"></i>
+                            <i class="icon-star3"></i>
+                            <i class="icon-star3"></i>
+                            <i class="icon-star-half-full"></i>
+                            <i class="icon-star-empty"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="oc-item">
+                      <div class="product">
+                        <div class="product-image">
+                          <a href="#"
+                            ><img
+                              src="https://botble.b-cdn.net/nest/storage/products/4-1-800x800.jpg"
+                              alt="Image 1"
+                          /></a>
+                          <a href="#"
+                            ><img
+                              src="https://botble.b-cdn.net/nest/storage/products/4-800x800.jpg"
+                              alt="Image 1"
+                          /></a>
+                          <div class="sale-flash badge">8%</div>
+                          <div class="bg-overlay">
+                            <div
+                              class="bg-overlay-content align-items-end justify-content-between"
+                              data-hover-animate="fadeIn"
+                              data-hover-speed="400"
+                            >
+                              <a href="#" class="btn btn-dark me-2"
+                                ><i class="icon-shopping-basket"></i
+                              ></a>
+                              <a
+                                href="demos/shop/ajax/shop-item.html"
+                                class="btn btn-dark"
+                                data-lightbox="ajax"
+                                ><i class="icon-line-expand"></i
+                              ></a>
+                            </div>
+                            <div class="bg-overlay-bg bg-transparent"></div>
+                          </div>
+                        </div>
+                        <div class="product-desc">
+                          <div class="product-title mb-1">
+                            <h3><a href="#">Đậu phộng nướng</a></h3>
+                          </div>
+                          <div class="product-price font-primary">
+                            <del class="me-1">$24.99</del> <ins>$12.49</ins>
+                          </div>
+                          <div class="product-rating">
+                            <i class="icon-star3"></i>
+                            <i class="icon-star3"></i>
+                            <i class="icon-star3"></i>
+                            <i class="icon-star-half-full"></i>
+                            <i class="icon-star-empty"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="oc-item">
+                      <div class="product">
+                        <div class="product-image">
+                          <a href="#"
+                            ><img
+                              src="https://botble.b-cdn.net/nest/storage/products/4-1-800x800.jpg"
+                              alt="Image 1"
+                          /></a>
+                          <a href="#"
+                            ><img
+                              src="https://botble.b-cdn.net/nest/storage/products/4-800x800.jpg"
+                              alt="Image 1"
+                          /></a>
+                          <div class="sale-flash badge">8%</div>
+                          <div class="bg-overlay">
+                            <div
+                              class="bg-overlay-content align-items-end justify-content-between"
+                              data-hover-animate="fadeIn"
+                              data-hover-speed="400"
+                            >
+                              <a href="#" class="btn btn-dark me-2"
+                                ><i class="icon-shopping-basket"></i
+                              ></a>
+                              <a
+                                href="demos/shop/ajax/shop-item.html"
+                                class="btn btn-dark"
+                                data-lightbox="ajax"
+                                ><i class="icon-line-expand"></i
+                              ></a>
+                            </div>
+                            <div class="bg-overlay-bg bg-transparent"></div>
+                          </div>
+                        </div>
+                        <div class="product-desc">
+                          <div class="product-title mb-1">
+                            <h3><a href="#">Đậu phộng nướng</a></h3>
+                          </div>
+                          <div class="product-price font-primary">
+                            <del class="me-1">$24.99</del> <ins>$12.49</ins>
+                          </div>
+                          <div class="product-rating">
+                            <i class="icon-star3"></i>
+                            <i class="icon-star3"></i>
+                            <i class="icon-star3"></i>
+                            <i class="icon-star-half-full"></i>
+                            <i class="icon-star-empty"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="oc-item">
+                      <div class="product">
+                        <div class="product-image">
+                          <a href="#"
+                            ><img
+                              src="https://botble.b-cdn.net/nest/storage/products/4-1-800x800.jpg"
+                              alt="Image 1"
+                          /></a>
+                          <a href="#"
+                            ><img
+                              src="https://botble.b-cdn.net/nest/storage/products/4-800x800.jpg"
+                              alt="Image 1"
+                          /></a>
+                          <div class="sale-flash badge">8%</div>
+                          <div class="bg-overlay">
+                            <div
+                              class="bg-overlay-content align-items-end justify-content-between"
+                              data-hover-animate="fadeIn"
+                              data-hover-speed="400"
+                            >
+                              <a href="#" class="btn btn-dark me-2"
+                                ><i class="icon-shopping-basket"></i
+                              ></a>
+                              <a
+                                href="demos/shop/ajax/shop-item.html"
+                                class="btn btn-dark"
+                                data-lightbox="ajax"
+                                ><i class="icon-line-expand"></i
+                              ></a>
+                            </div>
+                            <div class="bg-overlay-bg bg-transparent"></div>
+                          </div>
+                        </div>
+                        <div class="product-desc">
+                          <div class="product-title mb-1">
+                            <h3><a href="#">Đậu phộng nướng</a></h3>
+                          </div>
+                          <div class="product-price font-primary">
+                            <del class="me-1">$24.99</del> <ins>$12.49</ins>
+                          </div>
+                          <div class="product-rating">
+                            <i class="icon-star3"></i>
+                            <i class="icon-star3"></i>
+                            <i class="icon-star3"></i>
+                            <i class="icon-star-half-full"></i>
+                            <i class="icon-star-empty"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                  <div class="best-sell-img">
+                    <img
+                      src="https://themepanthers.com/wp/nest/d1/wp-content/uploads/2022/05/banner-4.png"
+                      alt="Image"
+                    />
+                    <h3>Mang thiên nhiên đến với ngôi nhà của bạn</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END BEST SELL -->
+
+          <!-- START POPULAR PRODUCT -->
+          <div id="popular-product" class="section bg-transparent my-0 pb-0">
+            <div class="container">
+              <div class="fancy-title title-center">
+                <h2>Sản phẩm phổ thông</h2>
+              </div>
+              <div class="row grid-6">
+                <!-- Shop Item 
+						============================================= -->
+                <div class="col-3 col-md-3 col-6 px-2">
+                  <div class="product">
+                    <div class="product-image">
+                      <a href="#"
+                        ><img
+                          src="https://botble.b-cdn.net/nest/storage/products/4-1-800x800.jpg"
+                          alt="Image 1"
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="https://botble.b-cdn.net/nest/storage/products/4-800x800.jpg"
+                          alt="Image 1"
+                      /></a>
+                      <div class="sale-flash badge">8%</div>
+                      <div class="bg-overlay">
+                        <div
+                          class="bg-overlay-content align-items-end justify-content-between"
+                          data-hover-animate="fadeIn"
+                          data-hover-speed="400"
+                        >
+                          <a href="#" class="btn btn-dark me-2"
+                            ><i class="icon-shopping-basket"></i
+                          ></a>
+                          <a
+                            href="demos/shop/ajax/shop-item.html"
+                            class="btn btn-dark"
+                            data-lightbox="ajax"
+                            ><i class="icon-line-expand"></i
+                          ></a>
+                        </div>
+                        <div class="bg-overlay-bg bg-transparent"></div>
+                      </div>
+                    </div>
+                    <div class="product-desc">
+                      <div class="product-title mb-1">
+                        <h3><a href="#">Đậu phộng nướng</a></h3>
+                      </div>
+                      <div class="product-price font-primary">
+                        <del class="me-1">$24.99</del> <ins>$12.49</ins>
+                      </div>
+                      <div class="product-rating">
+                        <i class="icon-star3"></i>
+                        <i class="icon-star3"></i>
+                        <i class="icon-star3"></i>
+                        <i class="icon-star-half-full"></i>
+                        <i class="icon-star-empty"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 col-md-3 col-6 px-2">
+                  <div class="product">
+                    <div class="product-image">
+                      <a href="#"
+                        ><img
+                          src="https://botble.b-cdn.net/nest/storage/products/4-1-800x800.jpg"
+                          alt="Image 1"
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="https://botble.b-cdn.net/nest/storage/products/4-800x800.jpg"
+                          alt="Image 1"
+                      /></a>
+                      <div class="sale-flash badge">8%</div>
+                      <div class="bg-overlay">
+                        <div
+                          class="bg-overlay-content align-items-end justify-content-between"
+                          data-hover-animate="fadeIn"
+                          data-hover-speed="400"
+                        >
+                          <a href="#" class="btn btn-dark me-2"
+                            ><i class="icon-shopping-basket"></i
+                          ></a>
+                          <a
+                            href="demos/shop/ajax/shop-item.html"
+                            class="btn btn-dark"
+                            data-lightbox="ajax"
+                            ><i class="icon-line-expand"></i
+                          ></a>
+                        </div>
+                        <div class="bg-overlay-bg bg-transparent"></div>
+                      </div>
+                    </div>
+                    <div class="product-desc">
+                      <div class="product-title mb-1">
+                        <h3><a href="#">Đậu phộng nướng</a></h3>
+                      </div>
+                      <div class="product-price font-primary">
+                        <del class="me-1">$24.99</del> <ins>$12.49</ins>
+                      </div>
+                      <div class="product-rating">
+                        <i class="icon-star3"></i>
+                        <i class="icon-star3"></i>
+                        <i class="icon-star3"></i>
+                        <i class="icon-star-half-full"></i>
+                        <i class="icon-star-empty"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 col-md-3 col-6 px-2">
+                  <div class="product">
+                    <div class="product-image">
+                      <a href="#"
+                        ><img
+                          src="https://botble.b-cdn.net/nest/storage/products/4-1-800x800.jpg"
+                          alt="Image 1"
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="https://botble.b-cdn.net/nest/storage/products/4-800x800.jpg"
+                          alt="Image 1"
+                      /></a>
+                      <div class="sale-flash badge">8%</div>
+                      <div class="bg-overlay">
+                        <div
+                          class="bg-overlay-content align-items-end justify-content-between"
+                          data-hover-animate="fadeIn"
+                          data-hover-speed="400"
+                        >
+                          <a href="#" class="btn btn-dark me-2"
+                            ><i class="icon-shopping-basket"></i
+                          ></a>
+                          <a
+                            href="demos/shop/ajax/shop-item.html"
+                            class="btn btn-dark"
+                            data-lightbox="ajax"
+                            ><i class="icon-line-expand"></i
+                          ></a>
+                        </div>
+                        <div class="bg-overlay-bg bg-transparent"></div>
+                      </div>
+                    </div>
+                    <div class="product-desc">
+                      <div class="product-title mb-1">
+                        <h3><a href="#">Đậu phộng nướng</a></h3>
+                      </div>
+                      <div class="product-price font-primary">
+                        <del class="me-1">$24.99</del> <ins>$12.49</ins>
+                      </div>
+                      <div class="product-rating">
+                        <i class="icon-star3"></i>
+                        <i class="icon-star3"></i>
+                        <i class="icon-star3"></i>
+                        <i class="icon-star-half-full"></i>
+                        <i class="icon-star-empty"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 col-md-3 col-6 px-2">
+                  <div class="product">
+                    <div class="product-image">
+                      <a href="#"
+                        ><img
+                          src="https://botble.b-cdn.net/nest/storage/products/4-1-800x800.jpg"
+                          alt="Image 1"
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="https://botble.b-cdn.net/nest/storage/products/4-800x800.jpg"
+                          alt="Image 1"
+                      /></a>
+                      <div class="sale-flash badge">8%</div>
+                      <div class="bg-overlay">
+                        <div
+                          class="bg-overlay-content align-items-end justify-content-between"
+                          data-hover-animate="fadeIn"
+                          data-hover-speed="400"
+                        >
+                          <a href="#" class="btn btn-dark me-2"
+                            ><i class="icon-shopping-basket"></i
+                          ></a>
+                          <a
+                            href="demos/shop/ajax/shop-item.html"
+                            class="btn btn-dark"
+                            data-lightbox="ajax"
+                            ><i class="icon-line-expand"></i
+                          ></a>
+                        </div>
+                        <div class="bg-overlay-bg bg-transparent"></div>
+                      </div>
+                    </div>
+                    <div class="product-desc">
+                      <div class="product-title mb-1">
+                        <h3><a href="#">Đậu phộng nướng</a></h3>
+                      </div>
+                      <div class="product-price font-primary">
+                        <del class="me-1">$24.99</del> <ins>$12.49</ins>
+                      </div>
+                      <div class="product-rating">
+                        <i class="icon-star3"></i>
+                        <i class="icon-star3"></i>
+                        <i class="icon-star3"></i>
+                        <i class="icon-star-half-full"></i>
+                        <i class="icon-star-empty"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 col-md-3 col-6 px-2">
+                  <div class="product">
+                    <div class="product-image">
+                      <a href="#"
+                        ><img
+                          src="https://botble.b-cdn.net/nest/storage/products/4-1-800x800.jpg"
+                          alt="Image 1"
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="https://botble.b-cdn.net/nest/storage/products/4-800x800.jpg"
+                          alt="Image 1"
+                      /></a>
+                      <div class="sale-flash badge">8%</div>
+                      <div class="bg-overlay">
+                        <div
+                          class="bg-overlay-content align-items-end justify-content-between"
+                          data-hover-animate="fadeIn"
+                          data-hover-speed="400"
+                        >
+                          <a href="#" class="btn btn-dark me-2"
+                            ><i class="icon-shopping-basket"></i
+                          ></a>
+                          <a
+                            href="demos/shop/ajax/shop-item.html"
+                            class="btn btn-dark"
+                            data-lightbox="ajax"
+                            ><i class="icon-line-expand"></i
+                          ></a>
+                        </div>
+                        <div class="bg-overlay-bg bg-transparent"></div>
+                      </div>
+                    </div>
+                    <div class="product-desc">
+                      <div class="product-title mb-1">
+                        <h3><a href="#">Đậu phộng nướng</a></h3>
+                      </div>
+                      <div class="product-price font-primary">
+                        <del class="me-1">$24.99</del> <ins>$12.49</ins>
+                      </div>
+                      <div class="product-rating">
+                        <i class="icon-star3"></i>
+                        <i class="icon-star3"></i>
+                        <i class="icon-star3"></i>
+                        <i class="icon-star-half-full"></i>
+                        <i class="icon-star-empty"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 col-md-3 col-6 px-2">
+                  <div class="product">
+                    <div class="product-image">
+                      <a href="#"
+                        ><img
+                          src="https://botble.b-cdn.net/nest/storage/products/4-1-800x800.jpg"
+                          alt="Image 1"
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="https://botble.b-cdn.net/nest/storage/products/4-800x800.jpg"
+                          alt="Image 1"
+                      /></a>
+                      <div class="sale-flash badge">8%</div>
+                      <div class="bg-overlay">
+                        <div
+                          class="bg-overlay-content align-items-end justify-content-between"
+                          data-hover-animate="fadeIn"
+                          data-hover-speed="400"
+                        >
+                          <a href="#" class="btn btn-dark me-2"
+                            ><i class="icon-shopping-basket"></i
+                          ></a>
+                          <a
+                            href="demos/shop/ajax/shop-item.html"
+                            class="btn btn-dark"
+                            data-lightbox="ajax"
+                            ><i class="icon-line-expand"></i
+                          ></a>
+                        </div>
+                        <div class="bg-overlay-bg bg-transparent"></div>
+                      </div>
+                    </div>
+                    <div class="product-desc">
+                      <div class="product-title mb-1">
+                        <h3><a href="#">Đậu phộng nướng</a></h3>
+                      </div>
+                      <div class="product-price font-primary">
+                        <del class="me-1">$24.99</del> <ins>$12.49</ins>
+                      </div>
+                      <div class="product-rating">
+                        <i class="icon-star3"></i>
+                        <i class="icon-star3"></i>
+                        <i class="icon-star3"></i>
+                        <i class="icon-star-half-full"></i>
+                        <i class="icon-star-empty"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 col-md-3 col-6 px-2">
+                  <div class="product">
+                    <div class="product-image">
+                      <a href="#"
+                        ><img
+                          src="https://botble.b-cdn.net/nest/storage/products/4-1-800x800.jpg"
+                          alt="Image 1"
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="https://botble.b-cdn.net/nest/storage/products/4-800x800.jpg"
+                          alt="Image 1"
+                      /></a>
+                      <div class="sale-flash badge">8%</div>
+                      <div class="bg-overlay">
+                        <div
+                          class="bg-overlay-content align-items-end justify-content-between"
+                          data-hover-animate="fadeIn"
+                          data-hover-speed="400"
+                        >
+                          <a href="#" class="btn btn-dark me-2"
+                            ><i class="icon-shopping-basket"></i
+                          ></a>
+                          <a
+                            href="demos/shop/ajax/shop-item.html"
+                            class="btn btn-dark"
+                            data-lightbox="ajax"
+                            ><i class="icon-line-expand"></i
+                          ></a>
+                        </div>
+                        <div class="bg-overlay-bg bg-transparent"></div>
+                      </div>
+                    </div>
+                    <div class="product-desc">
+                      <div class="product-title mb-1">
+                        <h3><a href="#">Đậu phộng nướng</a></h3>
+                      </div>
+                      <div class="product-price font-primary">
+                        <del class="me-1">$24.99</del> <ins>$12.49</ins>
+                      </div>
+                      <div class="product-rating">
+                        <i class="icon-star3"></i>
+                        <i class="icon-star3"></i>
+                        <i class="icon-star3"></i>
+                        <i class="icon-star-half-full"></i>
+                        <i class="icon-star-empty"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 col-md-3 col-6 px-2">
+                  <div class="product">
+                    <div class="product-image">
+                      <a href="#"
+                        ><img
+                          src="https://botble.b-cdn.net/nest/storage/products/4-1-800x800.jpg"
+                          alt="Image 1"
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="https://botble.b-cdn.net/nest/storage/products/4-800x800.jpg"
+                          alt="Image 1"
+                      /></a>
+                      <div class="sale-flash badge">8%</div>
+                      <div class="bg-overlay">
+                        <div
+                          class="bg-overlay-content align-items-end justify-content-between"
+                          data-hover-animate="fadeIn"
+                          data-hover-speed="400"
+                        >
+                          <a href="#" class="btn btn-dark me-2"
+                            ><i class="icon-shopping-basket"></i
+                          ></a>
+                          <a
+                            href="demos/shop/ajax/shop-item.html"
+                            class="btn btn-dark"
+                            data-lightbox="ajax"
+                            ><i class="icon-line-expand"></i
+                          ></a>
+                        </div>
+                        <div class="bg-overlay-bg bg-transparent"></div>
+                      </div>
+                    </div>
+                    <div class="product-desc">
+                      <div class="product-title mb-1">
+                        <h3><a href="#">Đậu phộng nướng</a></h3>
+                      </div>
+                      <div class="product-price font-primary">
+                        <del class="me-1">$24.99</del> <ins>$12.49</ins>
+                      </div>
+                      <div class="product-rating">
+                        <i class="icon-star3"></i>
+                        <i class="icon-star3"></i>
+                        <i class="icon-star3"></i>
+                        <i class="icon-star-half-full"></i>
+                        <i class="icon-star-empty"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- END POPULAR PRODUCT -->
+
+          <!-- START PROMO BOX -->
+          <div id="promo-box" class="section bg-transparent mt-0">
+            <div class="container">
+              <div class="promo-box-container">
+                <div class="row">
+                  <div class="col-lg-6 col-sm-12">
+                    <div class="promo-box-text">
+                      <h2>Ở nhà và tận hưởng dịch vụ giao hàng tận nơi</h2>
+                      <form
+                        id="widget-subscribe-form"
+                        action="http://themes.semicolonweb.com/html/canvas/include/subscribe.php"
+                        method="post"
+                        class="mb-0"
+                        novalidate="novalidate"
+                      >
+                        <div class="input-group input-group-lg mx-auto">
+                          <input
+                            type="email"
+                            id="widget-subscribe-form-email"
+                            name="widget-subscribe-form-email"
+                            class="form-control required email"
+                            placeholder="Email"
+                          />
+                          <button
+                            class="button fw-light ls2 text-uppercase"
+                            type="submit"
+                          >
+                            Đăng kí
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-sm-12">
+                    <div class="promo-box-img">
+                      <img
+                        src="https://themepanthers.com/wp/nest/d1/wp-content/uploads/2022/02/banner-9-min.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END PROMO BOX -->
+        </div>
+      </section>
+      <!-- #content end -->
+
+      <!-- Footer
+		============================================= -->
+      <footer id="footer" class="border">
+        <div class="container">
+          <!-- Footer Widgets
+				============================================= -->
+          <div class="footer-widgets-wrap pb-4 clearfix">
+            <div class="row">
+              <div class="col-lg-2 col-md-2 col-6">
+                <div class="widget clearfix">
+                  <h4 class="ls0 mb-4 nott">Liên kết nhanh</h4>
+
+                  <ul class="list-unstyled iconlist ms-0">
+                    <li class="mb-2"><a href="#">Giới thiệu</a></li>
+                    <li class="mb-2">
+                      <a href="demo-movers-company.html">Sản phẩm</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="demo-movers-faqs.html">Bán chạy</a>
+                    </li>
+                    <li class="mb-2"><a href="#">Giao hàng</a></li>
+                    <li class="mb-2">
+                      <a href="demo-movers-contact.html">Liên hệ</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-2 col-6">
+                <div class="widget clearfix">
+                  <h4 class="ls0 mb-4 nott">Liên kết nhanh</h4>
+
+                  <ul class="list-unstyled iconlist ms-0">
+                    <li class="mb-2"><a href="#">Giới thiệu</a></li>
+                    <li class="mb-2">
+                      <a href="demo-movers-company.html">Sản phẩm</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="demo-movers-faqs.html">Bán chạy</a>
+                    </li>
+                    <li class="mb-2"><a href="#">Giao hàng</a></li>
+                    <li class="mb-2">
+                      <a href="demo-movers-contact.html">Liên hệ</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-2 col-6">
+                <div class="widget clearfix">
+                  <h4 class="ls0 mb-4 nott">Liên kết nhanh</h4>
+
+                  <ul class="list-unstyled iconlist ms-0">
+                    <li class="mb-2"><a href="#">Giới thiệu</a></li>
+                    <li class="mb-2">
+                      <a href="demo-movers-company.html">Sản phẩm</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="demo-movers-faqs.html">Bán chạy</a>
+                    </li>
+                    <li class="mb-2"><a href="#">Giao hàng</a></li>
+                    <li class="mb-2">
+                      <a href="demo-movers-contact.html">Liên hệ</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-2 col-6">
+                <div class="widget clearfix">
+                  <h4 class="ls0 mb-4 nott">Liên kết nhanh</h4>
+
+                  <ul class="list-unstyled iconlist ms-0">
+                    <li class="mb-2"><a href="#">Giới thiệu</a></li>
+                    <li class="mb-2">
+                      <a href="demo-movers-company.html">Sản phẩm</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="demo-movers-faqs.html">Bán chạy</a>
+                    </li>
+                    <li class="mb-2"><a href="#">Giao hàng</a></li>
+                    <li class="mb-2">
+                      <a href="demo-movers-contact.html">Liên hệ</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-4 text-md-end">
+                <div class="widget clearfix">
+                  <h4 class="ls0 mb-4 nott">Địa chỉ:</h4>
+
+                  <div>
+                    <address>
+                      2/25 Thọ Tháp, Dịch Vọng <br />
+                      Cầu Giấy, Hà Nội <br />
+                    </address>
+                    <h3 class="mb-3">
+                      <a href="tel:0393004567"
+                        ><i class="icon-call me-1" style="font-size: 22px"></i>
+                        0393004567</a
+                      >
+                    </h3>
+                    <div class="d-flex justify-content-md-end">
+                      <a
+                        href="#"
+                        class="social-icon si-small si-facebook"
+                        title="Facebook"
+                      >
+                        <i class="icon-facebook"></i>
+                        <i class="icon-facebook"></i>
+                      </a>
+
+                      <a
+                        href="#"
+                        class="social-icon si-small si-instagram"
+                        title="instagram"
+                      >
+                        <i class="icon-instagram"></i>
+                        <i class="icon-instagram"></i>
+                      </a>
+
+                      <a
+                        href="#"
+                        class="social-icon si-small si-paypal"
+                        title="Paypal"
+                      >
+                        <i class="icon-paypal"></i>
+                        <i class="icon-paypal"></i>
+                      </a>
+
+                      <a
+                        href="#"
+                        class="social-icon si-small si-wikipedia"
+                        title="Apple Pay"
+                      >
+                        <i class="icon-apple-pay"></i>
+                        <i class="icon-apple-pay"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- .footer-widgets-wrap end -->
+        </div>
+
+        <!-- Copyrights
+			============================================= -->
+        <div id="copyrights" class="bg-transparent">
+          <div class="container clearfix">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-md-12 text-black-50">
+                Copyrights &copy; 2023 Bản quyền thuộc về FHM Agency.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- #copyrights end -->
+      </footer>
+      <!-- #footer end -->
+    </div>
+    <!-- #wrapper end -->
+
+    <!-- Go To Top
+	============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- JavaScripts
+	============================================= -->
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.min.js"></script>
+
+    <!-- DatePicker JS -->
+    <script src="js/components/datepicker.js"></script>
+
+    <!-- Footer Scripts
+	============================================= -->
+    <script src="js/functions.js"></script>
+
+    <script>
+      jQuery(".home-date").datepicker({
+        autoclose: true,
+        startDate: "today",
+      });
+    </script>
+  </body>
+
+  <!-- Mirrored from themes.semicolonweb.com/html/canvas/demo-movers.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Aug 2021 13:14:29 GMT -->
+</html>
