@@ -1,0 +1,18 @@
+.quantity .qty {
+  background-color: transparent;
+}
+
+.quantity .plus,
+.quantity .minus,
+.quantity .qty {
+  font-weight: 300;
+  background-color: transparent;
+}
+
+.button {
+  text-shadow: none;
+  background-color: transparent;
+  border: 1px solid #000;
+  font-weight: 300;
+  color: #000;
+}
