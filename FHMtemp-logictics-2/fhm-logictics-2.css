@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.menu-link,
+body {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+/* START HEADER */
+#logo img {
+  height: 60px !important;
+}
+.sticky-header-shrink #header-wrap #logo img {
+  height: 40px !important;
+}
+/* END HEADER */
+
+/* START ABOUT US */
+#about-us h3 {
+  font-size: 20px;
+}
+/* END ABOUT US */
+
+/* START COUNTER */
+#counter {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("https://images.unsplash.com/photo-1496347326319-2935d381b307?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1333&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+/* END COUNTER */
+
+/* START FOOTER */
+.footer-logo {
+  height: 60px !important;
+}
+/* END FOOTER */

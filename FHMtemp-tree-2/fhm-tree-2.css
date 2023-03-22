@@ -1,0 +1,382 @@
+body,
+small,
+.sub-menu-container .menu-item > .menu-link,
+.wp-caption,
+.fbox-center.fbox-italic p,
+.skills li .progress-percent .counter,
+.nav-tree ul ul a,
+.font-body,
+.sale-flash {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.heading-block {
+  margin-bottom: 30px;
+}
+
+.heading-block::after {
+  margin-top: 10px;
+  width: 100px;
+  border-top: 2px solid #3bb77e;
+}
+
+.top-cart-number::before,
+#page-menu-wrap,
+.page-menu-nav,
+.control-solid .flex-control-nav li:hover a,
+.control-solid .flex-control-nav li a.flex-active,
+.grid-filter li.activeFilter a,
+.grid-filter.style-4 li.activeFilter a::after,
+.grid-shuffle:hover,
+.entry-link:hover,
+.button,
+.button.button-dark:hover,
+.button.button-3d:hover,
+.fbox-icon i,
+.fbox-icon img,
+.fbox-effect.fbox-dark .fbox-icon i:hover,
+.fbox-effect.fbox-dark:hover .fbox-icon i,
+.fbox-border.fbox-effect.fbox-dark .fbox-icon i::after,
+.i-rounded:hover,
+.i-circled:hover,
+.tab-nav.tab-nav2 li.ui-state-active a,
+.testimonial .flex-control-nav li a,
+.skills li .progress,
+.owl-carousel .owl-dots .owl-dot,
+#gotoTop:hover,
+input.switch-toggle-round:checked + label::before,
+input.switch-toggle-flat:checked + label,
+input.switch-toggle-flat:checked + label::after,
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus,
+input.switch-toggle-round:checked + label::before,
+input.switch-toggle-flat:checked + label,
+input.switch-toggle-flat:checked + label::after,
+.dark .entry-link:hover,
+.dark .fbox-effect.fbox-dark .fbox-icon i:hover,
+.dark .fbox-effect.fbox-dark:hover .fbox-icon i,
+.dark .fbox-border.fbox-effect.fbox-dark .fbox-icon i::after,
+.dark .i-rounded:hover,
+.dark .i-circled:hover,
+.dark .tab-nav.tab-nav2 li.ui-state-active a,
+.dark #gotoTop:hover,
+.dark input.switch-toggle-round:checked + label::before,
+.dark input.switch-toggle-flat:checked + label,
+.dark input.switch-toggle-flat:checked + label::after,
+.bg-color,
+.bg-color #header-wrap,
+.h-bg-color:hover,
+.process-steps li.active a,
+.process-steps li.ui-tabs-active a,
+.sidenav > .ui-tabs-active > a,
+.sidenav > .ui-tabs-active > a:hover,
+.owl-carousel .owl-nav [class*="owl-"]:hover,
+.widget-filter-links li.active-filter span,
+.page-item.active .page-link,
+.page-link:hover,
+.page-link:focus {
+  background-color: #3bb77e !important;
+}
+
+.sale-flash {
+  background-image: url(https://htmldemo.net/alula/alula/assets/img/icons/green-discount-label.webp);
+  background-position: 4px center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: fit-content;
+  height: fit-content;
+  min-width: unset;
+  min-height: unset;
+  width: 90px;
+  font-size: 15px;
+  border-radius: 0px;
+  padding: 0px 0 8px 0 !important;
+  background-color: transparent;
+}
+
+.owl-carousel .owl-item img {
+  border-radius: 15px;
+}
+
+.rating-stars i {
+  color: #fdc040;
+  font-size: 18px;
+}
+
+.feature-box {
+  align-items: center;
+}
+
+/* START HEADER */
+#logo img {
+  height: 60px !important;
+}
+
+.primary-menu {
+  flex: 1;
+}
+
+.menu-container {
+  justify-content: center;
+}
+/* END HEADER */
+
+/* START SLIDER */
+#slider img {
+  border-radius: 15px;
+}
+/* END SLIDER */
+
+/* START NEW PRODUCT */
+#new-product .new-product-item {
+  position: relative;
+}
+
+#new-product .new-product-item:hover .new-product-img img {
+  transform: scale(1.1);
+}
+
+#new-product .new-product-img {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+#new-product .new-product-img img {
+  width: 100%;
+  transition: all ease 0.5s;
+}
+
+#new-product .new-product-text {
+  position: absolute;
+  top: 13%;
+  left: 5%;
+}
+
+#new-product .new-product-text * {
+  margin: 0;
+}
+
+#new-product .new-product-text .badge {
+  margin-bottom: 10px;
+
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #3bb77e;
+}
+
+#new-product .new-product-text h2 {
+  font-size: 20px;
+}
+
+#new-product .new-product-text p {
+  font-size: 18px;
+}
+
+#new-product .new-product-text .price {
+  font-size: 20px;
+  color: #3bb77e;
+  font-weight: 600;
+}
+
+/* END NEW PRODUCT */
+
+/* START HOT DEALS */
+
+#hot-deals .portfolio,
+.portfolio-item {
+  padding: 15px;
+}
+
+#hot-deals .portfolio-desc .item-price span {
+  display: flex;
+  gap: 10px;
+}
+
+#hot-deals .portfolio-desc h3 a {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* END HOT DEALS */
+
+/* START OFFER */
+#offer .offer-img {
+  width: 100%;
+}
+
+#offer .offer-img img {
+  width: 100%;
+  transform: rotateY(180deg);
+}
+
+#offer .offer-text {
+  padding-left: 30px;
+}
+
+#offer .offer-text * {
+  margin: 0;
+}
+
+#offer .offer-text h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#offer .offer-text h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+#offer .offer-text .badge {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #3bb77e;
+  text-shadow: none;
+}
+
+#offer .offer-text .button {
+  background-color: transparent !important;
+  border-radius: 15px;
+  border: 1px solid #3bb77e;
+  color: #3bb77e;
+  text-shadow: none;
+  margin-top: 50px;
+  font-size: 20px;
+  padding: 20px 30px;
+  transition: all ease 0.8s;
+}
+
+#offer .offer-text .button:hover {
+  transform: rotateX(360deg);
+}
+/* END OFFER */
+
+/* START PRODUCT */
+#product .product-img {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+#product .product-img img {
+  width: 100%;
+}
+
+/* END PRODUCT */
+
+/* START ADVANTAGE */
+#advantage {
+  border: 1px solid #eee;
+}
+#advantage .fbox-content h3 {
+  font-size: 17px;
+  color: #3bb77e;
+}
+/* END ADVANTAGE */
+
+/* START CATEGORY */
+#category .category-item {
+  position: relative;
+}
+
+#category .category-item:hover .category-img img {
+  transform: scale(1.1);
+}
+
+#category .category-img {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+#category .category-img img {
+  width: 100%;
+  transition: all ease 0.5s;
+}
+
+#category .category-text {
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#category .category-text h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+#category .category-text p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+/* END CATEGORY */
+
+/* START BLOG */
+#blog .entry-title h3 a {
+  font-size: 20px;
+}
+/* END BLOG */
+
+/* START FORM */
+#form .promo {
+  background-image: url("https://images.unsplash.com/photo-1483794344563-d27a8d18014e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+
+#form .promo h3 {
+  text-transform: uppercase;
+}
+
+#form .promo h3 span {
+  color: #3bb77e;
+}
+
+#form .button {
+  margin: 0;
+  background-color: #3bb77e;
+  color: #fff;
+}
+
+#form .input-group {
+  width: 40%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#form .input-group input {
+  border-radius: 15px 0 0 15px;
+}
+/* END FORM */
+
+/* START FOOTER */
+#footer .input-group {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#footer .input-group input {
+  border-radius: 15px 0 0 15px !important;
+}
+
+#footer .button {
+  margin: 0;
+  background-color: #3bb77e;
+  color: #fff;
+}
+/* END FOOTER */

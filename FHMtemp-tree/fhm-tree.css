@@ -226,7 +226,7 @@ input.switch-toggle-flat:checked + label::after,
 }
 
 #offer .offer-text .button {
-  background-color: transparent;
+  background-color: transparent !important;
   border-radius: 15px;
   border: 1px solid #3bb77e;
   color: #3bb77e;
