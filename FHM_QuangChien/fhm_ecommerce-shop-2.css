@@ -1,0 +1,27 @@
+#page-title {
+  border-radius: 8px;
+  margin: 40px auto 0px;
+  width: 90%;
+  text-align: center;
+}
+
+.filter-color {
+  display: inline-block;
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  margin: 0 2px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0);
+  transform: scale(1);
+  -webkit-transition: box-shadow 0.2s ease, transform 0.2s ease;
+  -o-transition: box-shadow 0.2s ease, transform 0.2s ease;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.filter-color.active {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+  transform: scale(1.2);
+}
